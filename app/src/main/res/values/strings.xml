@@ -14,22 +14,24 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="search_place">ค้นหาสถานที่</string>
-    <string name="way_mini_bus">เส้นทางเดินรถ</string>
-    <string name="put_place_to_search">ใส่ชื่อสถานที่เพื่อค้นหา</string>
+    <string name="search_place">Search of a place</string>
+    <string name="way_mini_bus">a Mini Bus Route</string>
+    <string name="put_place_to_search">Name a place for search</string>
 
-    <string name="total_way">รวมเส้นทาง</string>
-    <string name="minibus">การเดินรถสองแถว</string>
-    <string name="cost_mini_bus">ทั้ง 19 สายและค่าโดยสาร</string>
-    <string name="kornkan">ของเมืองขอนแก่น</string>
-    <string name="feet_back">แจ้งปัญหา</string>
-    <string name="how_to_use">วิธีการใช้งาน</string>
-    <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="total_way">All of</string>
+    <string name="minibus">The Mini Bus Route</string>
+    <string name="cost_mini_bus">Either 19 Route and Mini Bus fare</string>
+    <string name="kornkan">of Khon Kaen City</string>
+    <string name="feet_back">Report</string>
+    <string name="how_to_use">Instruction</string>
+    <string name="change_language">Language</string>
     <string name="search_detail">Search Detail</string>
-    <string name="minibus_go">รถสองแถวที่ไป</string>
+    <string name="minibus_go">The Mini Bus Route to</string>
     <string name="comment">Comment</string>
-    <string name="comment_toolbar">แนะนำติชม ข้อมูลผิดพลาด</string>
-    <string name="please_comment">กรุณาระบุรายละเอียด</string>
-    <string name="input_place">ใส่ชื่อสถานที่</string>
+    <string name="comment_toolbar">Suggestions and Feedback</string>
+    <string name="please_comment">Please specify details.</string>
+    <string name="input_place">Input place</string>
     <string name="detail_mini_bus">Detail Mini Bus</string>
+    <string name="th">TH</string>
+    <string name="en">EN</string>
 </resources>

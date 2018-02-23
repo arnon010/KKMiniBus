@@ -21,6 +21,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.app.arnont.kkminibus.LanguageActivity;
 import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
@@ -155,6 +156,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, HowToUseAppActivity.class));
             overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
         } else if (id == R.id.nav_change_language) {
+            startActivity(new Intent(this, LanguageActivity.class));
             overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
         } else if (id == R.id.nav_manage) {
             overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
