@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">KKMiniBus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_search">SEARCH</string>
+    <string name="menu_settings">HOME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_home_fragment">Hello HOME fragment</string>
+    <string name="hello_search_fragment">Hello SEARCH fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_place">ค้นหาสถานที่</string>
+    <string name="way_mini_bus">เส้นทางเดินรถ</string>
+    <string name="put_place_to_search">ใส่ชื่อสถานที่เพื่อค้นหา</string>
+
+    <string name="total_way">รวมเส้นทาง</string>
+    <string name="minibus">การเดินรถสองแถว</string>
+    <string name="cost_mini_bus">ทั้ง 19 สายและค่าโดยสาร</string>
+    <string name="kornkan">ของเมืองขอนแก่น</string>
+    <string name="feet_back">แจ้งปัญหา</string>
+    <string name="how_to_use">วิธีการใช้งาน</string>
+    <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="search_detail">Search Detail</string>
+    <string name="minibus_go">รถสองแถวที่ไป</string>
+    <string name="comment">Comment</string>
+    <string name="comment_toolbar">แนะนำติชม ข้อมูลผิดพลาด</string>
+    <string name="please_comment">กรุณาระบุรายละเอียด</string>
+    <string name="input_place">ใส่ชื่อสถานที่</string>
+    <string name="detail_mini_bus">Detail Mini Bus</string>
+</resources>
