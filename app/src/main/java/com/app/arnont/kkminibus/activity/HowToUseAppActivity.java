@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.widget.Toolbar;
 import android.view.View;
 
+import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
 
-public class HowToUseAppActivity extends AppCompatActivity {
+public class HowToUseAppActivity extends LocalizationActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_to_use_app);
 
@@ -25,11 +26,6 @@ public class HowToUseAppActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
-
-
-
-
     }
 
     @Override

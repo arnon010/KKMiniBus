@@ -6,14 +6,15 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
+import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
 
-public class DetailMiniBusActivity extends AppCompatActivity {
+public class DetailMiniBusActivity extends LocalizationActivity {
 
     TextView txtMiniBusDetail;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_mini_bus);
 

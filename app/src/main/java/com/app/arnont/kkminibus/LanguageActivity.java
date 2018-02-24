@@ -20,14 +20,13 @@ public class LanguageActivity extends LocalizationActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language);
 
-
         btn_th = findViewById(R.id.btn_th);
         btn_en = findViewById(R.id.btn_en);
 
         btn_th.setOnClickListener(this);
         btn_en.setOnClickListener(this);
 
-       // switchLanguageMode();
+//        switchLanguageMode();
     }
 
 

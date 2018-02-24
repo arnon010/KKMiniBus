@@ -21,19 +21,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.LanguageActivity;
 import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
 
-public class MainActivity extends AppCompatActivity
+import java.util.Locale;
+
+public class MainActivity extends LocalizationActivity
         implements NavigationView.OnNavigationItemSelectedListener,SearchFragment.OnFragmentInteractionListener,HomeFragment.OnFragmentInteractionListener {
 
     BottomNavigationView bottom_navigation;
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);

@@ -14,9 +14,19 @@
         android:layout_height="wrap_content"
         android:background="@color/black"
         android:titleTextColor="@color/gold"/>
-    <TextView
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/how_to_use"/>
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_use"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>

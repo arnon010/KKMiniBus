@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.widget.Toolbar;
 import android.view.View;
 
+import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
 
-public class CommentActivity extends AppCompatActivity {
+public class CommentActivity extends LocalizationActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comment);
 
