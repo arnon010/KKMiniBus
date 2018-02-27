@@ -1,6 +1,5 @@
 package com.app.arnont.kkminibus.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -8,6 +7,7 @@ import android.widget.Toolbar;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
+import com.app.arnont.kkminibus.fragment.ItemListDialogFragment;
 
 public class DetailMiniBusActivity extends LocalizationActivity {
 
@@ -34,6 +34,10 @@ public class DetailMiniBusActivity extends LocalizationActivity {
         String savedExtra = getIntent().getStringExtra("minibus");
         txtMiniBusDetail = findViewById(R.id.txtMiniBusDetail);
         txtMiniBusDetail.setText(savedExtra);
+
+
+        ItemListDialogFragment fragment = ItemListDialogFragment.newInstance();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,fragment).commit();
 
     }
 

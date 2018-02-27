@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.activity.DetailMiniBusActivity;
+import com.app.arnont.kkminibus.activity.MapsDetailActivity;
 import com.app.arnont.kkminibus.adapter.CustomListAdapter;
 
 /**
@@ -104,7 +105,7 @@ public class SearchDetailFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent intent = new Intent(getActivity(), DetailMiniBusActivity.class);
+                Intent intent = new Intent(getActivity(), MapsDetailActivity.class);
                 String message = nameArray[position];
                 intent.putExtra("minibus", message);
                 startActivity(intent);

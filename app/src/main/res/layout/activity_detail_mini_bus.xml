@@ -24,4 +24,9 @@
         android:gravity="center"
         android:layout_gravity="center"/>
 
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </LinearLayout>

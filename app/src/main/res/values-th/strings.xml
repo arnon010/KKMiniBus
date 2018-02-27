@@ -30,7 +30,7 @@
     <string name="comment_toolbar">แนะนำติชม ข้อมูลผิดพลาด</string>
     <string name="please_comment">กรุณาระบุรายละเอียด</string>
     <string name="input_place">ใส่ชื่อสถานที่</string>
-    <string name="detail_mini_bus">Detail Mini Bus</string>
+    <string name="detail_mini_bus">รายละเอียด รถสองแถว</string>
     <string name="th">ไืทย</string>
     <string name="en">อังกฤษ</string>
 </resources>
