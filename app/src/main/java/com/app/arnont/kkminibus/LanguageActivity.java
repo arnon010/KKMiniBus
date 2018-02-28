@@ -26,12 +26,13 @@ public class LanguageActivity extends LocalizationActivity implements View.OnCli
         btn_th.setOnClickListener(this);
         btn_en.setOnClickListener(this);
 
-//        switchLanguageMode();
+        switchLanguageMode();
     }
 
 
 
     private void switchLanguageMode() {
+        switchLanguage = findViewById(R.id.switchLanguage);
         if (switchLanguage != null) {
         switchLanguage.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

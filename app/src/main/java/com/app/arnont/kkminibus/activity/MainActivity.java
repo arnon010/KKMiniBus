@@ -165,7 +165,6 @@ public class MainActivity extends LocalizationActivity
             overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
         } else if (id == R.id.nav_share) {
             overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
-            startActivity(new Intent(this, MapsDetailActivity.class));
         } else if (id == R.id.nav_send) {
 
         }

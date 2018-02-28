@@ -12,19 +12,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:visibility="gone">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TH"/>
+            android:text="@string/th"/>
         <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/switchLanguage"
-            android:textSize="30sp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchLanguage"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,6 +58,8 @@
             android:text="@string/how_to_use"/>
 
     </LinearLayout>
+
+
 
 
 
