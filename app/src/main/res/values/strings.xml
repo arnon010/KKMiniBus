@@ -32,7 +32,7 @@
     <string name="please_comment">Please specify details.</string>
     <string name="input_place">Input place</string>
     <string name="detail_mini_bus">Detail Mini Bus</string>
-    <string name="th">TH</string>
-    <string name="en">EN</string>
+    <string name="th">THAI</string>
+    <string name="en">ENGLISH</string>
     <string name="title_activity_maps_detail">Map</string>
 </resources>
