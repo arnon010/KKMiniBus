@@ -26,7 +26,7 @@ import com.app.arnont.kkminibus.adapter.CustomListAdapter;
  */
 public class SearchDetailFragment extends Fragment {
 
-    String[] nameArray = {"Octopus","Pig","Sheep","Rabbit","Snake","Spider","Octopus","Pig","Sheep","Rabbit","Snake","Spider" };
+    String[] nameArray = {"รถสองแถว สาย 2","Pig","Sheep","Rabbit","Snake","Spider","Octopus","Pig","Sheep","Rabbit","Snake","Spider" };
 
     String[] infoArray = {
             "8 tentacled monster",

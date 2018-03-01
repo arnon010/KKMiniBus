@@ -104,24 +104,38 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
         // Polylines
         switch (txtFix) {
-            case "Octopus":
-                LatLng mapCenter3 = new LatLng(13.785063, 100.630262);
-                map.addMarker(new MarkerOptions().position(mapCenter3).title("My room").snippet("stay with my girlfriend"));
+            case "รถสองแถว สาย 2":
+                LatLng mapCenter3 = new LatLng(16.426973, 102.872721);
+                map.addMarker(new MarkerOptions().position(mapCenter3).title("Start").snippet("stay with my girlfriend"));
+                LatLng mapCenter4 = new LatLng(16.436582, 102.765653);
+                map.addMarker(new MarkerOptions().position(mapCenter4).title("Stop").snippet("stay with my girlfriend"));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter3, 16));
                 map.addPolyline(new PolylineOptions().geodesic(true)
-                        .add(new LatLng(13.785063, 100.630262))
-                        .add(new LatLng(13.783994, 100.630621))
-                        .add(new LatLng(13.783783, 100.632294))
-                        .add(new LatLng(13.783576, 100.632388))
-                        .add(new LatLng(13.783288, 100.634665))
-                        .add(new LatLng(13.783192, 100.634793))
-                        .add(new LatLng(13.783706, 100.636240))
-                        .add(new LatLng(13.783139, 100.636441))
+                        .add(new LatLng(16.426973, 102.872721))
+                        .add(new LatLng(16.430299, 102.836118))
+                        .add(new LatLng(16.426504, 102.835148))
+                        .add(new LatLng(16.426627, 102.834347))
+                        .add(new LatLng(16.426807, 102.833516))
+                        .add(new LatLng(16.429133, 102.833773))
+                        .add(new LatLng(16.432915, 102.834159))
+                        .add(new LatLng(16.437010, 102.834577))
+                        .add(new LatLng(16.438736, 102.834741))
+                        .add(new LatLng(16.439240, 102.830803))
+                        .add(new LatLng(16.431367, 102.828682))
+                        .add(new LatLng(16.432690, 102.819577))
+                        .add(new LatLng(16.434429, 102.817839))
+                        .add(new LatLng(16.434660, 102.816369))
+                        .add(new LatLng(16.433497, 102.813097))
+                        .add(new LatLng(16.434546, 102.808172))
+                        .add(new LatLng(16.434854, 102.804792))
+                        .add(new LatLng(16.436582, 102.765653))
                 );
                 break;
             case "Pig":
                 LatLng mapCenter2 = new LatLng(13.785056, 100.630257);
-                map.addMarker(new MarkerOptions().position(mapCenter2).title("My room").snippet("stay with my girlfriend"));
+                map.addMarker(new MarkerOptions().position(mapCenter2).title("Start").snippet("stay with my girlfriend"));
+                LatLng mapCenter1 = new LatLng(13.787607, 100.630293);
+                map.addMarker(new MarkerOptions().position(mapCenter1).title("Stop").snippet("stay with my girlfriend"));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter2, 16));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(13.785056, 100.630257))

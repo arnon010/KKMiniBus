@@ -57,7 +57,7 @@ public class LanguageActivity extends LocalizationActivity implements View.OnCli
         if (id == R.id.btn_en) {
             setLanguage("en");
         } else if (id == R.id.btn_th) {
-            setLanguage(("th"));
+            setLanguage("th");
         }
 
 

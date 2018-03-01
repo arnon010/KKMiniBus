@@ -1,5 +1,6 @@
 package com.app.arnont.kkminibus.activity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
@@ -10,6 +11,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,6 +21,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
@@ -27,6 +32,8 @@ import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends LocalizationActivity
@@ -34,6 +41,8 @@ public class MainActivity extends LocalizationActivity
 
     BottomNavigationView bottom_navigation;
     boolean doubleBackToExitPressedOnce = false;
+    RadioGroup radioGroup;
+    RadioButton radioTH, radioEN;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -91,9 +100,8 @@ public class MainActivity extends LocalizationActivity
         transaction.replace(R.id.frame_layout, HomeFragment.newInstance());
         transaction.commit();
 
+
     }
-
-
 
     @Override
     public void onBackPressed() {
@@ -117,10 +125,7 @@ public class MainActivity extends LocalizationActivity
                 }
             }, 2000);
 
-
         }
-
-
 
     }
 
@@ -159,8 +164,7 @@ public class MainActivity extends LocalizationActivity
             startActivity(new Intent(this, HowToUseAppActivity.class));
             overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
         } else if (id == R.id.nav_change_language) {
-            startActivity(new Intent(this, LanguageActivity.class));
-            overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+            showRadioButtonDialog();
         } else if (id == R.id.nav_manage) {
             overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
         } else if (id == R.id.nav_share) {
@@ -172,6 +176,36 @@ public class MainActivity extends LocalizationActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    private void showRadioButtonDialog() {
+
+        // custom dialog
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.radiobutton_dialog);
+        radioGroup = dialog.findViewById(R.id.radio_group);
+        radioTH = dialog.findViewById(R.id.radioTH);
+        radioEN = dialog.findViewById(R.id.radioEN);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId) {
+                    case R.id.radioEN:
+                        setLanguage("en");
+                        break;
+                    case R.id.radioTH:
+                        setLanguage("th");
+                        break;
+
+                }
+            }
+        });
+
+        dialog.show();
+
     }
 
     @Override
