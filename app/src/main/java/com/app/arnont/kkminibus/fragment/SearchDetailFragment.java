@@ -8,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -26,7 +28,8 @@ import com.app.arnont.kkminibus.adapter.CustomListAdapter;
  */
 public class SearchDetailFragment extends Fragment {
 
-    String[] nameArray = {"รถสองแถว สาย 2","รถสองแถว สาย 3","Sheep","Rabbit","Snake","Spider","Octopus","Pig","Sheep","Rabbit","Snake","Spider" };
+    String[] nameArray = {"รถสองแถว สาย 2","รถสองแถว สาย 3","รถสองแถว สาย 4","รถสองแถว สาย 5","รถสองแถว สาย 6",
+            "รถสองแถว สาย 12","รถสองแถว สาย 18","รถสองแถว สาย 19","รถสองแถว สาย 20","รถสองแถว สาย 22","รถสองแถว สาย 23"};
 
     String[] infoArray = {
             "8 tentacled monster",
@@ -40,7 +43,7 @@ public class SearchDetailFragment extends Fragment {
             "Great for jumpers",
             "Nice in a stew",
             "Great for shoes",
-            "Scary."
+            "Great for shoes"
     };
 
     Integer[] imageArray = {R.drawable.logo,
@@ -48,7 +51,7 @@ public class SearchDetailFragment extends Fragment {
             R.drawable.logo,
             R.drawable.logo,
             R.drawable.logo,
-            R.drawable.logo,R.drawable.logo,
+            R.drawable.logo,
             R.drawable.logo,
             R.drawable.logo,
             R.drawable.logo,
@@ -113,6 +116,10 @@ public class SearchDetailFragment extends Fragment {
 
             }
         });
+
+        LayoutAnimationController lac = new LayoutAnimationController(AnimationUtils.loadAnimation(getActivity(), R.anim.pop_out), 0.5f); //0.5f == time between appearance of listview items.
+        listView.setLayoutAnimation(lac);
+        listView.startLayoutAnimation();
 
 
         return view;

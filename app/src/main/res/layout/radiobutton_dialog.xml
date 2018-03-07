@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="50dp"
-    android:paddingRight="100dp"
-    android:paddingLeft="100dp"
+    android:paddingRight="50dp"
+    android:paddingLeft="50dp"
     android:paddingBottom="50dp"
     android:background="@drawable/dialog_radio_style">
 
@@ -13,10 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/change_language"
-        android:textColor="@color/gold"
         android:textSize="@dimen/h1"
         android:textStyle="bold"
-        android:shadowColor="@color/black"
         android:shadowRadius="3"/>
 
     <RadioGroup
@@ -35,8 +33,6 @@
             android:id="@+id/radioEN"
             android:textStyle="bold"
             android:textSize="@dimen/h2"
-            android:textColor="@color/gold"
-            android:shadowColor="@color/black"
             android:shadowRadius="3"/>
         <RadioButton
             android:layout_width="match_parent"
@@ -45,8 +41,6 @@
             android:id="@+id/radioTH"
             android:textStyle="bold"
             android:textSize="@dimen/h2"
-            android:textColor="@color/gold"
-            android:shadowColor="@color/black"
             android:shadowRadius="3"/>
 
     </RadioGroup>

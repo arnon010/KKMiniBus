@@ -2,6 +2,7 @@ package com.app.arnont.kkminibus.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -11,13 +12,11 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,14 +26,12 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
-import com.app.arnont.kkminibus.LanguageActivity;
 import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Locale;
+
 
 public class MainActivity extends LocalizationActivity
         implements NavigationView.OnNavigationItemSelectedListener,SearchFragment.OnFragmentInteractionListener,HomeFragment.OnFragmentInteractionListener {
@@ -95,6 +92,7 @@ public class MainActivity extends LocalizationActivity
             }
 
         });
+
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_layout, HomeFragment.newInstance());
@@ -201,6 +199,11 @@ public class MainActivity extends LocalizationActivity
                         break;
 
                 }
+
+                Intent intent = getIntent();
+                finish();
+                overridePendingTransition(R.anim.push_in,R.anim.push_in_exit);
+                startActivity(intent);
             }
         });
 
