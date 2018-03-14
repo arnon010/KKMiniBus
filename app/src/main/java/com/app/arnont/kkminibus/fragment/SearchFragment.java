@@ -1,5 +1,6 @@
 package com.app.arnont.kkminibus.fragment;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +30,8 @@ import butterknife.ButterKnife;
 public class SearchFragment extends Fragment implements View.OnClickListener {
 
     ImageView imgSearch;
+    EditText edtSearch;
+    String searchPlace;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -68,6 +72,14 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         imgSearch = view.findViewById(R.id.imgSearch);
         imgSearch.setOnClickListener(this);
 
+        edtSearch = view.findViewById(R.id.edtSearch);
+
+
+//        Intent intent = new Intent(getActivity(), SearchDetailFragment.class);
+//        searchPlace = edtSearch.getText().toString();
+//        intent.putExtra("searchPlace", searchPlace);
+//        getActivity().startActivity(intent);
+
         // Inflate the layout for this fragment
         return view;
     }
@@ -91,11 +103,18 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.imgSearch:
+
+                Bundle bundle = new Bundle();
+                searchPlace = edtSearch.getText().toString();
+                bundle.putSerializable("searchPlace",searchPlace);
                 Fragment fragment = new SearchDetailFragment();
+                fragment.setArguments(bundle);
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.frame_layout, fragment);
                 fragmentTransaction.commit();
+
+
                 break;
             default:
                 break;

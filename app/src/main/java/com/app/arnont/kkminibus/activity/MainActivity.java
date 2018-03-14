@@ -2,7 +2,6 @@ package com.app.arnont.kkminibus.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -12,6 +11,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -29,8 +29,6 @@ import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
-
-import java.util.Locale;
 
 
 public class MainActivity extends LocalizationActivity
@@ -98,6 +96,7 @@ public class MainActivity extends LocalizationActivity
         transaction.replace(R.id.frame_layout, HomeFragment.newInstance());
         transaction.commit();
 
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
     }
 

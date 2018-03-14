@@ -1,5 +1,7 @@
 package com.app.arnont.kkminibus.activity;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -13,6 +15,7 @@ public class DetailMiniBusActivity extends LocalizationActivity {
 
     TextView txtMiniBusDetail;
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

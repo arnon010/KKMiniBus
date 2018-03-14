@@ -5,13 +5,17 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.activity.DetailMiniBusActivity;
@@ -27,6 +31,8 @@ import com.app.arnont.kkminibus.adapter.CustomListAdapter;
  * create an instance of this fragment.
  */
 public class SearchDetailFragment extends Fragment {
+
+    TextView txtSearchDeatail;
 
     String[] nameArray = {"รถสองแถว สาย 2","รถสองแถว สาย 3","รถสองแถว สาย 4","รถสองแถว สาย 5","รถสองแถว สาย 6",
             "รถสองแถว สาย 12","รถสองแถว สาย 18","รถสองแถว สาย 19","รถสองแถว สาย 20","รถสองแถว สาย 22","รถสองแถว สาย 23"};
@@ -60,6 +66,7 @@ public class SearchDetailFragment extends Fragment {
 
 
     ListView listView;
+    CustomListAdapter listAdapter;
 
 
 
@@ -99,7 +106,7 @@ public class SearchDetailFragment extends Fragment {
 
         final View view = inflater.inflate(R.layout.fragment_search_detail, container, false);
 
-        CustomListAdapter listAdapter = new CustomListAdapter(getActivity(), nameArray, infoArray, imageArray);
+        listAdapter = new CustomListAdapter(getActivity(), nameArray, infoArray, imageArray);
 
         listView = view.findViewById(R.id.listViewSearchDetail);
         listView.setAdapter(listAdapter);
@@ -121,12 +128,31 @@ public class SearchDetailFragment extends Fragment {
         listView.setLayoutAnimation(lac);
         listView.startLayoutAnimation();
 
+        txtSearchDeatail = view.findViewById(R.id.txtSearchDeatail);
+        String searchPlace = getArguments().getString("searchPlace");
+        txtSearchDeatail.setText(searchPlace);
+
+
+        txtSearchDeatail.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                SearchDetailFragment.this.listAdapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                SearchDetailFragment.this.listAdapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+
 
         return view;
-
-
-
-
     }
 
     // TODO: Rename method, update argument and hook method into UI event

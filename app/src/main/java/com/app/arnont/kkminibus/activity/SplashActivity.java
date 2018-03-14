@@ -23,7 +23,7 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        if (Build.VERSION.SDK_INT < 16) {
+        if (Build.VERSION.SDK_INT < 21) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
         } else {

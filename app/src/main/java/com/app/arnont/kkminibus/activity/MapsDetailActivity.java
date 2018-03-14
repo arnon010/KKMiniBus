@@ -1,6 +1,8 @@
 package com.app.arnont.kkminibus.activity;
 
+import android.annotation.TargetApi;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -33,6 +35,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
     private static final int ACCESS_FINE_LOCATION_INTENT_ID = 3;
     String txtFix;
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

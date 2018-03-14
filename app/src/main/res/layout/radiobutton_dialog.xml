@@ -7,7 +7,7 @@
     android:paddingRight="50dp"
     android:paddingLeft="50dp"
     android:paddingBottom="50dp"
-    android:background="@drawable/dialog_radio_style">
+    android:background="@drawable/popup_style">
 
     <TextView
         android:layout_width="match_parent"
