@@ -1,6 +1,7 @@
 package com.app.arnont.kkminibus.adapter;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,54 +11,45 @@ import android.widget.TextView;
 
 import com.app.arnont.kkminibus.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * Created by arnont on 2/22/18.
  */
 
-public class CustomListAdapter extends ArrayAdapter {
+public class CustomListAdapter extends ArrayAdapter<MiniBus> {
 
-    //to reference the Activity
-    private final Activity context;
 
-    //to store the animal images
-    private final Integer[] imageIDarray;
-
-    //to store the list of countries
-    private final String[] nameArray;
-
-    //to store the list of countries
-    private final String[] infoArray;
-
-    public CustomListAdapter(Activity context, String[] nameArrayParam, String[] infoArrayParam, Integer[] imageIDArrayParam){
-
-        super(context, R.layout.listview_layout , nameArrayParam);
-
-        this.context=context;
-        this.imageIDarray = imageIDArrayParam;
-        this.nameArray = nameArrayParam;
-        this.infoArray = infoArrayParam;
-
+    // private List<DrinksList> items = null; // no use
+    private ArrayList<MiniBus> arraylist;
+    public CustomListAdapter(Context context, int layoutId, List<MiniBus> items) {
+            super(context, layoutId, items);
     }
 
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+            View arrayView = convertView;
+            if(arrayView == null){
+            LayoutInflater vi;
+                vi = LayoutInflater.from(getContext());
+            arrayView = vi.inflate(R.layout.listview_layout, parent, false);
+            }
 
-    public View getView(int position, View view, ViewGroup parent) {
-        LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.listview_layout, null,true);
+            MiniBus currentPosition = getItem(position);
+            if(currentPosition != null){
+            ImageView image = arrayView.findViewById(R.id.icon);
+            image.setImageResource(currentPosition.getImageID());
 
-        //this code gets references to objects in the listview_row.xml file
-        TextView firstLine = rowView.findViewById(R.id.firstLine);
-        TextView secondLine = rowView.findViewById(R.id.secondLine);
-        ImageView icon = rowView.findViewById(R.id.icon);
+            TextView name = arrayView.findViewById(R.id.firstLine);
+            name.setText(currentPosition.getName());
 
-        //this code sets the values of the objects to values from the arrays
-        firstLine.setText(nameArray[position]);
-        secondLine.setText(infoArray[position]);
-        icon.setImageResource(imageIDarray[position]);
-
-        return rowView;
-
-    };
-
-
+            TextView info = arrayView.findViewById(R.id.secondLine);
+            info.setText(currentPosition.getInfo());
+            }
+            return arrayView;
+    }
 }
+
+

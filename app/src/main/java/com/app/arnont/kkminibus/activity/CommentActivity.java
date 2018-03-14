@@ -1,7 +1,10 @@
 package com.app.arnont.kkminibus.activity;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.Toolbar;
 import android.view.View;
 
@@ -10,6 +13,10 @@ import com.app.arnont.kkminibus.R;
 
 public class CommentActivity extends LocalizationActivity {
 
+    EditText edtComment;
+    String strComment;
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +33,10 @@ public class CommentActivity extends LocalizationActivity {
                 onBackPressed();
             }
         });
+
+        edtComment = findViewById(R.id.edtComment);
+        strComment = edtComment.getText().toString();
+
 
     }
 

@@ -40,7 +40,9 @@
             android:maxLines="1"
             android:textStyle="bold"
             android:gravity="center"
-            android:background="@drawable/textview_style" />
+            android:background="@drawable/textview_style">
+            <requestFocus/>
+        </TextView>
 
 
     </LinearLayout>

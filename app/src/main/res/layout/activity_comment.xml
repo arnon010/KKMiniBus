@@ -19,6 +19,7 @@
         android:titleTextColor="@color/gold"/>
 
     <EditText
+        android:id="@+id/edtComment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
