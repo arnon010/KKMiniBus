@@ -1,6 +1,5 @@
 package com.app.arnont.kkminibus.fragment;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,15 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.app.arnont.kkminibus.R;
-import com.app.arnont.kkminibus.activity.DetailMiniBusActivity;
 import com.app.arnont.kkminibus.activity.MapsDetailActivity;
 import com.app.arnont.kkminibus.adapter.CustomListAdapter;
 import com.app.arnont.kkminibus.adapter.MiniBus;
@@ -39,15 +35,15 @@ import java.util.Locale;
  */
 public class SearchDetailFragment extends Fragment {
 
-    TextView txtSearchDeatail;
+    EditText txtSearchDeatail;
     String searchPlace;
     private ArrayAdapter<MiniBus> adapter;
 
     private List<MiniBus> miniBus;
     ArrayList<MiniBus> mAllData=new ArrayList<MiniBus>();
 
-    String[] nameArray = {"รถสองแถว สาย 2","รถสองแถว สาย 3","รถสองแถว สาย 4","รถสองแถว สาย 5","รถสองแถว สาย 6",
-            "รถสองแถว สาย 12","รถสองแถว สาย 18","รถสองแถว สาย 19","รถสองแถว สาย 20","รถสองแถว สาย 22","รถสองแถว สาย 23"};
+    String[] nameArray = {"กลางเมือง","ชาตะผดุง","ทางรถไฟ","บ้านบะขาม","บ้านหนองไฮ","ประชาสโมสร","ม - ภาค","มลิวรรณ",
+            "มิตรภาพ","ร - 8","รอบบึงแก่นนคร","ศรีจันทร์","ศูนย์ราชการ - ทุ่งสร้าง","หน้าเมือง","หลังหอกาฬ","เหล่านาดี"};
 
     String[] infoArray = {
             "8 tentacled monster",
@@ -146,8 +142,8 @@ public class SearchDetailFragment extends Fragment {
         listView.startLayoutAnimation();
 
         txtSearchDeatail = rootView.findViewById(R.id.txtSearchDeatail);
-        searchPlace = getArguments().getString("searchPlace");
-        txtSearchDeatail.setText(searchPlace);
+//        searchPlace = getArguments().getString("searchPlace");
+//        txtSearchDeatail.setText(searchPlace);
 
         txtSearchDeatail.addTextChangedListener(new TextWatcher() {
 
@@ -160,13 +156,8 @@ public class SearchDetailFragment extends Fragment {
                 filter(text);
                 listAdapter.notifyDataSetChanged();
 
-                InputMethodManager inputManager =
-                        (InputMethodManager) getContext().
-                                getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputManager.hideSoftInputFromWindow(
-                        getActivity().getCurrentFocus().getWindowToken(),
-                        InputMethodManager.HIDE_NOT_ALWAYS);
-
+//                InputMethodManager inputManager = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+//                inputManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),InputMethodManager.HIDE_NOT_ALWAYS);
 
             }
 
@@ -184,24 +175,27 @@ public class SearchDetailFragment extends Fragment {
             }
         });
 
-
-
         return rootView;
     }
 
     private void populateDrinksList() {
         miniBus = new ArrayList<MiniBus>();
-        miniBus.add(new MiniBus("รถสองแถว สาย 2","8 tentacled monster" ,R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 3", "Delicious in rolls", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 4", "Great for jumpers", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 5", "Fanta Orange", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 6", "Fanta Lemon", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 12", "Fanta Blue", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 18", "Sprite", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 19", "Soda Water", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 20", "Tonic Water", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 22", "Sparkling Water Ioli", R.drawable.logo));
-        miniBus.add(new MiniBus("รถสองแถว สาย 23", "Sparkling Water Perrier", R.drawable.logo));
+        miniBus.add(new MiniBus("กลางเมือง","8 tentacled monster" ,R.drawable.logo));
+        miniBus.add(new MiniBus("ชาตะผดุง", "Delicious in rolls", R.drawable.logo));
+        miniBus.add(new MiniBus("ทางรถไฟ", "Great for jumpers", R.drawable.logo));
+        miniBus.add(new MiniBus("บ้านบะขาม", "Fanta Orange", R.drawable.logo));
+        miniBus.add(new MiniBus("บ้านหนองไฮ", "Fanta Lemon", R.drawable.logo));
+        miniBus.add(new MiniBus("ประชาสโมสร", "Fanta Blue", R.drawable.logo));
+        miniBus.add(new MiniBus("ม - ภาค", "Sprite", R.drawable.logo));
+        miniBus.add(new MiniBus("มลิวรรณ", "Soda Water", R.drawable.logo));
+        miniBus.add(new MiniBus("มิตรภาพ", "Tonic Water", R.drawable.logo));
+        miniBus.add(new MiniBus("ร - 8", "Sparkling Water Ioli", R.drawable.logo));
+        miniBus.add(new MiniBus("รอบบึงแก่นนคร", "Sparkling Water Perrier", R.drawable.logo));
+        miniBus.add(new MiniBus("ศรีจันทร์", "Sparkling Water Perrier", R.drawable.logo));
+        miniBus.add(new MiniBus("ศูนย์ราชการ - ทุ่งสร้าง", "Sparkling Water Perrier", R.drawable.logo));
+        miniBus.add(new MiniBus("หน้าเมือง", "Sparkling Water Perrier", R.drawable.logo));
+        miniBus.add(new MiniBus("หลังหอกาฬ", "Sparkling Water Perrier", R.drawable.logo));
+        miniBus.add(new MiniBus("เหล่านาดี", "Sparkling Water Perrier", R.drawable.logo));
 
         mAllData.addAll(miniBus);
         listView = rootView.findViewById(R.id.listViewSearchDetail);
@@ -219,7 +213,7 @@ public class SearchDetailFragment extends Fragment {
             for (MiniBus wp : mAllData) {
                 if (wp.getName().toLowerCase(Locale.getDefault())
                         .contains(charText)) {
-                    miniBus .add(wp);
+                    miniBus.add(wp);
                 }
             }
         }

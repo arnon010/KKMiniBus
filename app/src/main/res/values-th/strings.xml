@@ -33,4 +33,5 @@
     <string name="detail_mini_bus">รายละเอียด รถสองแถว</string>
     <string name="th">ไืทย</string>
     <string name="en">อังกฤษ</string>
+    <string name="search_your_mini_bus">ค้นหารถสองแถว</string>
 </resources>

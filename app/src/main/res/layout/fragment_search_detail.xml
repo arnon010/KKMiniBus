@@ -26,7 +26,7 @@
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             />
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginRight="50dp"
@@ -34,15 +34,14 @@
             android:layout_marginBottom="30dp"
             android:layout_marginTop="10dp"
             android:padding="5dp"
-            android:text="@string/search_detail"
+            android:hint="@string/search_your_mini_bus"
             android:id="@+id/txtSearchDeatail"
             android:textSize="@dimen/h1"
             android:maxLines="1"
-            android:textStyle="bold"
             android:gravity="center"
             android:background="@drawable/textview_style">
             <requestFocus/>
-        </TextView>
+        </EditText>
 
 
     </LinearLayout>

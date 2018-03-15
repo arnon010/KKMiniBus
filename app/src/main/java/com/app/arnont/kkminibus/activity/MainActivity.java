@@ -28,6 +28,7 @@ import android.widget.Toast;
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
+import com.app.arnont.kkminibus.fragment.SearchDetailFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
 
 
@@ -79,7 +80,7 @@ public class MainActivity extends LocalizationActivity
                         selectedFragment = HomeFragment.newInstance();
                         break;
                     case R.id.action_search:
-                        selectedFragment = SearchFragment.newInstance();
+                        selectedFragment = SearchDetailFragment.newInstance();
                         break;
                 }
 
