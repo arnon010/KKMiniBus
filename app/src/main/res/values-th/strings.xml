@@ -34,4 +34,5 @@
     <string name="th">ไืทย</string>
     <string name="en">อังกฤษ</string>
     <string name="search_your_mini_bus">ค้นหารถสองแถว</string>
+    <string name="bus_route">เส้นทางการเดินรถ</string>
 </resources>

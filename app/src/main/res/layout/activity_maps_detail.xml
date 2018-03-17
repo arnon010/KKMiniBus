@@ -36,7 +36,8 @@ tools:context="com.app.arnont.kkminibus.activity.MapsDetailActivity">
             android:id="@+id/txtMiniBusDetail"
             android:text="@string/detail_mini_bus"
             android:gravity="center"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:visibility="gone"/>
 
         <FrameLayout
             android:id="@+id/map_fragment_container"

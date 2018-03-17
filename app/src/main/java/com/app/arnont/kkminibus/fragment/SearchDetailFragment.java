@@ -46,21 +46,33 @@ public class SearchDetailFragment extends Fragment {
             "มิตรภาพ","ร - 8","รอบบึงแก่นนคร","ศรีจันทร์","ศูนย์ราชการ - ทุ่งสร้าง","หน้าเมือง","หลังหอกาฬ","เหล่านาดี"};
 
     String[] infoArray = {
-            "8 tentacled monster",
-            "Delicious in rolls",
-            "Great for jumpers",
+            "กลางเมือง",
+            "ชาตะผดุง",
+            "ทางรถไฟ",
+            "บ้านบะขาม",
+            "บ้านหนองไฮ",
+            "ประชาสโมสร.",
+            "ม - ภาค",
+            "มลิวรรณ",
+            "มิตรภาพ",
             "Nice in a stew",
-            "Great for shoes",
-            "Scary.",
-            "8 tentacled monster",
-            "Delicious in rolls",
-            "Great for jumpers",
-            "Nice in a stew",
-            "Great for shoes",
-            "Great for shoes"
+            "ร - 8",
+            "รอบบึงแก่นนคร",
+            "ศรีจันทร์",
+            "ศูนย์ราชการ - ทุ่งสร้าง",
+            "หน้าเมือง",
+            "หลังหอกาฬ",
+            "เหล่านาดี"
     };
 
-    Integer[] imageArray = {R.drawable.logo,
+    Integer[] imageArray = {
+            R.drawable.logo,
+            R.drawable.logo,
+            R.drawable.logo,
+            R.drawable.logo,
+            R.drawable.logo,
+            R.drawable.logo,
+            R.drawable.logo,
             R.drawable.logo,
             R.drawable.logo,
             R.drawable.logo,
@@ -129,11 +141,12 @@ public class SearchDetailFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), MapsDetailActivity.class);
                 String message = nameArray[position];
                 intent.putExtra("minibus", message);
+                String message2 = infoArray[position];
+                intent.putExtra("btsMinibus2", message2);
+                Integer message3 = imageArray[position];
+                intent.putExtra("image", message3);
                 startActivity(intent);
                 getActivity().overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
-
-
-
             }
         });
 
@@ -158,7 +171,6 @@ public class SearchDetailFragment extends Fragment {
 
 //                InputMethodManager inputManager = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
 //                inputManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),InputMethodManager.HIDE_NOT_ALWAYS);
-
             }
 
             @Override
@@ -179,23 +191,23 @@ public class SearchDetailFragment extends Fragment {
     }
 
     private void populateDrinksList() {
-        miniBus = new ArrayList<MiniBus>();
-        miniBus.add(new MiniBus("กลางเมือง","8 tentacled monster" ,R.drawable.logo));
-        miniBus.add(new MiniBus("ชาตะผดุง", "Delicious in rolls", R.drawable.logo));
-        miniBus.add(new MiniBus("ทางรถไฟ", "Great for jumpers", R.drawable.logo));
-        miniBus.add(new MiniBus("บ้านบะขาม", "Fanta Orange", R.drawable.logo));
-        miniBus.add(new MiniBus("บ้านหนองไฮ", "Fanta Lemon", R.drawable.logo));
-        miniBus.add(new MiniBus("ประชาสโมสร", "Fanta Blue", R.drawable.logo));
-        miniBus.add(new MiniBus("ม - ภาค", "Sprite", R.drawable.logo));
-        miniBus.add(new MiniBus("มลิวรรณ", "Soda Water", R.drawable.logo));
-        miniBus.add(new MiniBus("มิตรภาพ", "Tonic Water", R.drawable.logo));
-        miniBus.add(new MiniBus("ร - 8", "Sparkling Water Ioli", R.drawable.logo));
-        miniBus.add(new MiniBus("รอบบึงแก่นนคร", "Sparkling Water Perrier", R.drawable.logo));
-        miniBus.add(new MiniBus("ศรีจันทร์", "Sparkling Water Perrier", R.drawable.logo));
-        miniBus.add(new MiniBus("ศูนย์ราชการ - ทุ่งสร้าง", "Sparkling Water Perrier", R.drawable.logo));
-        miniBus.add(new MiniBus("หน้าเมือง", "Sparkling Water Perrier", R.drawable.logo));
-        miniBus.add(new MiniBus("หลังหอกาฬ", "Sparkling Water Perrier", R.drawable.logo));
-        miniBus.add(new MiniBus("เหล่านาดี", "Sparkling Water Perrier", R.drawable.logo));
+        miniBus = new ArrayList<>();
+        miniBus.add(new MiniBus("กลางเมือง","กลางเมือง" ,R.drawable.logo));
+        miniBus.add(new MiniBus("ชาตะผดุง", "ชาตะผดุง", R.drawable.logo));
+        miniBus.add(new MiniBus("ทางรถไฟ", "ทางรถไฟ", R.drawable.logo));
+        miniBus.add(new MiniBus("บ้านบะขาม", "บ้านบะขาม", R.drawable.logo));
+        miniBus.add(new MiniBus("บ้านหนองไฮ", "บ้านหนองไฮ", R.drawable.logo));
+        miniBus.add(new MiniBus("ประชาสโมสร", "ประชาสโมสร", R.drawable.logo));
+        miniBus.add(new MiniBus("ม - ภาค", "ม - ภาค", R.drawable.logo));
+        miniBus.add(new MiniBus("มลิวรรณ", "มลิวรรณ", R.drawable.logo));
+        miniBus.add(new MiniBus("มิตรภาพ", "Tมิตรภาพ", R.drawable.logo));
+        miniBus.add(new MiniBus("ร - 8", "ร - 8", R.drawable.logo));
+        miniBus.add(new MiniBus("รอบบึงแก่นนคร", "รอบบึงแก่นนคร", R.drawable.logo));
+        miniBus.add(new MiniBus("ศรีจันทร์", "ศรีจันทร์", R.drawable.logo));
+        miniBus.add(new MiniBus("ศูนย์ราชการ - ทุ่งสร้าง", "ศูนย์ราชการ - ทุ่งสร้าง", R.drawable.logo));
+        miniBus.add(new MiniBus("หน้าเมือง", "หน้าเมือง", R.drawable.logo));
+        miniBus.add(new MiniBus("หลังหอกาฬ", "หลังหอกาฬ", R.drawable.logo));
+        miniBus.add(new MiniBus("เหล่านาดี", "เหล่านาดี", R.drawable.logo));
 
         mAllData.addAll(miniBus);
         listView = rootView.findViewById(R.id.listViewSearchDetail);

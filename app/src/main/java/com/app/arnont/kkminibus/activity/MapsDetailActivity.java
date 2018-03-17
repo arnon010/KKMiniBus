@@ -45,7 +45,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         Toolbar toolbar = findViewById(R.id.toolbarDetailMiniBus);
-        toolbar.setTitle(R.string.detail_mini_bus);
+        toolbar.setTitle(R.string.bus_route);
         setActionBar(toolbar);
 
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
@@ -65,7 +65,6 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
         ItemListDialogFragment fragment = ItemListDialogFragment.newInstance();
         getSupportFragmentManager().beginTransaction().replace(R.id.map_fragment_container,fragment).commit();
-
 
     }
 
@@ -103,7 +102,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
         map.setPadding(0,0,0,120);
         enableCurrentLocationButton();
 
-
+        map.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
 
 
         // Polylines

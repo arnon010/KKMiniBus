@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.app.arnont.kkminibus.R;
 
@@ -21,6 +22,11 @@ public class ItemListDialogFragment extends BottomSheetDialogFragment {
     private ImageView mLeftArrow;
 
     private ImageView mRightArrow;
+
+    TextView firstLineBottomSheet , secondLineBottomSheet;
+    ImageView iconBottomSheet;
+
+
 
     public ItemListDialogFragment() {
         // Required empty public constructor
@@ -41,6 +47,16 @@ public class ItemListDialogFragment extends BottomSheetDialogFragment {
         // find arrows
         mLeftArrow = view.findViewById(R.id.bottom_sheet_left_arrow);
         mRightArrow = view.findViewById(R.id.bottom_sheet_right_arrow);
+
+        String savedExtra = getActivity().getIntent().getStringExtra("minibus");
+        firstLineBottomSheet = view.findViewById(R.id.firstLineBottomSheet);
+        firstLineBottomSheet.setText(savedExtra);
+        String savedExtra2 = getActivity().getIntent().getStringExtra("btsMinibus2");
+        secondLineBottomSheet = view.findViewById(R.id.secondLineBottomSheet);
+        secondLineBottomSheet.setText(savedExtra2);
+        Integer savedExtra3 = getActivity().getIntent().getIntExtra("image",0);
+        iconBottomSheet = view.findViewById(R.id.iconBottomSheet);
+        iconBottomSheet.setImageResource(savedExtra3);
 
         initializeBottomSheet();
 
