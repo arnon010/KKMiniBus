@@ -42,11 +42,11 @@ public class SearchDetailFragment extends Fragment {
     private List<MiniBus> miniBus;
     ArrayList<MiniBus> mAllData=new ArrayList<MiniBus>();
 
-    String[] nameArray = {"กลางเมือง","ชาตะผดุง","ทางรถไฟ","บ้านบะขาม","บ้านหนองไฮ","ประชาสโมสร","ม - ภาค","มลิวรรณ",
+    String[] nameArray = {"สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","ชาตะผดุง","ทางรถไฟ","บ้านบะขาม","บ้านหนองไฮ","ประชาสโมสร","ม - ภาค","มลิวรรณ",
             "มิตรภาพ","ร - 8","รอบบึงแก่นนคร","ศรีจันทร์","ศูนย์ราชการ - ทุ่งสร้าง","หน้าเมือง","หลังหอกาฬ","เหล่านาดี"};
 
     String[] infoArray = {
-            "กลางเมือง",
+            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย",
             "ชาตะผดุง",
             "ทางรถไฟ",
             "บ้านบะขาม",
@@ -192,7 +192,7 @@ public class SearchDetailFragment extends Fragment {
 
     private void populateDrinksList() {
         miniBus = new ArrayList<>();
-        miniBus.add(new MiniBus("กลางเมือง","กลางเมือง" ,R.drawable.logo));
+        miniBus.add(new MiniBus("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย" ,R.drawable.logo));
         miniBus.add(new MiniBus("ชาตะผดุง", "ชาตะผดุง", R.drawable.logo));
         miniBus.add(new MiniBus("ทางรถไฟ", "ทางรถไฟ", R.drawable.logo));
         miniBus.add(new MiniBus("บ้านบะขาม", "บ้านบะขาม", R.drawable.logo));
