@@ -5,12 +5,20 @@ import android.content.Context;
 import android.content.res.Configuration;
 
 import com.akexorcist.localizationactivity.core.LocalizationApplicationDelegate;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by arnont on 2/23/18.
  */
 
 public class CustomApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+    }
+
     LocalizationApplicationDelegate localizationDelegate = new LocalizationApplicationDelegate(this);
 
     @Override

@@ -35,4 +35,7 @@
     <string name="en">อังกฤษ</string>
     <string name="search_your_mini_bus">ค้นหารถสองแถว</string>
     <string name="bus_route">เส้นทางการเดินรถ</string>
+    <string name="send_your_comment">ส่งความคิดเห็นของท่าน</string>
+    <string name="email">อีเมล</string>
+    <string name="name">ชื่อ</string>
 </resources>

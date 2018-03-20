@@ -1,5 +1,7 @@
 package com.app.arnont.kkminibus.activity;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toolbar;
@@ -10,6 +12,7 @@ import com.app.arnont.kkminibus.R;
 
 public class HowToUseAppActivity extends LocalizationActivity {
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

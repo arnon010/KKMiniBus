@@ -42,7 +42,7 @@
                android:layout_height="50dp"
                android:id="@+id/imgSearch"
                android:layout_gravity="center_horizontal"
-               android:src="@drawable/ic_search_white_24dp"
+               android:src="@drawable/ic_search"
                android:background="@drawable/search_btn_style"
                />
            <!--android:background="@drawabutton_search_styletyle"-->

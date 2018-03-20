@@ -43,11 +43,12 @@
             android:gravity="center"
             android:layout_margin="20dp">
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
                 android:id="@+id/imgBtnMap"
-                android:src="@drawable/logo"/>
+                android:src="@drawable/ic_car_group"/>
 
         </LinearLayout>
         <View

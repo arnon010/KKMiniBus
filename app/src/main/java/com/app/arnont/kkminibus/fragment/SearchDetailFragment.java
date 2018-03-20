@@ -42,44 +42,44 @@ public class SearchDetailFragment extends Fragment {
     private List<MiniBus> miniBus;
     ArrayList<MiniBus> mAllData=new ArrayList<MiniBus>();
 
-    String[] nameArray = {"สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","ชาตะผดุง","ทางรถไฟ","บ้านบะขาม","บ้านหนองไฮ","ประชาสโมสร","ม - ภาค","มลิวรรณ",
-            "มิตรภาพ","ร - 8","รอบบึงแก่นนคร","ศรีจันทร์","ศูนย์ราชการ - ทุ่งสร้าง","หน้าเมือง","หลังหอกาฬ","เหล่านาดี"};
+    String[] nameArray = {"สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","สาย 3 : บขส.3 – บ้านพรหมนิมิตร","สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง","สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม",
+            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม","สาย 8 : สามเหลี่ยม – บ้านดอนบม","สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า","สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน",
+            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง","สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง","สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง","สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง",
+            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย","หน้าเมือง","หลังหอกาฬ","เหล่านาดี"};
 
     String[] infoArray = {
             "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย",
-            "ชาตะผดุง",
-            "ทางรถไฟ",
-            "บ้านบะขาม",
-            "บ้านหนองไฮ",
-            "ประชาสโมสร.",
-            "ม - ภาค",
-            "มลิวรรณ",
-            "มิตรภาพ",
-            "Nice in a stew",
-            "ร - 8",
-            "รอบบึงแก่นนคร",
-            "ศรีจันทร์",
-            "ศูนย์ราชการ - ทุ่งสร้าง",
+            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร",
+            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง",
+            "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม",
+            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม",
+            "สาย 8 : สามเหลี่ยม – บ้านดอนบม",
+            "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า",
+            "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน",
+            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง",
+            "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง",
+            "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง",
+            "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง",
+            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย",
             "หน้าเมือง",
             "หลังหอกาฬ",
             "เหล่านาดี"
     };
 
     Integer[] imageArray = {
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
-            R.drawable.logo,
+            R.drawable.ic_car2,
+            R.drawable.ic_car3,
+            R.drawable.ic_car4,
+            R.drawable.ic_car5,
+            R.drawable.ic_car6,
+            R.drawable.ic_car8,
+            R.drawable.ic_car10,
+            R.drawable.ic_car12,
+            R.drawable.ic_car18,
+            R.drawable.ic_car19,
+            R.drawable.ic_car20,
+            R.drawable.ic_car22,
+            R.drawable.ic_car23,
             R.drawable.logo,
             R.drawable.logo,
             R.drawable.logo};
@@ -192,19 +192,19 @@ public class SearchDetailFragment extends Fragment {
 
     private void populateDrinksList() {
         miniBus = new ArrayList<>();
-        miniBus.add(new MiniBus("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย" ,R.drawable.logo));
-        miniBus.add(new MiniBus("ชาตะผดุง", "ชาตะผดุง", R.drawable.logo));
-        miniBus.add(new MiniBus("ทางรถไฟ", "ทางรถไฟ", R.drawable.logo));
-        miniBus.add(new MiniBus("บ้านบะขาม", "บ้านบะขาม", R.drawable.logo));
-        miniBus.add(new MiniBus("บ้านหนองไฮ", "บ้านหนองไฮ", R.drawable.logo));
-        miniBus.add(new MiniBus("ประชาสโมสร", "ประชาสโมสร", R.drawable.logo));
-        miniBus.add(new MiniBus("ม - ภาค", "ม - ภาค", R.drawable.logo));
-        miniBus.add(new MiniBus("มลิวรรณ", "มลิวรรณ", R.drawable.logo));
-        miniBus.add(new MiniBus("มิตรภาพ", "Tมิตรภาพ", R.drawable.logo));
-        miniBus.add(new MiniBus("ร - 8", "ร - 8", R.drawable.logo));
-        miniBus.add(new MiniBus("รอบบึงแก่นนคร", "รอบบึงแก่นนคร", R.drawable.logo));
-        miniBus.add(new MiniBus("ศรีจันทร์", "ศรีจันทร์", R.drawable.logo));
-        miniBus.add(new MiniBus("ศูนย์ราชการ - ทุ่งสร้าง", "ศูนย์ราชการ - ทุ่งสร้าง", R.drawable.logo));
+        miniBus.add(new MiniBus("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย" ,R.drawable.ic_car2));
+        miniBus.add(new MiniBus("สาย 3 : บขส.3 – บ้านพรหมนิมิตร", "สาย 3 : บขส.3 – บ้านพรหมนิมิตร", R.drawable.ic_car3));
+        miniBus.add(new MiniBus("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง", "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง", R.drawable.ic_car4));
+        miniBus.add(new MiniBus("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม", "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม", R.drawable.ic_car5));
+        miniBus.add(new MiniBus("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม", "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม", R.drawable.ic_car6));
+        miniBus.add(new MiniBus("สาย 8 : สามเหลี่ยม – บ้านดอนบม", "สาย 8 : สามเหลี่ยม – บ้านดอนบม", R.drawable.ic_car8));
+        miniBus.add(new MiniBus("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า", "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า", R.drawable.ic_car10));
+        miniBus.add(new MiniBus("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน", "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน", R.drawable.ic_car12));
+        miniBus.add(new MiniBus("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง", "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง", R.drawable.ic_car18));
+        miniBus.add(new MiniBus("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง", "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง", R.drawable.ic_car19));
+        miniBus.add(new MiniBus("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง", "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง", R.drawable.ic_car20));
+        miniBus.add(new MiniBus("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง", "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง", R.drawable.ic_car22));
+        miniBus.add(new MiniBus("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย", "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย", R.drawable.ic_car23));
         miniBus.add(new MiniBus("หน้าเมือง", "หน้าเมือง", R.drawable.logo));
         miniBus.add(new MiniBus("หลังหอกาฬ", "หลังหอกาฬ", R.drawable.logo));
         miniBus.add(new MiniBus("เหล่านาดี", "เหล่านาดี", R.drawable.logo));

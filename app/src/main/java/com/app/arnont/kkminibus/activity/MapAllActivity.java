@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.app.arnont.kkminibus.R;
@@ -16,12 +17,16 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapAllActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private static final int ACCESS_FINE_LOCATION_INTENT_ID = 3;
+
+    String strLatlng,strLatlng1,strLatlng2,strLatlng3,strLatlng4,strLatlng5,strLatlng6,strLatlng7,strLatlng8,
+            strLatlng9,strLatlng10,strLatlng11,strLatlng12,strLatlng13,strLatlng14, strLatlng15;
 
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
@@ -73,7 +78,7 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
         mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
 
         // Add a marker in Sydney and move the camera
-        LatLng latLng = new LatLng(16.438445, 102.836451);
+        final LatLng latLng = new LatLng(16.438445, 102.836451);
         mMap.addMarker(new MarkerOptions().position(latLng).title("กลางเมือง").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
 
@@ -140,6 +145,78 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
         mMap.addMarker(new MarkerOptions().position(latLng7).title("มลิวรรณ").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng7,12));
 
+        strLatlng = latLng.toString();
+        strLatlng1 = latLng1.toString();
+        strLatlng2 = latLng2.toString();
+        strLatlng3 = latLng3.toString();
+        strLatlng4 = latLng4.toString();
+        strLatlng5 = latLng5.toString();
+        strLatlng6 = latLng6.toString();
+        strLatlng7 = latLng7.toString();
+        strLatlng8 = latLng8.toString();
+        strLatlng9 = latLng9.toString();
+        strLatlng10 = latLng10.toString();
+        strLatlng11 = latLng11.toString();
+        strLatlng12 = latLng12.toString();
+        strLatlng13 = latLng13.toString();
+        strLatlng14 = latLng14.toString();
+        strLatlng15 = latLng15.toString();
+
+
+
+        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                if (marker.getTitle().equals("มลิวรรณ")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng7, Toast.LENGTH_SHORT).show();
+
+                }
+//                else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }else if (marker.getTitle().equals("มลิวรรณ")) {
+//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+//
+//                }
+            }
+        });
+
     }
 
 
@@ -156,6 +233,7 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
             }
         }
     }
+
     private void requestLocationPermission() {
         if (ActivityCompat.shouldShowRequestPermissionRationale(MapAllActivity.this, android.Manifest.permission.ACCESS_FINE_LOCATION)) {
             ActivityCompat.requestPermissions(MapAllActivity.this,

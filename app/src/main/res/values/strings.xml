@@ -38,4 +38,7 @@
     <string name="title_activity_map_all">Map</string>
     <string name="search_your_mini_bus">Search your mini bus</string>
     <string name="bus_route">Mini Bus route</string>
+    <string name="send_your_comment">SEND YOUR COMMENT</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
 </resources>
