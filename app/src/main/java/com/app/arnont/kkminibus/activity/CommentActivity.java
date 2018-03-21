@@ -3,8 +3,10 @@ package com.app.arnont.kkminibus.activity;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toolbar;
 import android.view.View;
 
@@ -23,15 +25,9 @@ public class CommentActivity extends LocalizationActivity{
     EditText edtComment,edtNameComment,edtEmailComment;
 
     Button btnComment;
+    TextView txtViewName ,txtViewEmail, txtViewComment;
 
     Toolbar toolbar;
-
-
-    private static final String TAG = "AddEventFragment";
-
-    String strName;
-    String strEmail;
-    String strComment;
 
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
     DatabaseReference mUsersRef = mRootRef.child("USERS");
@@ -55,14 +51,86 @@ public class CommentActivity extends LocalizationActivity{
             }
         });
 
+        txtViewName = findViewById(R.id.txtViewName);
+        txtViewEmail = findViewById(R.id.txtViewEmail);
+
+
         edtNameComment = findViewById(R.id.edtNameComment);
         edtEmailComment = findViewById(R.id.edtEmailComment);
-        edtComment = findViewById(R.id.edtComment);
+        edtComment = findViewById(R.id.edtCommentText);
         btnComment = findViewById(R.id.btnComment);
+        txtViewComment = findViewById(R.id.txtViewComment);
 
-        strName = edtNameComment.getText().toString().trim();
-        strEmail = edtEmailComment.getText().toString().trim();
-        strComment = edtComment.getText().toString().trim();
+        // Username
+        edtNameComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+                if (hasFocus) {
+                    new Handler().postDelayed(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            // Show white background behind floating label
+                            txtViewName.setVisibility(View.VISIBLE);
+                        }
+                    }, 100);
+                } else {
+                    // Required to show/hide white background behind floating label during focus change
+                    if (edtNameComment.getText().length() > 0)
+                        txtViewName.setVisibility(View.VISIBLE);
+                    else
+                        txtViewName.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+        // Password
+        edtEmailComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+                if (hasFocus) {
+                    new Handler().postDelayed(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            // Show white background behind floating label
+                            txtViewEmail.setVisibility(View.VISIBLE);
+                        }
+                    }, 100);
+                } else {
+                    // Required to show/hide white background behind floating label during focus change
+                    if (edtEmailComment.getText().length() > 0)
+                        txtViewEmail.setVisibility(View.VISIBLE);
+                    else
+                        txtViewEmail.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        // Username
+        edtComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+                if (hasFocus) {
+                    new Handler().postDelayed(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            // Show white background behind floating label
+                            txtViewComment.setVisibility(View.VISIBLE);
+                        }
+                    }, 100);
+                } else {
+                    // Required to show/hide white background behind floating label during focus change
+                    if (edtComment.getText().length() > 0)
+                        txtViewComment.setVisibility(View.VISIBLE);
+                    else
+                        txtViewComment.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
 
         btnComment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,11 +145,11 @@ public class CommentActivity extends LocalizationActivity{
     private void addNewContact() {
         String key = mMessagesRef.push().getKey();
         HashMap<String, Object> postValues = new HashMap<>();
-        postValues.put("Email", strEmail);
-        postValues.put("Comment", strComment);
+        postValues.put("Email", edtEmailComment.getText().toString().trim());
+        postValues.put("Comment", edtComment.getText().toString().trim());
 
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/user-messages/" + strName + "/" + key, postValues);
+        childUpdates.put("/user-messages/" + edtNameComment.getText().toString().trim() + "/" + key, postValues);
 
         mRootRef.updateChildren(childUpdates);
     }

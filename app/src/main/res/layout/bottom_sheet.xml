@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="445dp"
-    android:background="@color/black"
     app:behavior_hideable="false"
     app:behavior_peekHeight="?actionBarSize"
     app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
@@ -14,7 +13,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/black"
+        android:background="@drawable/edittext_style"
         android:paddingStart="@dimen/activity_horizontal_margin"
         android:paddingEnd="@dimen/activity_horizontal_margin">
 
@@ -24,7 +23,7 @@
             android:layout_height="wrap_content"
             android:text="@string/detail_mini_bus"
             android:textStyle="bold"
-            android:textColor="@color/gold"
+            android:textColor="@color/black"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -94,7 +93,7 @@
                 android:gravity="center_vertical"
                 android:text="Example application"
                 android:textSize="16sp"
-                android:textColor="@color/gold"/>
+                android:textColor="@color/black"/>
             <TextView
                 android:id="@+id/secondLineBottomSheet"
                 android:layout_width="match_parent"
@@ -103,7 +102,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_toRightOf="@id/icon"
                 android:ellipsize="marquee"
-                android:textColor="@color/gold"
+                android:textColor="@color/black"
                 android:text="Description"
                 android:textSize="12sp"
                 android:singleLine="true" />
@@ -125,21 +124,97 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bus_route"
-            android:textColor="@color/gold"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="20dp">
+            android:textColor="@color/black"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute2"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute3"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute4"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute5"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute6"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute7"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/txtMiniBusRoute8"
+                        android:text="..."
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtMiniBusRoute"
-                android:text="..."
-                android:textColor="@color/gold"/>
-
-        </LinearLayout>
 
     </LinearLayout>
 

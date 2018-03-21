@@ -78,58 +78,58 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
         mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
 
         // Add a marker in Sydney and move the camera
-        final LatLng latLng = new LatLng(16.438445, 102.836451);
-        mMap.addMarker(new MarkerOptions().position(latLng).title("กลางเมือง").snippet(""));
+        final LatLng latLng = new LatLng(16.426794, 102.874816);
+        mMap.addMarker(new MarkerOptions().position(latLng).title("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
 
-        LatLng latLng1 = new LatLng(16.428768, 102.851612);
-        mMap.addMarker(new MarkerOptions().position(latLng1).title("ชาตะผดุง").snippet(""));
+        LatLng latLng1 = new LatLng(16.389369, 102.806185);
+        mMap.addMarker(new MarkerOptions().position(latLng1).title("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng1));
 
-        LatLng latLng2 = new LatLng(16.415613, 102.822637);
-        mMap.addMarker(new MarkerOptions().position(latLng2).title("ทางรถไฟ").snippet(""));
+        LatLng latLng2 = new LatLng(16.498304, 102.832508);
+        mMap.addMarker(new MarkerOptions().position(latLng2).title("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng2));
 
-        LatLng latLng3 = new LatLng(16.428739, 102.854318);
-        mMap.addMarker(new MarkerOptions().position(latLng3).title("บ้านบะขาม").snippet(""));
+        LatLng latLng3 = new LatLng(16.426291, 102.827488);
+        mMap.addMarker(new MarkerOptions().position(latLng3).title("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng3));
 
-        LatLng latLng4 = new LatLng(16.414864, 102.874371);
-        mMap.addMarker(new MarkerOptions().position(latLng4).title("บ้านหนองไฮ").snippet(""));
+        LatLng latLng4 = new LatLng(16.425585, 102.834150);
+        mMap.addMarker(new MarkerOptions().position(latLng4).title("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng4));
 
-        LatLng latLng5 = new LatLng(16.427275, 102.870638);
-        mMap.addMarker(new MarkerOptions().position(latLng5).title("ประชาสโมสร").snippet(""));
+        LatLng latLng5 = new LatLng(16.389369, 102.806185);
+        mMap.addMarker(new MarkerOptions().position(latLng5).title("สาย 8 : สามเหลี่ยม – บ้านดอนบม").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng5));
 
-        LatLng latLng6 = new LatLng(16.421426, 102.820540);
-        mMap.addMarker(new MarkerOptions().position(latLng6).title("ม - ภาค").snippet(""));
+        LatLng latLng6 = new LatLng(16.389369, 102.806185);
+        mMap.addMarker(new MarkerOptions().position(latLng6).title("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng6));
 
         //มลิวรรณ
 
-        LatLng latLng8 = new LatLng(16.498304, 102.832508);
-        mMap.addMarker(new MarkerOptions().position(latLng8).title("มิตรภาพ").snippet(""));
+        LatLng latLng8 = new LatLng(16.389369, 102.806185);
+        mMap.addMarker(new MarkerOptions().position(latLng8).title("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng8));
 
-        LatLng latLng9 = new LatLng(16.462070, 102.798958);
-        mMap.addMarker(new MarkerOptions().position(latLng9).title("ร - 8").snippet(""));
+        LatLng latLng9 = new LatLng(16.426794, 102.874816);
+        mMap.addMarker(new MarkerOptions().position(latLng9).title("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng9));
 
-        LatLng latLng10 = new LatLng(16.406101, 102.839402);
-        mMap.addMarker(new MarkerOptions().position(latLng10).title("รอบบึงแก่นนคร").snippet(""));
+        LatLng latLng10 = new LatLng(16.426291, 102.827488);
+        mMap.addMarker(new MarkerOptions().position(latLng10).title("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng10));
 
-        LatLng latLng11 = new LatLng(16.426794, 102.874816);
-        mMap.addMarker(new MarkerOptions().position(latLng11).title("ศรีจันทร์").snippet(""));
+        LatLng latLng11 = new LatLng(16.426291, 102.827488);
+        mMap.addMarker(new MarkerOptions().position(latLng11).title("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng11));
 
-        LatLng latLng12 = new LatLng(16.438666, 102.834748);
-        mMap.addMarker(new MarkerOptions().position(latLng12).title("ูนย์ราชการ - ทุ่งสร้าง").snippet(""));
+        LatLng latLng12 = new LatLng(16.414864, 102.874371);
+        mMap.addMarker(new MarkerOptions().position(latLng12).title("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng12));
 
         LatLng latLng13 = new LatLng(16.438631, 102.834744);
-        mMap.addMarker(new MarkerOptions().position(latLng13).title("หน้าเมือง").snippet(""));
+        mMap.addMarker(new MarkerOptions().position(latLng13).title("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย").snippet(""));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng13));
 
         LatLng latLng14 = new LatLng(16.440927, 102.819076);
@@ -167,53 +167,56 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
-                if (marker.getTitle().equals("มลิวรรณ")) {
+                if (marker.getTitle().equals("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย")) {
                     Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng7, Toast.LENGTH_SHORT).show();
 
                 }
-//                else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }else if (marker.getTitle().equals("มลิวรรณ")) {
-//                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
-//
-//                }
+                else if (marker.getTitle().equals("สาย 3 : บขส.3 – บ้านพรหมนิมิตร")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 8 : สามเหลี่ยม – บ้านดอนบม")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("หลังหอกาฬ")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("เหล่านาดี")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }else if (marker.getTitle().equals("มลิวรรณ")) {
+                    Toast.makeText(MapAllActivity.this, "Lat Lng is " + strLatlng, Toast.LENGTH_SHORT).show();
+
+                }
             }
         });
 

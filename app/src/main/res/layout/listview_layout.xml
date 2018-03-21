@@ -8,17 +8,18 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:adjustViewBounds="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
         android:layout_marginRight="10dp"
         android:contentDescription="TODO"
-        android:src="@drawable/logo" />
+        android:src="@drawable/ic_car2" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="30dp"
         android:gravity="center">
         <TextView
             android:id="@+id/firstLine"

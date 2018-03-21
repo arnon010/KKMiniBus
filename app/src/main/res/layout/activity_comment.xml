@@ -22,46 +22,164 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp">
-        <RelativeLayout
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edittext_style">
-            <EditText
-                android:id="@+id/edtNameComment"
+            android:text="@string/please_tell_your_information"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1"
+            android:id="@+id/txtView"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:id="@+id/viewLine"
+            android:background="@color/gold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/txtView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/viewLine">
+
+            <!-- Name -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_rounded_input_field" />
+
+                <TextView
+                    android:id="@+id/txtViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/name"
+                    android:textSize="16sp"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="@string/name"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <EditText
+                        android:id="@+id/edtNameComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:backgroundTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <!-- Email -->
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textSize="@dimen/h1"
-                android:hint="@string/name"
-                android:maxEms="1"
-                android:inputType="text"
-                android:background="@drawable/edittext_white_style"/>
-            <EditText
-                android:id="@+id/edtEmailComment"
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_rounded_input_field" />
+
+                <TextView
+                    android:id="@+id/txtViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/email"
+                    android:textSize="16sp"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="@string/email"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <EditText
+                        android:id="@+id/edtEmailComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:backgroundTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <!-- Email -->
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:inputType="textEmailAddress"
-                android:textSize="@dimen/h1"
-                android:hint="@string/email"
-                android:paddingTop="10dp"
-                android:background="@drawable/edittext_white_style"
-                android:layout_below="@+id/edtNameComment"/>
-            <EditText
-                android:id="@+id/edtComment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textSize="@dimen/h1"
-                android:hint="@string/please_comment"
-                android:maxEms="1"
-                android:paddingTop="10dp"
-                android:background="@drawable/edittext_white_style"
-                android:layout_below="@+id/edtEmailComment"/>
-        </RelativeLayout>
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_rounded_input_field" />
+
+                <TextView
+                    android:id="@+id/txtViewComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/comment"
+                    android:textSize="16sp"
+                    android:background="@android:color/white"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="@string/comment"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <EditText
+                        android:id="@+id/edtCommentText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:backgroundTint="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
 
         <Button
             android:layout_width="250dp"

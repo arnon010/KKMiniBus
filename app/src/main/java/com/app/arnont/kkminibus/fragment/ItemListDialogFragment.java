@@ -91,8 +91,8 @@ public class ItemListDialogFragment extends BottomSheetDialogFragment {
     }
 
     private void transitionBottomSheetBackgroundColor(float slideOffset) {
-        int colorFrom = getResources().getColor(R.color.black);
-        int colorTo = getResources().getColor(R.color.blackAlpha60);
+        int colorFrom = getResources().getColor(R.color.white);
+        int colorTo = getResources().getColor(R.color.white);
         mBottomSheet.setBackgroundColor(interpolateColor(slideOffset,
                 colorFrom, colorTo));
     }

@@ -3,10 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="black">#000000</color>
-    <color name="blackAlpha60">#96000000</color>
+    <color name="black">#232526</color>
+    <color name="blackAlpha60">#96232526</color>
     <color name="white">#FFFFFF</color>
-    <color name="gold">#FFD700</color>
+    <color name="gold">#F9A600</color>
     <color name="white_trans">#96FFFFFF</color>
     <color name="green">#a5e830</color>
 
@@ -28,4 +28,7 @@
     <color name="colorPrimaryText">#FFFFFF</color>
     <color name="colorSecondaryText">#C6C6C6</color>
     <color name="colorAccentAlpha60">#96ff4081</color>
+
+    <color name="darkgray">#A9A9A9</color>
+    <color name="whitesmoke">#96232526</color>
 </resources>
