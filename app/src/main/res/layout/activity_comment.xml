@@ -38,14 +38,16 @@
             android:layout_height="3dp"
             android:id="@+id/viewLine"
             android:background="@color/gold"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             android:layout_below="@+id/txtView"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_below="@+id/viewLine">
 
             <!-- Name -->

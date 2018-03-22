@@ -1,6 +1,7 @@
 package com.app.arnont.kkminibus.activity;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -136,6 +137,9 @@ public class CommentActivity extends LocalizationActivity{
             @Override
             public void onClick(View v) {
                 addNewContact();
+                startActivity(new Intent(CommentActivity.this, MainActivity.class));
+                overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                finish();
             }
         });
 
@@ -149,7 +153,7 @@ public class CommentActivity extends LocalizationActivity{
         postValues.put("Comment", edtComment.getText().toString().trim());
 
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/user-messages/" + edtNameComment.getText().toString().trim() + "/" + key, postValues);
+        childUpdates.put("/user-messages/" + "Name: ' " + edtNameComment.getText().toString().trim() + " '/" + key, postValues);
 
         mRootRef.updateChildren(childUpdates);
     }

@@ -30,6 +30,7 @@ import com.app.arnont.kkminibus.R;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
 import com.app.arnont.kkminibus.fragment.SearchDetailFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 
 public class MainActivity extends LocalizationActivity
@@ -39,6 +40,7 @@ public class MainActivity extends LocalizationActivity
     boolean doubleBackToExitPressedOnce = false;
     RadioGroup radioGroup;
     RadioButton radioTH, radioEN;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,6 +67,14 @@ public class MainActivity extends LocalizationActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "12345");
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Nougat");
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "Image");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 
 
 

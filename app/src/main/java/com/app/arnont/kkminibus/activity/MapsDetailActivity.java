@@ -301,7 +301,6 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .add(new LatLng(16.431986, 102.823987))
                         .add(new LatLng(16.432068, 102.823381))
                         .add(new LatLng(16.432346, 102.823461))
-                        .add(new LatLng(16.431806, 102.825108))
                         .add(new LatLng(16.433360, 102.823840))
                         .add(new LatLng(16.433821, 102.823994))
                         .add(new LatLng(16.434224, 102.824222))
@@ -586,7 +585,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
             case "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม":
                 LatLng mapCenter9 = new LatLng(16.425585, 102.834150);
                 map.addMarker(new MarkerOptions().position(mapCenter9).title("Start").snippet("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
-                LatLng mapCenter10 = new LatLng(16.427204, 102.869500);
+                LatLng mapCenter10 = new LatLng(16.389369, 102.806185);
                 map.addMarker(new MarkerOptions().position(mapCenter10).title("Stop").snippet("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter9, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
@@ -797,8 +796,14 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .add(new LatLng(16.464138, 102.831166))
                         .add(new LatLng(16.464117, 102.831447))
                         .add(new LatLng(16.464089, 102.831887))
+                        .color(getResources().getColor(R.color.s8)));
 
                         // อีกเส้น
+                    LatLng mapCenter11_2 = new LatLng(16.413375, 102.833920);
+                    map.addMarker(new MarkerOptions().position(mapCenter11_2).title("Start 2").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+                    LatLng mapCenter12_2 = new LatLng(16.390434, 102.841350);
+                    map.addMarker(new MarkerOptions().position(mapCenter12_2).title("Stop 2").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+                    map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.413375, 102.833920))
                         .add(new LatLng(16.413337, 102.835197))
                         .add(new LatLng(16.412992, 102.835159))
@@ -854,8 +859,6 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .add(new LatLng(16.390943, 102.841172))
                         .add(new LatLng(16.390707, 102.841202))
                         .add(new LatLng(16.390434, 102.841350))
-
-
                         .color(getResources().getColor(R.color.s8))
                 );
                 break;
@@ -1026,8 +1029,14 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .add(new LatLng(16.441258, 102.817117))
                         .add(new LatLng(16.441392, 102.815894))
                         .add(new LatLng(16.441628, 102.814526))
+                        .color(getResources().getColor(R.color.s10)));
 
                         //อีกเส้น
+                    LatLng mapCenter13_2 = new LatLng(16.428768, 102.851612);
+                    map.addMarker(new MarkerOptions().position(mapCenter13_2).title("Start").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+                    LatLng mapCenter14_2 = new LatLng(16.435280, 102.854037);
+                    map.addMarker(new MarkerOptions().position(mapCenter14_2).title("Stop").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+                    map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.428768, 102.851612))
                         .add(new LatLng(16.429478, 102.851593))
                         .add(new LatLng(16.430206, 102.851606))
@@ -1046,8 +1055,6 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .add(new LatLng(16.434639, 102.853806))
                         .add(new LatLng(16.434966, 102.853927))
                         .add(new LatLng(16.435280, 102.854037))
-
-
                         .color(getResources().getColor(R.color.s10))
                 );
                 break;
