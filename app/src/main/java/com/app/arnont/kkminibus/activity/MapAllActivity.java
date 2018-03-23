@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
-import android.widget.Toast;
 import android.widget.Toolbar;
 
 import com.app.arnont.kkminibus.R;
@@ -26,10 +25,6 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
 
     private GoogleMap mMap;
     private static final int ACCESS_FINE_LOCATION_INTENT_ID = 3;
-
-    String strLatlng,strLatlng1,strLatlng2,strLatlng3,strLatlng4,strLatlng5,strLatlng6,strLatlng7,strLatlng8,
-            strLatlng9,strLatlng10,strLatlng11,strLatlng12,strLatlng13,strLatlng14, strLatlng15;
-
 
     String[] nameArray = {"สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","สาย 3 : บขส.3 – บ้านพรหมนิมิตร","สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง","สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม",
             "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม","สาย 8 : สามเหลี่ยม – บ้านดอนบม","สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า","สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน",
@@ -175,20 +170,8 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
 
         LatLng latLng13 = new LatLng(16.438631, 102.834744);
         mMap.addMarker(new MarkerOptions().position(latLng13).title("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng13));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng13,14));
 
-        LatLng latLng14 = new LatLng(16.440927, 102.819076);
-        mMap.addMarker(new MarkerOptions().position(latLng14).title("หลังหอกาฬ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng14));
-
-        LatLng latLng15 = new LatLng(16.406098, 102.784713);
-        mMap.addMarker(new MarkerOptions().position(latLng15).title("เหล่านาดี").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng15));
-
-        // มลิวรรณ
-        LatLng latLng7 = new LatLng(16.439512, 102.828740);
-        mMap.addMarker(new MarkerOptions().position(latLng7).title("มลิวรรณ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng7,12));
 
 
 
@@ -413,4 +396,5 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
         super.onBackPressed();
         overridePendingTransition(R.anim.pop_out, R.anim.pop_out_exit);
     }
+
 }

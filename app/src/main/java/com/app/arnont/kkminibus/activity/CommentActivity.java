@@ -5,16 +5,23 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 import android.view.View;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,6 +41,12 @@ public class CommentActivity extends LocalizationActivity{
     DatabaseReference mUsersRef = mRootRef.child("USERS");
     DatabaseReference mMessagesRef = mRootRef.child("messages");
 
+    private static final String NAME_KEY = "Name";
+    private static final String EMAIL_KEY = "Email";
+    private static final String COMMENT_KEY = "Comment";
+
+    FirebaseFirestore db;
+
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +64,8 @@ public class CommentActivity extends LocalizationActivity{
                 onBackPressed();
             }
         });
+
+        db = FirebaseFirestore.getInstance();
 
         txtViewName = findViewById(R.id.txtViewName);
         txtViewEmail = findViewById(R.id.txtViewEmail);
@@ -136,7 +151,8 @@ public class CommentActivity extends LocalizationActivity{
         btnComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addNewContact();
+                addNewContactRealTimeDatabase();
+                addNewContactCloudFireStore();
                 startActivity(new Intent(CommentActivity.this, MainActivity.class));
                 overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
                 finish();
@@ -146,17 +162,43 @@ public class CommentActivity extends LocalizationActivity{
 
     }
 
-    private void addNewContact() {
+    private void addNewContactRealTimeDatabase() {
+        //FireBase RealTime Database
         String key = mMessagesRef.push().getKey();
         HashMap<String, Object> postValues = new HashMap<>();
         postValues.put("Email", edtEmailComment.getText().toString().trim());
         postValues.put("Comment", edtComment.getText().toString().trim());
 
         Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/user-messages/" + "Name: ' " + edtNameComment.getText().toString().trim() + " '/" + key, postValues);
+        childUpdates.put("/KK MiniBus/" + "Name: ' " + edtNameComment.getText().toString().trim() + " '/" + key, postValues);
 
         mRootRef.updateChildren(childUpdates);
+
     }
+
+    private void addNewContactCloudFireStore() {
+        Map<String, Object> newContact = new HashMap<>();
+        newContact.put(NAME_KEY, edtNameComment.getText().toString().trim());
+        newContact.put(EMAIL_KEY, edtEmailComment.getText().toString().trim());
+        newContact.put(COMMENT_KEY, edtComment.getText().toString().trim());
+
+        db.collection("KK MiniBus").add(newContact)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Toast.makeText(CommentActivity.this, "Comment Success", Toast.LENGTH_SHORT);
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(CommentActivity.this, "Cannot Comment" + e.toString(), Toast.LENGTH_SHORT);
+                        Log.d("Fail Send Data", e.toString());
+                    }
+                });
+
+    }
+
 
     @Override
     public void onBackPressed() {
