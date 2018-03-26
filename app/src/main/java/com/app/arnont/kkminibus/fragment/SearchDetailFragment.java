@@ -228,7 +228,6 @@ public class SearchDetailFragment extends Fragment {
         miniBus.add(new MiniBus("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา", "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา", R.drawable.ic_car13));
         miniBus.add(new MiniBus("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม", "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม", R.drawable.ic_car16));
         miniBus.add(new MiniBus("สาย 17 : บ้านโนนทัน – บ้านโคกท่า", "สาย 17 : บ้านโนนทัน – บ้านโคกท่า", R.drawable.ic_car17));
-        miniBus.add(new MiniBus("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา", "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา", R.drawable.ic_car13));
         miniBus.add(new MiniBus("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง", "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง", R.drawable.ic_car18));
         miniBus.add(new MiniBus("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง", "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง", R.drawable.ic_car19));
         miniBus.add(new MiniBus("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง", "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง", R.drawable.ic_car20));
