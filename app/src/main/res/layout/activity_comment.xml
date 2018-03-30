@@ -179,6 +179,12 @@
                         android:maxLines="1"
                         android:backgroundTint="@android:color/transparent"/>
                 </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
             </RelativeLayout>
 
         </LinearLayout>

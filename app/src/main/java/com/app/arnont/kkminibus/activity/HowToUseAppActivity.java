@@ -4,6 +4,8 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toolbar;
 import android.view.View;
 
@@ -11,6 +13,9 @@ import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnont.kkminibus.R;
 
 public class HowToUseAppActivity extends LocalizationActivity {
+
+    TextView txtHowTo;
+    ImageView imgHowTo;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -29,6 +34,11 @@ public class HowToUseAppActivity extends LocalizationActivity {
                 onBackPressed();
             }
         });
+
+        txtHowTo = findViewById(R.id.txtHowTo);
+        imgHowTo = findViewById(R.id.imgHowTo);
+
+
     }
 
     @Override

@@ -36,11 +36,10 @@ import java.util.Locale;
 public class SearchDetailFragment extends Fragment {
 
     EditText txtSearchDeatail;
-    String searchPlace;
     private ArrayAdapter<MiniBus> adapter;
 
     private List<MiniBus> miniBus;
-    ArrayList<MiniBus> mAllData=new ArrayList<MiniBus>();
+    ArrayList<MiniBus> mAllData=new ArrayList<>();
 
     String[] nameArray = {
             "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย",
@@ -178,8 +177,6 @@ public class SearchDetailFragment extends Fragment {
         listView.startLayoutAnimation();
 
         txtSearchDeatail = rootView.findViewById(R.id.txtSearchDeatail);
-//        searchPlace = getArguments().getString("searchPlace");
-//        txtSearchDeatail.setText(searchPlace);
 
         txtSearchDeatail.addTextChangedListener(new TextWatcher() {
 
@@ -191,9 +188,6 @@ public class SearchDetailFragment extends Fragment {
                 String text = txtSearchDeatail.getText().toString().toLowerCase(Locale.getDefault());
                 filter(text);
                 listAdapter.notifyDataSetChanged();
-
-//                InputMethodManager inputManager = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-//                inputManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(),InputMethodManager.HIDE_NOT_ALWAYS);
             }
 
             @Override

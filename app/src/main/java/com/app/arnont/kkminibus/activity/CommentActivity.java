@@ -33,7 +33,7 @@ public class CommentActivity extends LocalizationActivity{
     EditText edtComment,edtNameComment,edtEmailComment;
 
     Button btnComment;
-    TextView txtViewName ,txtViewEmail, txtViewComment;
+    TextView txtViewName ,txtViewEmail, txtViewComment,textView;
 
     Toolbar toolbar;
 
@@ -76,6 +76,7 @@ public class CommentActivity extends LocalizationActivity{
         edtComment = findViewById(R.id.edtCommentText);
         btnComment = findViewById(R.id.btnComment);
         txtViewComment = findViewById(R.id.txtViewComment);
+        textView = findViewById(R.id.textView);
 
         // Username
         edtNameComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -124,6 +125,7 @@ public class CommentActivity extends LocalizationActivity{
                 }
             }
         });
+
         // Username
         edtComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -151,11 +153,20 @@ public class CommentActivity extends LocalizationActivity{
         btnComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (edtEmailComment.getText().toString().trim().equals("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+")) {
+                    startActivity(new Intent(CommentActivity.this, MainActivity.class));
+                    Toast.makeText(getApplicationContext(),"valid email address", Toast.LENGTH_SHORT).show();
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                    finish();
+                    Log.d("Check", "valid email address");
+                } else {
+                    Toast.makeText(getApplicationContext(),"Invalid email address", Toast.LENGTH_SHORT).show();
+                    Log.d("Check", "Invalid email address");
+                }
                 addNewContactRealTimeDatabase();
                 addNewContactCloudFireStore();
-                startActivity(new Intent(CommentActivity.this, MainActivity.class));
-                overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
-                finish();
+
+
             }
         });
 
@@ -187,6 +198,8 @@ public class CommentActivity extends LocalizationActivity{
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(CommentActivity.this, "Comment Success", Toast.LENGTH_SHORT);
+
+                        finish();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -198,6 +211,9 @@ public class CommentActivity extends LocalizationActivity{
                 });
 
     }
+
+
+
 
 
     @Override
