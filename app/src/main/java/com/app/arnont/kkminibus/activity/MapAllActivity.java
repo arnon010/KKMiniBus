@@ -29,46 +29,46 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
     private static final int ACCESS_FINE_LOCATION_INTENT_ID = 3;
 
     String[] nameArray = {
-            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย",
-            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร",
-            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง",
-            "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม",
-            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม",
-            "สาย 8 : สามเหลี่ยม – บ้านดอนบม",
-            "สาย 9 : สามเหลี่ยม – บ้านสะอาด",
-            "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า",
-            "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ",
-            "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน",
-            "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา",
-            "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม",
-            "สาย 17 : บ้านโนนทัน – บ้านโคกท่า",
-            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง",
-            "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง",
-            "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง",
-            "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง",
-            "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง",
-            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย"};
+            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\n\nCentral",
+            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\n\nTheMall",
+            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง\n\nKK",
+            "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม\n\nSchool",
+            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม\n\nFootball",
+            "สาย 8 : สามเหลี่ยม – บ้านดอนบม\n\nCentral",
+            "สาย 9 : สามเหลี่ยม – บ้านสะอาด\n\nTheMall",
+            "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า\n\nKK",
+            "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ\n\nSchool",
+            "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน\n\nFootball",
+            "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา\n\nCentral",
+            "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม\n\nTheMall",
+            "สาย 17 : บ้านโนนทัน – บ้านโคกท่า\n\nKK",
+            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง\n\nSchool",
+            "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง\n\nFootball",
+            "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง\n\nCentral",
+            "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง\n\nTheMall",
+            "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง\n\nKK",
+            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย\n\nSchool"};
 
     String[] infoArray = {
-            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย",
-            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร",
-            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง",
-            "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม",
-            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม",
-            "สาย 8 : สามเหลี่ยม – บ้านดอนบม",
-            "สาย 9 : สามเหลี่ยม – บ้านสะอาด",
-            "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า",
-            "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ",
-            "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน",
-            "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา",
-            "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม",
-            "สาย 17 : บ้านโนนทัน – บ้านโคกท่า",
-            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง",
-            "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง",
-            "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง",
-            "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง",
-            "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง",
-            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย"
+            "Central",
+            "TheMall",
+            "KK",
+            "School",
+            "Football",
+            "Central",
+            "TheMall",
+            "KK",
+            "School",
+            "Football",
+            "Central",
+            "TheMall",
+            "KK",
+            "School",
+            "Football",
+            "Central",
+            "TheMall",
+            "KK",
+            "School"
     };
 
     Integer[] imageArray = {
@@ -144,71 +144,71 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
 
         // Add a marker in Sydney and move the camera
         final LatLng latLng = new LatLng(16.426794, 102.874816);
-        mMap.addMarker(new MarkerOptions().position(latLng).title("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng).title("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
 
         LatLng latLng1 = new LatLng(16.389369, 102.806185);
-        mMap.addMarker(new MarkerOptions().position(latLng1).title("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng1).title("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng1));
 
         LatLng latLng2 = new LatLng(16.498304, 102.832508);
-        mMap.addMarker(new MarkerOptions().position(latLng2).title("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng2).title("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng2));
 
         LatLng latLng3 = new LatLng(16.426291, 102.827488);
-        mMap.addMarker(new MarkerOptions().position(latLng3).title("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng3).title("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng3));
 
         LatLng latLng5 = new LatLng(16.389369, 102.806185);
-        mMap.addMarker(new MarkerOptions().position(latLng5).title("สาย 8 : สามเหลี่ยม – บ้านดอนบม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng5).title("สาย 8 : สามเหลี่ยม – บ้านดอนบม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng5));
 
         LatLng latLng14 = new LatLng(16.455835, 102.827421);
-        mMap.addMarker(new MarkerOptions().position(latLng14).title("สาย 9 : สามเหลี่ยม – บ้านสะอาด").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng14).title("สาย 9 : สามเหลี่ยม – บ้านสะอาด").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng14));
 
         LatLng latLng6 = new LatLng(16.389369, 102.806185);
-        mMap.addMarker(new MarkerOptions().position(latLng6).title("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng6).title("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng6));
 
         LatLng latLng16 = new LatLng(16.409522, 102.781848);
-        mMap.addMarker(new MarkerOptions().position(latLng16).title("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng16).title("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng16));
 
         LatLng latLng8 = new LatLng(16.389369, 102.806185);
-        mMap.addMarker(new MarkerOptions().position(latLng8).title("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng8).title("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng8));
 
         LatLng latLng15 = new LatLng(16.447973, 102.822856);
-        mMap.addMarker(new MarkerOptions().position(latLng15).title("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng15).title("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_short)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng15));
 
         LatLng latLng17 = new LatLng(16.464537, 102.827373);
-        mMap.addMarker(new MarkerOptions().position(latLng17).title("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng17).title("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng17));
 
         LatLng latLng18 = new LatLng(16.389369, 102.806185);
-        mMap.addMarker(new MarkerOptions().position(latLng18).title("สาย 17 : บ้านโนนทัน – บ้านโคกท่า").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng18).title("สาย 17 : บ้านโนนทัน – บ้านโคกท่า").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng18));
 
         LatLng latLng9 = new LatLng(16.426794, 102.874816);
-        mMap.addMarker(new MarkerOptions().position(latLng9).title("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng9).title("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng9));
 
         LatLng latLng10 = new LatLng(16.426291, 102.827488);
-        mMap.addMarker(new MarkerOptions().position(latLng10).title("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng10).title("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng10));
 
         LatLng latLng11 = new LatLng(16.426291, 102.827488);
-        mMap.addMarker(new MarkerOptions().position(latLng11).title("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng11).title("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng11));
 
         LatLng latLng19 = new LatLng(16.455550, 102.855093);
-        mMap.addMarker(new MarkerOptions().position(latLng19).title("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng19).title("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng19));
 
         LatLng latLng12 = new LatLng(16.414864, 102.874371);
-        mMap.addMarker(new MarkerOptions().position(latLng12).title("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng12).title("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng12));
 
         LatLng latLng13 = new LatLng(16.438631, 102.834744);
@@ -216,7 +216,7 @@ public class MapAllActivity extends FragmentActivity implements OnMapReadyCallba
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng13));
 
         LatLng latLng4 = new LatLng(16.425585, 102.834150);
-        mMap.addMarker(new MarkerOptions().position(latLng4).title("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_marker)));
+        mMap.addMarker(new MarkerOptions().position(latLng4).title("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng4, 14));
 
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {

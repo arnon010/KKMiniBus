@@ -104,6 +104,7 @@
                 android:ellipsize="marquee"
                 android:textColor="@color/black"
                 android:text="Description"
+                android:visibility="gone"
                 android:textSize="12sp"
                 android:singleLine="true" />
 

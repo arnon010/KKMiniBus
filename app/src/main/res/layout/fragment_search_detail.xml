@@ -34,7 +34,7 @@
             android:layout_marginTop="10dp"
             android:padding="5dp"
             android:hint="@string/search_your_mini_bus"
-            android:id="@+id/txtSearchDeatail"
+            android:id="@+id/txtSearchDetail"
             android:textSize="@dimen/h1"
             android:maxLines="1"
             android:gravity="center"

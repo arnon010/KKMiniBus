@@ -1,6 +1,8 @@
 package com.app.arnont.kkminibus.activity;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
@@ -26,15 +28,22 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
+import com.app.arnont.kkminibus.BuildConfig;
 import com.app.arnont.kkminibus.R;
+import com.app.arnont.kkminibus.application.ForceUpdateChecker;
 import com.app.arnont.kkminibus.fragment.HomeFragment;
 import com.app.arnont.kkminibus.fragment.SearchDetailFragment;
 import com.app.arnont.kkminibus.fragment.SearchFragment;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 
 
 public class MainActivity extends LocalizationActivity
-        implements NavigationView.OnNavigationItemSelectedListener,SearchFragment.OnFragmentInteractionListener,HomeFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        SearchFragment.OnFragmentInteractionListener,
+        HomeFragment.OnFragmentInteractionListener,
+        ForceUpdateChecker.OnUpdateNeededListener {
 
     BottomNavigationView bottom_navigation;
     boolean doubleBackToExitPressedOnce = false;
@@ -76,8 +85,6 @@ public class MainActivity extends LocalizationActivity
         bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "Image");
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 
-
-
         bottom_navigation = findViewById(R.id.bottom_navigation);
         bottom_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -108,6 +115,8 @@ public class MainActivity extends LocalizationActivity
         transaction.commit();
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+
+        ForceUpdateChecker.with(this).onUpdateNeeded(this).check();
 
     }
 
@@ -225,4 +234,34 @@ public class MainActivity extends LocalizationActivity
     public void onFragmentInteraction(Uri uri) {
 
     }
+
+    @Override
+    public void onUpdateNeeded(final String updateUrl) {
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("New version available")
+                .setMessage("Please, update app to new version to continue reposting.")
+                .setPositiveButton("Update",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                redirectStore(updateUrl);
+                            }
+                        }).setNegativeButton("No, thanks", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                }).create();
+        dialog.show();
+
+    }
+
+    private void redirectStore(String updateUrl) {
+        final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(updateUrl));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
+    }
+
 }

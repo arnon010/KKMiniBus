@@ -42,46 +42,46 @@ public class SearchDetailFragment extends Fragment {
     ArrayList<MiniBus> mAllData=new ArrayList<>();
 
     String[] nameArray = {
-            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย",
-            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร",
-            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง",
-            "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม",
-            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม",
-            "สาย 8 : สามเหลี่ยม – บ้านดอนบม",
-            "สาย 9 : สามเหลี่ยม – บ้านสะอาด",
-            "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า",
-            "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ",
-            "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน",
-            "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา",
-            "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม",
-            "สาย 17 : บ้านโนนทัน – บ้านโคกท่า",
-            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง",
-            "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง",
-            "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง",
-            "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง",
-            "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง",
-            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย"};
+            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\n\nCentral",
+            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\n\nTheMall",
+            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง\n\nKK",
+            "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม\n\nSchool",
+            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม\n\nFootball",
+            "สาย 8 : สามเหลี่ยม – บ้านดอนบม\n\nCentral",
+            "สาย 9 : สามเหลี่ยม – บ้านสะอาด\n\nTheMall",
+            "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า\n\nKK",
+            "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ\n\nSchool",
+            "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน\n\nFootball",
+            "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา\n\nCentral",
+            "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม\n\nTheMall",
+            "สาย 17 : บ้านโนนทัน – บ้านโคกท่า\n\nKK",
+            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง\n\nSchool",
+            "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง\n\nFootball",
+            "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง\n\nCentral",
+            "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง\n\nTheMall",
+            "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง\n\nKK",
+            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย\n\nSchool"};
 
     String[] infoArray = {
-            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย",
-            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร",
-            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง",
-            "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม",
-            "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม",
-            "สาย 8 : สามเหลี่ยม – บ้านดอนบม",
-            "สาย 9 : สามเหลี่ยม – บ้านสะอาด",
-            "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า",
-            "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ",
-            "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน",
-            "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา",
-            "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม",
-            "สาย 17 : บ้านโนนทัน – บ้านโคกท่า",
-            "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง",
-            "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง",
-            "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง",
-            "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง",
-            "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง",
-            "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย"
+            "Central",
+            "TheMall",
+            "KK",
+            "School",
+            "Football",
+            "Central",
+            "TheMall",
+            "KK",
+            "School",
+            "Football",
+            "Central",
+            "TheMall",
+            "KK",
+            "School",
+            "Football",
+            "Central",
+            "TheMall",
+            "KK",
+            "School"
     };
 
     Integer[] imageArray = {
@@ -140,6 +140,8 @@ public class SearchDetailFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
@@ -176,7 +178,7 @@ public class SearchDetailFragment extends Fragment {
         listView.setLayoutAnimation(lac);
         listView.startLayoutAnimation();
 
-        txtSearchDeatail = rootView.findViewById(R.id.txtSearchDeatail);
+        txtSearchDeatail = rootView.findViewById(R.id.txtSearchDetail);
 
         txtSearchDeatail.addTextChangedListener(new TextWatcher() {
 
@@ -209,25 +211,25 @@ public class SearchDetailFragment extends Fragment {
 
     private void populateDrinksList() {
         miniBus = new ArrayList<>();
-        miniBus.add(new MiniBus("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย","สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย" ,R.drawable.ic_car2));
-        miniBus.add(new MiniBus("สาย 3 : บขส.3 – บ้านพรหมนิมิตร", "สาย 3 : บขส.3 – บ้านพรหมนิมิตร", R.drawable.ic_car3));
-        miniBus.add(new MiniBus("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง", "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง", R.drawable.ic_car4));
-        miniBus.add(new MiniBus("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม", "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม", R.drawable.ic_car5));
-        miniBus.add(new MiniBus("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม", "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม", R.drawable.ic_car6));
-        miniBus.add(new MiniBus("สาย 8 : สามเหลี่ยม – บ้านดอนบม", "สาย 8 : สามเหลี่ยม – บ้านดอนบม", R.drawable.ic_car8));
-        miniBus.add(new MiniBus("สาย 9 : สามเหลี่ยม – บ้านสะอาด", "สาย 9 : สามเหลี่ยม – บ้านสะอาด", R.drawable.ic_car9));
-        miniBus.add(new MiniBus("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า", "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า", R.drawable.ic_car10));
-        miniBus.add(new MiniBus("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ", "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ", R.drawable.ic_car11));
-        miniBus.add(new MiniBus("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน", "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน", R.drawable.ic_car12));
-        miniBus.add(new MiniBus("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา", "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา", R.drawable.ic_car13));
-        miniBus.add(new MiniBus("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม", "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม", R.drawable.ic_car16));
-        miniBus.add(new MiniBus("สาย 17 : บ้านโนนทัน – บ้านโคกท่า", "สาย 17 : บ้านโนนทัน – บ้านโคกท่า", R.drawable.ic_car17));
-        miniBus.add(new MiniBus("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง", "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง", R.drawable.ic_car18));
-        miniBus.add(new MiniBus("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง", "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง", R.drawable.ic_car19));
-        miniBus.add(new MiniBus("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง", "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง", R.drawable.ic_car20));
-        miniBus.add(new MiniBus("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง", "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง", R.drawable.ic_car21));
-        miniBus.add(new MiniBus("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง", "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง", R.drawable.ic_car22));
-        miniBus.add(new MiniBus("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย", "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย", R.drawable.ic_car23));
+        miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+        miniBus.add(new MiniBus(nameArray[1],infoArray[1] ,imageArray[1]));
+        miniBus.add(new MiniBus(nameArray[2],infoArray[2] ,imageArray[2]));
+        miniBus.add(new MiniBus(nameArray[3],infoArray[3] ,imageArray[3]));
+        miniBus.add(new MiniBus(nameArray[4],infoArray[4] ,imageArray[4]));
+        miniBus.add(new MiniBus(nameArray[5],infoArray[5] ,imageArray[5]));
+        miniBus.add(new MiniBus(nameArray[6],infoArray[6] ,imageArray[6]));
+        miniBus.add(new MiniBus(nameArray[7],infoArray[7] ,imageArray[7]));
+        miniBus.add(new MiniBus(nameArray[8],infoArray[8] ,imageArray[8]));
+        miniBus.add(new MiniBus(nameArray[9],infoArray[9] ,imageArray[9]));
+        miniBus.add(new MiniBus(nameArray[10],infoArray[10] ,imageArray[10]));
+        miniBus.add(new MiniBus(nameArray[11],infoArray[11] ,imageArray[11]));
+        miniBus.add(new MiniBus(nameArray[12],infoArray[12] ,imageArray[12]));
+        miniBus.add(new MiniBus(nameArray[13],infoArray[13] ,imageArray[13]));
+        miniBus.add(new MiniBus(nameArray[14],infoArray[14] ,imageArray[14]));
+        miniBus.add(new MiniBus(nameArray[15],infoArray[15] ,imageArray[15]));
+        miniBus.add(new MiniBus(nameArray[16],infoArray[16] ,imageArray[16]));
+        miniBus.add(new MiniBus(nameArray[17],infoArray[17] ,imageArray[17]));
+        miniBus.add(new MiniBus(nameArray[18],infoArray[18] ,imageArray[18]));
 
         mAllData.addAll(miniBus);
         listView = rootView.findViewById(R.id.listViewSearchDetail);
