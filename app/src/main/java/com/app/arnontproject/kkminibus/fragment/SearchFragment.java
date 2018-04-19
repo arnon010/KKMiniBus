@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.fragment;
+package com.app.arnontproject.kkminibus.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.app.arnont.kkminibus.R;
+import com.app.arnontproject.kkminibus.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

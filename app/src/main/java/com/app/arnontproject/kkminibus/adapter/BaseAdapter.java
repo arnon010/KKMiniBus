@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.adapter;
+package com.app.arnontproject.kkminibus.adapter;
 
 import android.support.v7.app.AppCompatActivity;
 

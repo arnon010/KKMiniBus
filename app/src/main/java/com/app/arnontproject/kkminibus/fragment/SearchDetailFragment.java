@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.fragment;
+package com.app.arnontproject.kkminibus.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -16,10 +16,10 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.app.arnont.kkminibus.R;
-import com.app.arnont.kkminibus.activity.MapsDetailActivity;
-import com.app.arnont.kkminibus.adapter.CustomListAdapter;
-import com.app.arnont.kkminibus.adapter.MiniBus;
+import com.app.arnontproject.kkminibus.R;
+import com.app.arnontproject.kkminibus.activity.MapsDetailActivity;
+import com.app.arnontproject.kkminibus.adapter.CustomListAdapter;
+import com.app.arnontproject.kkminibus.adapter.MiniBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,9 +42,9 @@ public class SearchDetailFragment extends Fragment {
     ArrayList<MiniBus> mAllData=new ArrayList<>();
 
     String[] nameArray = {
-            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\n\nCentral",
-            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\n\nTheMall",
-            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง\n\nKK",
+            "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\nบ.โคกฟันโปง, บ.หัวทุ่ง, บ.คำไฮ, เซ็นทรัลพลาซ่า ขอนแก่น, ศาลหลักเมือง ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, เซ็นโทซ่า, ไปรษณีย์ขอนแก่น, วัดศรีจันทร์, เรือนจำขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, โรงพยาบาลศูนย์ขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.พระคือ, บ.หนองโพธิ์, บ.หนองแสง, บ.โคกน้อย",
+            "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\nบขส. 3, แม็คโคร ขอนแก่น, ประตูน้ำขอนแก่น, ตลาดอู้ฟู, โรงเรียนแก่นนครวิทยาลัย, ศาลหลักเมือง ขอนแก่น, เซ็นทรัลพลาซ่า ขอนแก่น, โรงบาลราชพฤกษ์ ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, ไปรษณีย์ขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.ท่าหิน, บ.พรหมนิมิตร",
+            "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง\n\n",
             "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม\n\nSchool",
             "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม\n\nFootball",
             "สาย 8 : สามเหลี่ยม – บ้านดอนบม\n\nCentral",

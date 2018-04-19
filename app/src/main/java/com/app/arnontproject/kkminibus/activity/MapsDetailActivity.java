@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.activity;
+package com.app.arnontproject.kkminibus.activity;
 
 import android.annotation.TargetApi;
 import android.content.pm.PackageManager;
@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 
-import com.app.arnont.kkminibus.fragment.ItemListDialogFragment;
+import com.app.arnontproject.kkminibus.fragment.ItemListDialogFragment;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
 
@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-import com.app.arnont.kkminibus.R;
+import com.app.arnontproject.kkminibus.R;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -108,12 +108,12 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
         // Polylines
         switch (txtFix) {
-            case "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\n\nCentral":
+            case "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\nบ.โคกฟันโปง, บ.หัวทุ่ง, บ.คำไฮ, เซ็นทรัลพลาซ่า ขอนแก่น, ศาลหลักเมือง ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, เซ็นโทซ่า, ไปรษณีย์ขอนแก่น, วัดศรีจันทร์, เรือนจำขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, โรงพยาบาลศูนย์ขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.พระคือ, บ.หนองโพธิ์, บ.หนองแสง, บ.โคกน้อย":
 
                 LatLng mapCenter1 = new LatLng(16.426794, 102.874816);
-                map.addMarker(new MarkerOptions().position(mapCenter1).title("Start").snippet("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter1).title("Start").snippet("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter2 = new LatLng(16.436621, 102.765723);
-                map.addMarker(new MarkerOptions().position(mapCenter2).title("Stop").snippet("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter2).title("Stop").snippet("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter1, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.426794, 102.874816))
@@ -218,11 +218,11 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .color(getResources().getColor(R.color.s2))
                 );
                 break;
-            case "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\n\nTheMall":
+            case "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\nบขส. 3, แม็คโคร ขอนแก่น, ประตูน้ำขอนแก่น, ตลาดอู้ฟู, โรงเรียนแก่นนครวิทยาลัย, ศาลหลักเมือง ขอนแก่น, เซ็นทรัลพลาซ่า ขอนแก่น, โรงบาลราชพฤกษ์ ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, ไปรษณีย์ขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.ท่าหิน, บ.พรหมนิมิตร":
                 LatLng mapCenter3 = new LatLng(16.389369, 102.806185);
-                map.addMarker(new MarkerOptions().position(mapCenter3).title("Start").snippet("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter3).title("Start").snippet("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter4 = new LatLng(16.427065, 102.872894);
-                map.addMarker(new MarkerOptions().position(mapCenter4).title("Stop").snippet("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter4).title("Stop").snippet("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter3, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.389369, 102.806185))
@@ -356,9 +356,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 break;
             case "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง\n\nKK":
                 LatLng mapCenter5 = new LatLng(16.498304, 102.832508);
-                map.addMarker(new MarkerOptions().position(mapCenter5).title("Start").snippet("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter5).title("Start").snippet("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter6 = new LatLng(16.389369, 102.806185);
-                map.addMarker(new MarkerOptions().position(mapCenter6).title("Stop").snippet("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter6).title("Stop").snippet("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter5, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.498304, 102.832508))
@@ -493,9 +493,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 break;
             case "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม\n\nSchool":
                 LatLng mapCenter7 = new LatLng(16.426291, 102.827488);
-                map.addMarker(new MarkerOptions().position(mapCenter7).title("Start").snippet("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter7).title("Start").snippet("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter8 = new LatLng(16.448607, 102.767814);
-                map.addMarker(new MarkerOptions().position(mapCenter8).title("Stop").snippet("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter8).title("Stop").snippet("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter7, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.426291, 102.827488))
@@ -584,9 +584,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม\n\nFootball":
                 LatLng mapCenter9 = new LatLng(16.425585, 102.834150);
-                map.addMarker(new MarkerOptions().position(mapCenter9).title("Start").snippet("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter9).title("Start").snippet("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter10 = new LatLng(16.389369, 102.806185);
-                map.addMarker(new MarkerOptions().position(mapCenter10).title("Stop").snippet("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter10).title("Stop").snippet("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter9, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.425585, 102.834150))
@@ -660,9 +660,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 8 : สามเหลี่ยม – บ้านดอนบม\n\nCentral":
                 LatLng mapCenter11 = new LatLng(16.389369, 102.806185);
-                map.addMarker(new MarkerOptions().position(mapCenter11).title("Start").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter11).title("Start").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter12 = new LatLng(16.464089, 102.831887);
-                map.addMarker(new MarkerOptions().position(mapCenter12).title("Stop").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter12).title("Stop").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter11, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.389369, 102.806185))
@@ -800,9 +800,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                         // อีกเส้น
                     LatLng mapCenter11_2 = new LatLng(16.413375, 102.833920);
-                    map.addMarker(new MarkerOptions().position(mapCenter11_2).title("Start 2").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                    map.addMarker(new MarkerOptions().position(mapCenter11_2).title("Start 2").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                     LatLng mapCenter12_2 = new LatLng(16.390434, 102.841350);
-                    map.addMarker(new MarkerOptions().position(mapCenter12_2).title("Stop 2").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                    map.addMarker(new MarkerOptions().position(mapCenter12_2).title("Stop 2").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                     map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.413375, 102.833920))
                         .add(new LatLng(16.413337, 102.835197))
@@ -865,9 +865,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 9 : สามเหลี่ยม – บ้านสะอาด\n\nTheMall":
                 LatLng mapCenter27 = new LatLng(16.455835, 102.827421);
-                map.addMarker(new MarkerOptions().position(mapCenter27).title("Start").snippet("สาย 9 : สามเหลี่ยม – บ้านสะอาด").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter27).title("Start").snippet("สาย 9 : สามเหลี่ยม – บ้านสะอาด").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter28 = new LatLng(16.409571, 102.781850);
-                map.addMarker(new MarkerOptions().position(mapCenter28).title("Stop").snippet("สาย 9 : สามเหลี่ยม – บ้านสะอาด").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter28).title("Stop").snippet("สาย 9 : สามเหลี่ยม – บ้านสะอาด").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter27, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.455835, 102.827421))
@@ -1072,9 +1072,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า\n\nKK":
                 LatLng mapCenter13 = new LatLng(16.389369, 102.806185);
-                map.addMarker(new MarkerOptions().position(mapCenter13).title("Start").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter13).title("Start").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter14 = new LatLng(16.441628, 102.814526);
-                map.addMarker(new MarkerOptions().position(mapCenter14).title("Stop").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter14).title("Stop").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter13, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.389369, 102.806185))
@@ -1240,9 +1240,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                         //อีกเส้น
                     LatLng mapCenter13_2 = new LatLng(16.428768, 102.851612);
-                    map.addMarker(new MarkerOptions().position(mapCenter13_2).title("Start").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                    map.addMarker(new MarkerOptions().position(mapCenter13_2).title("Start").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                     LatLng mapCenter14_2 = new LatLng(16.435280, 102.854037);
-                    map.addMarker(new MarkerOptions().position(mapCenter14_2).title("Stop").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                    map.addMarker(new MarkerOptions().position(mapCenter14_2).title("Stop").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                     map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.428768, 102.851612))
                         .add(new LatLng(16.429478, 102.851593))
@@ -1268,9 +1268,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ\n\nSchool":
                 LatLng mapCenter29 = new LatLng(16.409522, 102.781848);
-                map.addMarker(new MarkerOptions().position(mapCenter29).title("Start").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter29).title("Start").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter30 = new LatLng(16.441628, 102.814526);
-                map.addMarker(new MarkerOptions().position(mapCenter30).title("Stop").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter30).title("Stop").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter29, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.409522, 102.781848))
@@ -1431,9 +1431,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน\n\nFootball":
                 LatLng mapCenter15 = new LatLng(16.389369, 102.806185);
-                map.addMarker(new MarkerOptions().position(mapCenter15).title("Start").snippet("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter15).title("Start").snippet("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter16 = new LatLng(16.447767, 102.841116);
-                map.addMarker(new MarkerOptions().position(mapCenter16).title("Stop").snippet("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter16).title("Stop").snippet("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter15, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.389369, 102.806185))
@@ -1553,9 +1553,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา\n\nCentral":
                 LatLng mapCenter31 = new LatLng(16.447973, 102.822856);
-                map.addMarker(new MarkerOptions().position(mapCenter31).title("Start").snippet("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter31).title("Start").snippet("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter32 = new LatLng(16.390454, 102.841332);
-                map.addMarker(new MarkerOptions().position(mapCenter32).title("Stop").snippet("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter32).title("Stop").snippet("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter31, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.447973, 102.822856))
@@ -1782,9 +1782,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม\n\nTheMall":
                 LatLng mapCenter33 = new LatLng(16.464537, 102.827373);
-                map.addMarker(new MarkerOptions().position(mapCenter33).title("Start").snippet("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter33).title("Start").snippet("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter34 = new LatLng(16.423453, 102.852517);
-                map.addMarker(new MarkerOptions().position(mapCenter34).title("Stop").snippet("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter34).title("Stop").snippet("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter33, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.464537, 102.827373))
@@ -1899,9 +1899,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 17 : บ้านโนนทัน – บ้านโคกท่า\n\nKK":
                 LatLng mapCenter35 = new LatLng(16.389369, 102.806185);
-                map.addMarker(new MarkerOptions().position(mapCenter35).title("Start").snippet("สาย 17 : บ้านโนนทัน – บ้านโคกท่า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter35).title("Start").snippet("สาย 17 : บ้านโนนทัน – บ้านโคกท่า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter36 = new LatLng(16.480840, 102.872316);
-                map.addMarker(new MarkerOptions().position(mapCenter36).title("Stop").snippet("สาย 17 : บ้านโนนทัน – บ้านโคกท่า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter36).title("Stop").snippet("สาย 17 : บ้านโนนทัน – บ้านโคกท่า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter35, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.389369, 102.806185))
@@ -2079,9 +2079,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง\n\nSchool":
                 LatLng mapCenter17 = new LatLng(16.426794, 102.874816);
-                map.addMarker(new MarkerOptions().position(mapCenter17).title("Start").snippet("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter17).title("Start").snippet("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter18 = new LatLng(16.426483, 102.835136);
-                map.addMarker(new MarkerOptions().position(mapCenter18).title("Stop").snippet("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter18).title("Stop").snippet("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter17, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.426794, 102.874816))
@@ -2118,9 +2118,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 break;
             case "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง\n\nFootball":
                 LatLng mapCenter19 = new LatLng(16.426291, 102.827488);
-                map.addMarker(new MarkerOptions().position(mapCenter19).title("Start").snippet("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter19).title("Start").snippet("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter20 = new LatLng(16.498304, 102.832508);
-                map.addMarker(new MarkerOptions().position(mapCenter20).title("Stop").snippet("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter20).title("Stop").snippet("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter19, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.426291, 102.827488))
@@ -2198,9 +2198,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 break;
             case "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง\n\nCentral":
                 LatLng mapCenter21 = new LatLng(16.426291, 102.827488);
-                map.addMarker(new MarkerOptions().position(mapCenter21).title("Start").snippet("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter21).title("Start").snippet("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter22 = new LatLng(16.498304, 102.832508);
-                map.addMarker(new MarkerOptions().position(mapCenter22).title("Stop").snippet("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter22).title("Stop").snippet("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter21, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.426291, 102.827488))
@@ -2277,9 +2277,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง\n\nTheMall":
                 LatLng mapCenter37 = new LatLng(16.455550, 102.855093);
-                map.addMarker(new MarkerOptions().position(mapCenter37).title("Start").snippet("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter37).title("Start").snippet("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter38 = new LatLng(16.411424, 102.859660);
-                map.addMarker(new MarkerOptions().position(mapCenter38).title("Stop").snippet("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter38).title("Stop").snippet("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter37, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.455550, 102.855093))
@@ -2425,9 +2425,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
             case "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง\n\nKK":
                 LatLng mapCenter23 = new LatLng(16.414864, 102.874371);
-                map.addMarker(new MarkerOptions().position(mapCenter23).title("Start").snippet("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter23).title("Start").snippet("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter24 = new LatLng(16.447251, 102.837567);
-                map.addMarker(new MarkerOptions().position(mapCenter24).title("Stop").snippet("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter24).title("Stop").snippet("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter23, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.414864, 102.874371))
@@ -2564,9 +2564,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 break;
             case "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย\n\nSchool":
                 LatLng mapCenter25 = new LatLng(16.426570, 102.826566);
-                map.addMarker(new MarkerOptions().position(mapCenter25).title("Start").snippet("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter25).title("Start").snippet("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter26 = new LatLng(16.372533, 102.809281);
-                map.addMarker(new MarkerOptions().position(mapCenter26).title("Stop").snippet("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_long)));
+                map.addMarker(new MarkerOptions().position(mapCenter26).title("Stop").snippet("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter25, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.426570, 102.826566))

@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.adapter;
+package com.app.arnontproject.kkminibus.adapter;
 
 /**
  * Created by arnont on 3/14/18.

@@ -31,6 +31,8 @@
             android:layout_toRightOf="@id/icon"
             android:gravity="center_vertical"
             android:text="Example application"
+            android:maxLines="2"
+            android:ellipsize="end"
             android:textColor="@color/black"
             android:textSize="16sp" />
         <TextView
@@ -40,7 +42,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/icon"
-            android:ellipsize="marquee"
+            android:ellipsize="end"
             android:text="Description"
             android:textColor="@color/black"
             android:textSize="12sp"

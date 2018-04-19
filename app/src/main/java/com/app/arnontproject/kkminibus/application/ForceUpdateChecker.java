@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.application;
+package com.app.arnontproject.kkminibus.application;
 
 import android.content.Context;
 import android.content.pm.PackageManager;

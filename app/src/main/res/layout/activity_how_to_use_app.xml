@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.app.arnont.kkminibus.activity.HowToUseAppActivity">
+    tools:context="com.app.arnontproject.kkminibus.activity.HowToUseAppActivity">
     <Toolbar
         android:id="@+id/toolbarHowTo"
         android:minHeight="?attr/actionBarSize"

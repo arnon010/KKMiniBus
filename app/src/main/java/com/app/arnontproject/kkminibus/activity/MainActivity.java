@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.activity;
+package com.app.arnontproject.kkminibus.activity;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -28,12 +28,12 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
-import com.app.arnont.kkminibus.BuildConfig;
-import com.app.arnont.kkminibus.R;
-import com.app.arnont.kkminibus.application.ForceUpdateChecker;
-import com.app.arnont.kkminibus.fragment.HomeFragment;
-import com.app.arnont.kkminibus.fragment.SearchDetailFragment;
-import com.app.arnont.kkminibus.fragment.SearchFragment;
+import com.app.arnontproject.kkminibus.BuildConfig;
+import com.app.arnontproject.kkminibus.R;
+import com.app.arnontproject.kkminibus.application.ForceUpdateChecker;
+import com.app.arnontproject.kkminibus.fragment.HomeFragment;
+import com.app.arnontproject.kkminibus.fragment.SearchDetailFragment;
+import com.app.arnontproject.kkminibus.fragment.SearchFragment;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;

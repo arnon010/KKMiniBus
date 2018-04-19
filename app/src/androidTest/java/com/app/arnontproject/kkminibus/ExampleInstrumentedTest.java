@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus;
+package com.app.arnontproject.kkminibus;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

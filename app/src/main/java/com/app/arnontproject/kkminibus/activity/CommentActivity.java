@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.activity;
+package com.app.arnontproject.kkminibus.activity;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.widget.Toolbar;
 import android.view.View;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
-import com.app.arnont.kkminibus.R;
+import com.app.arnontproject.kkminibus.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -36,6 +36,8 @@ public class CommentActivity extends LocalizationActivity{
     TextView txtViewName ,txtViewEmail, txtViewComment,textView;
 
     Toolbar toolbar;
+
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
     DatabaseReference mUsersRef = mRootRef.child("USERS");
@@ -153,9 +155,11 @@ public class CommentActivity extends LocalizationActivity{
         btnComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (edtEmailComment.getText().toString().trim().equals("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+")) {
+                if (edtEmailComment.getText().toString().trim().matches(emailPattern)) {
                     startActivity(new Intent(CommentActivity.this, MainActivity.class));
                     Toast.makeText(getApplicationContext(),"valid email address", Toast.LENGTH_SHORT).show();
+                    addNewContactRealTimeDatabase();
+                    addNewContactCloudFireStore();
                     overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
                     finish();
                     Log.d("Check", "valid email address");
@@ -163,8 +167,7 @@ public class CommentActivity extends LocalizationActivity{
                     Toast.makeText(getApplicationContext(),"Invalid email address", Toast.LENGTH_SHORT).show();
                     Log.d("Check", "Invalid email address");
                 }
-                addNewContactRealTimeDatabase();
-                addNewContactCloudFireStore();
+
 
 
             }

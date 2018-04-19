@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.fragment;
+package com.app.arnontproject.kkminibus.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,10 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.app.arnont.kkminibus.R;
-import com.app.arnont.kkminibus.activity.MainActivity;
-import com.app.arnont.kkminibus.activity.MapAllActivity;
-import com.app.arnont.kkminibus.activity.SplashActivity;
+import com.app.arnontproject.kkminibus.R;
+import com.app.arnontproject.kkminibus.activity.MainActivity;
+import com.app.arnontproject.kkminibus.activity.MapAllActivity;
+import com.app.arnontproject.kkminibus.activity.SplashActivity;
 
 /**
  * A simple {@link Fragment} subclass.

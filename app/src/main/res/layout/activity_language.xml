@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.app.arnont.kkminibus.LanguageActivity">
+    tools:context="com.app.arnontproject.kkminibus.LanguageActivity">
 
 
     <LinearLayout

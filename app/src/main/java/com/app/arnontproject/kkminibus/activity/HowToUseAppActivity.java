@@ -1,28 +1,30 @@
-package com.app.arnont.kkminibus.activity;
+package com.app.arnontproject.kkminibus.activity;
 
 import android.annotation.TargetApi;
 import android.os.Build;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
+import android.view.View;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
-import com.app.arnont.kkminibus.R;
-import com.app.arnont.kkminibus.fragment.ItemListDialogFragment;
+import com.app.arnontproject.kkminibus.R;
 
-public class DetailMiniBusActivity extends LocalizationActivity {
+public class HowToUseAppActivity extends LocalizationActivity {
 
-    TextView txtMiniBusDetail;
+    TextView txtHowTo;
+    ImageView imgHowTo;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_mini_bus);
+        setContentView(R.layout.activity_how_to_use_app);
 
-        Toolbar toolbar = findViewById(R.id.toolbarDetailMiniBus);
-        toolbar.setTitle(R.string.detail_mini_bus);
+        Toolbar toolbar = findViewById(R.id.toolbarHowTo);
+        toolbar.setTitle(R.string.how_to_use);
         setActionBar(toolbar);
         getSupportActionBar().hide();
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
@@ -33,14 +35,9 @@ public class DetailMiniBusActivity extends LocalizationActivity {
             }
         });
 
+        txtHowTo = findViewById(R.id.txtHowTo);
+        imgHowTo = findViewById(R.id.imgHowTo);
 
-        String savedExtra = getIntent().getStringExtra("minibus");
-        txtMiniBusDetail = findViewById(R.id.txtMiniBusDetail);
-        txtMiniBusDetail.setText(savedExtra);
-
-
-        ItemListDialogFragment fragment = ItemListDialogFragment.newInstance();
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,fragment).commit();
 
     }
 
@@ -49,4 +46,6 @@ public class DetailMiniBusActivity extends LocalizationActivity {
         super.onBackPressed();
         overridePendingTransition(R.anim.pop_out, R.anim.pop_out_exit);
     }
+
+
 }

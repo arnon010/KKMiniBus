@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus;
+package com.app.arnontproject.kkminibus;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.activity;
+package com.app.arnontproject.kkminibus.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
-import com.app.arnont.kkminibus.R;
+import com.app.arnontproject.kkminibus.R;
 
 public class SplashActivity extends Activity implements Animation.AnimationListener {
 

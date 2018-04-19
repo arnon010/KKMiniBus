@@ -1,4 +1,4 @@
-package com.app.arnont.kkminibus.adapter;
+package com.app.arnontproject.kkminibus.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.app.arnont.kkminibus.R;
+import com.app.arnontproject.kkminibus.R;
 
 import java.util.ArrayList;
 import java.util.List;
