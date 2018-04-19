@@ -218,27 +218,97 @@
     <string name="ban_nong_bua_di_mi_line12">Ban Nong Bua Di Mi</string>
 
     <!--สาย13-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
-    <!--<string name=""></string>-->
+    <string name="ban_noi_ni_wad">Ban Noi Ni-wad</string>
+    <string name="bus_terminal_1">Bus Terminal 1</string>
+    <string name="a_jira_market">A. Jira Market</string>
+    <string name="tukcom_khonkaen">Tukcom Khon Kaen</string>
+    <string name="kanlayanawat_school">Kanlayanawat School</string>
+    <string name="municipal_market">Municipal Market</string>
+    <string name="suan_sanuk_municipal_school">Suan Sanuk Municipal School</string>
+    <string name="bueng_kaen_nakhon">Bueng Kaen Nakhon</string>
+    <string name="ban_tum">Ban Tum</string>
+    <string name="ban_don_bom">Ban Don Bom</string>
+    <string name="ban_dong_noi">Ban Dong Noi</string>
+    <string name="ban_don_dang">Ban Don Dang</string>
+    <string name="ban_don_chan">Ban Don Chan</string>
+
+    <!--สาย16-->
+    <string name="ban_non_tan_line16">Ban Non Tan</string>
+    <string name="non_tan_market_line16">Non Tan Market</string>
+    <string name="khonkaen_rajanagarindra_psychiatric_hospital_line16">Khon Kaen Rajanagarindra Psychiatric Hospital</string>
+    <string name="khonkaen_prison_line16">Khon Kaen Prison</string>
+    <string name="kanlayanawat_school_line16">Kanlayanawat School</string>
+    <string name="bus_terminal_1_line16">Bus Terminal 1</string>
+    <string name="ban_sam_liam_line16">Ban Sam Liam</string>
+
+    <!--สาย17-->
+
+
+
+
+
+    <!--สาย18-->
+    <string name="kanlayanawat_school_line18">Kanlayanawat School</string>
+    <string name="khonkaen_prison_line18">Khon Kaen Prison</string>
+    <string name="northeastern_vocation_institute_khonkaen_technical_college_line18">Northeastern Vocation Institute Khon Kaen Technical College</string>
+    <string name="medical_education_center_khonkaen_hospital_line18">Medical Education Center Khon Kaen Hospital</string>
+    <string name="rajamangala_university_of_technology_isan_line18">Rajamangala University of Technology Isan</string>
+    <string name="nong_yai_market_line18">Nong Yai Market</string>
+    <string name="ban_awe_mong_line18">Ban Awe Mong</string>
+    <string name="ban_song_pueai_line18">Ban Song Pueai</string>
+    <string name="ban_non_phon_line18">Ban Non Phon</string>
+
+    <!--สาย19-->
+    <string name="nong_phai_lom_market_line19">Nong Phai Lom Market</string>
+    <string name="municipal_market_line19">Municipal Market</string>
+    <string name="bang_lamphu_market_line19">Bang Lamphu Market</string>
+    <string name="khonkaen_wittayayon_school_line19">Khon Kaen Wittayayon School</string>
+    <string name="bus_terminal_1_line19">Bus Terminal 1</string>
+    <string name="sirikit_heart_center_line19">Sirikit Heart Center</string>
+    <string name="srinagarind_hospital_line19">Srinagarind Hospital</string>
+    <string name="khonkaen_university_line19">Khon Kaen University</string>
+    <string name="lotus_extra_khonkhon_line19">Lotus Extra Khon Khon</string>
+    <string name="ban_non_muang_line19">Ban Non Muang</string>
+    <string name="ban_non_raug_line19">Ban Non Raug</string>
+
+
+    <!--สาย20-->
 
 
 
 
 
 
+
+
+    <!--สาย21-->
+    <string name="ban_non_khawao_line21">Ban Non Khawao</string>
+    <string name="ban_lao_nok_chum_line21">Ban Lao Nok Chum</string>
+    <string name="ban_bue_line21">Ban Bue</string>
+    <string name="ban_non_tan_line21">Ban Non Tan</string>
+    <string name="bueng_kaen_nakhon_line21">Bueng Kaen Nakhon</string>
+    <string name="fairy_plaza_line21">Fairy Plaza</string>
+    <string name="municipal_market_line21">Municipal Market</string>
+    <string name="kanlayanawat_school_line21">Kanlayanawat School</string>
+    <string name="khonkaen_metropolitan_police_station_line21">Khon Kaen Metropolitan Police Station</string>
+    <string name="khonkaen_wittayayon_school_line21">Khon Kaen Wittayayon School</string>
+    <string name="bus_terminal_1_line21">Bus Terminal 1</string>
+    <string name="city_hall_in_khonkaen_line21">City Hall in Khon Kaen</string>
+    <string name="ban_don_market_line21">Ban Don Market</string>
+    <string name="ban_don_yang_line21">Ban Don Yang</string>
+
+    <!--สาย22-->
+    <string name="ban_nong_hai_line22">Ban Nong hai</string>
+    <string name="nong_yai_market">Nong Yai Market</string>
+    <string name="medical_education_center_khonkaen_hospital_line22">Medical Education Center Khon Kaen Hospital</string>
+    <string name="khon_kaen_prison_line22">Khon Kaen Prison</string>
+    <string name="khon_kaen_metropolitan_police_station_line22">Khon Kaen Metropolitan Police Station</string>
+    <string name="municipal_market_line22">Municipal Market</string>
+    <string name="bang_lamphu_market_line22">Bang Lamphu Market</string>
+    <string name="khon_kaen_wittayayon_school_line22">Khon Kaen Wittayayon School</string>
+    <string name="bus_terminal_1_line22">Bus Terminal 1</string>
+    <string name="khonkaen_post_office_line22">Khon Kaen Post Office</string>
+    <string name="ban_don_ya_nang_line22">Ban Don Ya Nang</string>
 
     <!--สาย23-->
     <string name="municipal_market_line23">Municipal Market</string>
