@@ -4,10 +4,10 @@ import android.annotation.TargetApi;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 
+import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnontproject.kkminibus.fragment.ItemListDialogFragment;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
@@ -27,7 +27,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsDetailActivity extends LocalizationActivity implements OnMapReadyCallback {
 
     private GoogleMap map;
     TextView txtMiniBusDetail;
@@ -39,8 +39,9 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_maps_detail);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -354,7 +355,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .color(getResources().getColor(R.color.s3))
                 );
                 break;
-            case "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง\n\nKK":
+            case "สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง\nบขส.3, แม็คโคร ขอนแก่น, ประตูน้ำขอนแก่น, ตลาดอู้ฟู, ขอนแก่นแหอวน, โรงเรียนแก่นนครวิทยาลัย, โรงเรียนโสตศึกษาขอนแก่น, สนามกีฬากลางขอนแก่น, โรงเรียนเทศบาลวัดกลาง, แฟรี่พลาซ่า, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, บขส.1, ศูนย์หัวใจสิริกิตขอนแก่น, โรงพยาบาลศรีนครินทร์, มหาวิทยาลัยขอนแก่น, โลตัสเอ็กซ์ตร้า, บ.สำราญ, บ.หนองน้ำเกลี้ยง":
                 LatLng mapCenter5 = new LatLng(16.498304, 102.832508);
                 map.addMarker(new MarkerOptions().position(mapCenter5).title("Start").snippet("สาย 4 : บขส.3 – บ้านหนองน้ำเกลี้ยง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter6 = new LatLng(16.389369, 102.806185);
@@ -491,7 +492,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                 );
                 break;
-            case "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม\n\nSchool":
+            case "สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม\nตลาดหนองไผ่ล้อม, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, เซ็นโทซ่า, ศูนย์ประชุมกาญจนาภิเษก, มหาวิทยาลัยขอนแก่น, สถาบันพัฒนาฝีมือแรงงานขอนแก่น, บ.ทุ่ม":
                 LatLng mapCenter7 = new LatLng(16.426291, 102.827488);
                 map.addMarker(new MarkerOptions().position(mapCenter7).title("Start").snippet("สาย 5 : ตลาดหนองไผ่ล้อม – บ้านทุ่ม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter8 = new LatLng(16.448607, 102.767814);
@@ -582,7 +583,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                 break;
 
-            case "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม\n\nFootball":
+            case "สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม\nตลาดเทศบาล, เทศบาลนครขอนแก่น, ศาลหลักเมืองขอนแก่น, เซ็นทรัลพลาซ่าขอนแก่น, บิ๊กซีขอนแก่น, ตลาดต้นตาล, โฮมโปรขอนแก่น, แม็คโครขอนแก่น, ประตูน้ำขอนแก่น, เทสโก้โลตัสขอนแก่น, บขส.3, บ.กุดกว้าง, บ.ท่าพระ, บ.หนองหญ้าแพรก, บ.ท่าแร่, บ.โนนเขวา, บ.เหล่านกชุม":
                 LatLng mapCenter9 = new LatLng(16.425585, 102.834150);
                 map.addMarker(new MarkerOptions().position(mapCenter9).title("Start").snippet("สาย 6 : ตลาดเทศบาล 1 – บ้านเหล่านกชุม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter10 = new LatLng(16.389369, 102.806185);
@@ -658,7 +659,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                 break;
 
-            case "สาย 8 : สามเหลี่ยม – บ้านดอนบม\n\nCentral":
+            case "สาย 8 : สามเหลี่ยม – บ้านดอนบม\nมหาวิทยาลัยขอนแก่น, เซ็นโทซ่า, บขส.1, บขส.2, สถานีตํารวจภูธรเมืองขอนแก่น, โรงเรียนขอนแก่นวิทยายน, โรงเรียนกัลยาณวัตร, ตลาดเทศบาล, แฟรี่พลาซ่า, เมืองเก่า, บึงแก่นนคร, บ.ดอนบม":
                 LatLng mapCenter11 = new LatLng(16.389369, 102.806185);
                 map.addMarker(new MarkerOptions().position(mapCenter11).title("Start").snippet("สาย 8 : สามเหลี่ยม – บ้านดอนบม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter12 = new LatLng(16.464089, 102.831887);
@@ -863,7 +864,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 );
                 break;
 
-            case "สาย 9 : สามเหลี่ยม – บ้านสะอาด\n\nTheMall":
+            case "สาย 9 : สามเหลี่ยม – บ้านสะอาด\nบ.สามเหลี่ยม, บขส.1, บขส.2, โรงเรียนขอนแก่นวิทยายน, ไปรษณีย์ขอนแก่น, ตลาดเทศบาล, แฟรี่พลาซ่า, สนามกีฬากลางขอนแก่น, โรงเรียนแก่นนครวิทยาลัย, ตลาดต้นตาล, มหาวิทยาลัยภาคตะวันออกเฉียงเหนือ, บ.กอก, บ.โจด, บ.สะอาด":
                 LatLng mapCenter27 = new LatLng(16.455835, 102.827421);
                 map.addMarker(new MarkerOptions().position(mapCenter27).title("Start").snippet("สาย 9 : สามเหลี่ยม – บ้านสะอาด").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter28 = new LatLng(16.409571, 102.781850);
@@ -1070,7 +1071,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                 break;
 
-            case "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า\n\nKK":
+            case "สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า\nมหาวิทยาลัยขอนแก่น, บขส.1, ที่ว่าการอําเภอเมืองขอนแก่น, บ.บะขาม, เรือนจำขอนแก่น, บขส.2, โรงเรียนขอนแก่นวิทยายน, ไปรษณีย์ขอนแก่น, สถานีตํารวจภูธรเมืองขอนแก่น, ตลาดเทศบาล, แฟรี่พลาซ่า, สนามกีฬากลางขอนแก่น, โรงเรียนแก่นนครวิทยาลัย, ประตูน้ำขอนแก่น, แม็คโครขอนแก่น, เทสโก้โลตัสขอนแก่น":
                 LatLng mapCenter13 = new LatLng(16.389369, 102.806185);
                 map.addMarker(new MarkerOptions().position(mapCenter13).title("Start").snippet("สาย 10 : มหาวิทยาลัยขอนแก่น – สนามม้า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter14 = new LatLng(16.441628, 102.814526);
@@ -1266,7 +1267,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 );
                 break;
 
-            case "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ\n\nSchool":
+            case "สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ\nบ.โนนสวรรค์, ตลาดหนองใหญ่, วิทยาลัยอาชีวศึกษาขอนแก่น, บขส.2, โรงเรียนขอนแก่นวิทยายน, ตึกคอมขอนแก่น, เทศบาลนครขอนแก่น, ตลาดต้นตาล, บ.โคกฟันโปง":
                 LatLng mapCenter29 = new LatLng(16.409522, 102.781848);
                 map.addMarker(new MarkerOptions().position(mapCenter29).title("Start").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter30 = new LatLng(16.441628, 102.814526);
@@ -1429,7 +1430,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 );
                 break;
 
-            case "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน\n\nFootball":
+            case "สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน\nศาลากลางจังหวัดขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนแก่นนครวิทยาลัย, ประตูน้ำขอนแก่น, เทสโก้โลตัสขอนแก่น, บขส.3, บ.โนนตุ่น, บ.กุดกว้าง, บ.ท่าพระ, บ.หนองบัวดีหมี":
                 LatLng mapCenter15 = new LatLng(16.389369, 102.806185);
                 map.addMarker(new MarkerOptions().position(mapCenter15).title("Start").snippet("สาย 12 : พิพิธภัณฑ์ – รร.ท่าพระวิทยายน").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter16 = new LatLng(16.447767, 102.841116);
@@ -1551,7 +1552,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
 
 
-            case "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา\n\nCentral":
+            case "สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา\nบ้านน้อยนิเวศน์, บขส.1, ตลาด อ.จิระ ขอนแก่น, ตึกคอมขอนแก่น, โรงเรียนกัลยาณวัตรม, ตลาดเทศบาล, โรงเรียนเทศบาลสวนสนุก, บึงแก่นนคร, บ.ตูม, บ.ดอนบม, บ.ดอนแดง, บ้านดอนหัน":
                 LatLng mapCenter31 = new LatLng(16.447973, 102.822856);
                 map.addMarker(new MarkerOptions().position(mapCenter31).title("Start").snippet("สาย 13 : บ้านน้อยนิเวศน์ – บ้านสว่างมรรคา").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter32 = new LatLng(16.390454, 102.841332);
@@ -1780,7 +1781,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .color(getResources().getColor(R.color.s10)));
                 break;
 
-            case "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม\n\nTheMall":
+            case "สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม\nบ.โนนทัน, ตลาดโนนทัน, โรงพยาบาลจิตเวชขอนแก่น, เรือนจำขอนแก่น, โรงเรียนกัลยาณวัตร, บขส.1, บ.สามเหลี่ยม":
                 LatLng mapCenter33 = new LatLng(16.464537, 102.827373);
                 map.addMarker(new MarkerOptions().position(mapCenter33).title("Start").snippet("สาย 16 : บ้านโนนทัน – วัดป่าอดุลยาราม").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter34 = new LatLng(16.423453, 102.852517);
@@ -1897,7 +1898,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .color(getResources().getColor(R.color.s10)));
                 break;
 
-            case "สาย 17 : บ้านโนนทัน – บ้านโคกท่า\n\nKK":
+            case "สาย 17 : บ้านโนนทัน – บ้านโคกท่า\nบ.โนนทัน, บึงแก่นนคร, โรงเรียนเทศบาลสวนสนุก, แฟรี่พลาซ่า, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, วิทยาลัยอาชีวศึกษาขอนแก่น, ตลาดบ้านดอน, ค่ายศรีพัชรินทร์, โรงเรียนขามแก่นนคร, บ.โกทา, บ.หนองหิน, บ.ห้วยชัน, บ.โคกท่า":
                 LatLng mapCenter35 = new LatLng(16.389369, 102.806185);
                 map.addMarker(new MarkerOptions().position(mapCenter35).title("Start").snippet("สาย 17 : บ้านโนนทัน – บ้านโคกท่า").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter36 = new LatLng(16.480840, 102.872316);
@@ -2077,7 +2078,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .color(getResources().getColor(R.color.s10)));
                 break;
 
-            case "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง\n\nSchool":
+            case "สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง\nโรงเรียนกัลยาณวัตร, เรือนจำขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, โรงพยาบาลศูนย์ขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.แอ่วมอง, บ.สงเปือย, บ.โนนพอง":
                 LatLng mapCenter17 = new LatLng(16.426794, 102.874816);
                 map.addMarker(new MarkerOptions().position(mapCenter17).title("Start").snippet("สาย 18 : โรงเรียนกัลยาณวัตร – บ้านโนนพอง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter18 = new LatLng(16.426483, 102.835136);
@@ -2116,7 +2117,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                 );
                 break;
-            case "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง\n\nFootball":
+            case "สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง\nตลาดหนองไผ่ล้อม, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, >บขส.1, ศูนย์หัวใจสิริกิตขอนแก่น, โรงพยาบาลศรีนครินทร์ขอนแก่น, มหาวิทยาลัยขอนแก่น, โลตัสเอ็กซ์ตร้า, บ.โนนเมือง, บ.โนนเรือง":
                 LatLng mapCenter19 = new LatLng(16.426291, 102.827488);
                 map.addMarker(new MarkerOptions().position(mapCenter19).title("Start").snippet("สาย 19 : ตลาดหนองไผ่ล้อม – บ้านโนนเรือง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter20 = new LatLng(16.498304, 102.832508);
@@ -2196,7 +2197,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
 
                 );
                 break;
-            case "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง\n\nCentral":
+            case "สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง\nตลาดหนองไผ่ล้อม, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, บขส.1, ศูนย์หัวใจสิริกิตขอนแก่น, โรงพยาบาลศรีนครินทร์ขอนแก่น, มหาวิทยาลัยขอนแก่น, โลตัสเอ็กซ์ตร้า, บ.โคกนางาม, บ.หนองค้า, บ.กลางฮุง":
                 LatLng mapCenter21 = new LatLng(16.426291, 102.827488);
                 map.addMarker(new MarkerOptions().position(mapCenter21).title("Start").snippet("สาย 20 : ตลาดหนองไผ่ล้อม – บ้านกลางฮุง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter22 = new LatLng(16.498304, 102.832508);
@@ -2275,7 +2276,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 );
                 break;
 
-            case "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง\n\nTheMall":
+            case "สาย 21 : บ้านโนนเขวา – บ้านดอนยาง\nบ.โนนเขวา, บ.เหล่านกชุม, บ.บือ, บ.โนนทัน, บึงแก่นนคร, แฟรี่พลาซ่า, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, โรงเรียนขอนแก่นวิทยายน, บขส.1, ศาลากลางจังหวัดขอนแก่น, ตลาดบ้านดอน, บ.ดองยาง":
                 LatLng mapCenter37 = new LatLng(16.455550, 102.855093);
                 map.addMarker(new MarkerOptions().position(mapCenter37).title("Start").snippet("สาย 21 : บ้านโนนเขวา – บ้านดอนยาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter38 = new LatLng(16.411424, 102.859660);
@@ -2423,7 +2424,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                 break;
 
 
-            case "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง\n\nKK":
+            case "สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง\nบ.หนองไฮ, ตลาดหนองใหญ่, โรงพยาบาลศูนย์ขอนแก่น, เรือนจำขอนแก่น, สถานีตํารวจภูธรเมืองขอนแก่น, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, บขส.1, ไปรษณีย์ขอนแก่น, บ.ดอนหญ้านาง":
                 LatLng mapCenter23 = new LatLng(16.414864, 102.874371);
                 map.addMarker(new MarkerOptions().position(mapCenter23).title("Start").snippet("สาย 22 : บ้านหนองไฮ- บ้านดอนหญ้านาง").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter24 = new LatLng(16.447251, 102.837567);
@@ -2562,7 +2563,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
                         .color(getResources().getColor(R.color.s22))
                 );
                 break;
-            case "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย\n\nSchool":
+            case "สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย\nตลาดเทศบาล, ตลาดเทศบาล, บ.โนนตุ่น, บ.ท่าพระ, บ.หนองบัวดีหมี, บ.หนองแวง, บ.ห้วยเตย":
                 LatLng mapCenter25 = new LatLng(16.426570, 102.826566);
                 map.addMarker(new MarkerOptions().position(mapCenter25).title("Start").snippet("สาย 23 : ตลาดเทศบาล 1 – บ้านห้วยเตย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter26 = new LatLng(16.372533, 102.809281);
@@ -2749,7 +2750,7 @@ public class MapsDetailActivity extends FragmentActivity implements OnMapReadyCa
     }
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
 
     }

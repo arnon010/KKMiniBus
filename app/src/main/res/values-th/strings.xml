@@ -98,17 +98,19 @@
     <string name="khon_kaen_deaf_school_line4">โรงเรียนโสตศึกษาขอนแก่น</string>
     <string name="khonkaen_sports_stadium_line4">สนามกีฬากลางขอนแก่น</string>
     <string name="wat_klang_municipal_school_line4">โรงเรียนเทศบาลวัดกลาง</string>
-    <string name="fairy_plaza_line4">แฟรี่ พลาซ่า</string>
+    <string name="fairy_plaza_line4">แฟรี่พลาซ่า</string>
     <string name="municipal_market_line4">ตลาดเทศบาล</string>
     <string name="bang_lamphu_market_line4">ตลาดบางลำภู</string>
     <string name="khonkaen_wittayayon_school_line4">โรงเรียนขอนแก่นวิทยายน</string>
-    <string name="bus_terminal_1_line4">บขส. 1</string>
+    <string name="bus_terminal_1_line4">บขส.1</string>
     <string name="sirikit_heart_center_line4">ศูนย์หัวใจสิริกิตขอนแก่น</string>
     <string name="srinagarind_hospital_line4">โรงพยาบาลศรีนครินทร์</string>
     <string name="khonkaen_university_line4">มหาวิทยาลัยขอนแก่น</string>
     <string name="lotus_extra_khonkhon_line4">โลตัสเอ็กซ์ตร้า</string>
     <string name="ban_samram_line4">บ.สำราญ</string>
     <string name="ban_nong_nam_kieng_line4">บ.หนองน้ำเกลี้ยง</string>
+
+    <!-- บขส.3, แม็คโคร ขอนแก่น, ประตูน้ำขอนแก่น, ตลาดอู้ฟู, ขอนแก่นแหอวน, โรงเรียนแก่นนครวิทยาลัย, โรงเรียนโสตศึกษาขอนแก่น, สนามกีฬากลางขอนแก่น, โรงเรียนเทศบาลวัดกลาง, แฟรี่พลาซ่า, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, บขส.1, ศูนย์หัวใจสิริกิตขอนแก่น, โรงพยาบาลศรีนครินทร์, มหาวิทยาลัยขอนแก่น, โลตัสเอ็กซ์ตร้า, บ.สำราญ, บ.หนองน้ำเกลี้ยง -->
     
     
     <!--สาย5 9ที่-->
@@ -119,20 +121,21 @@
     <string name="sentosa_khonkaen_line5">เซ็นโทซ่า</string>
     <string name="khonkaen_cytocare_line5">ศูนย์ประชุมกาญจนาภิเษก</string>
     <string name="khonkaen_university_line5">มหาวิทยาลัยขอนแก่น</string>
-    <string name="khonkaen_institude_for_skill_development_line5">สถาบันพัฒนาฝีมือแรงงาน ขอนแก่น</string>
+    <string name="khonkaen_institude_for_skill_development_line5">สถาบันพัฒนาฝีมือแรงงานขอนแก่น</string>
     <string name="ban_thum_line5">บ.ทุ่ม</string>
+    <!-- ตลาดหนองไผ่ล้อม, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, เซ็นโทซ่า, ศูนย์ประชุมกาญจนาภิเษก, มหาวิทยาลัยขอนแก่น, สถาบันพัฒนาฝีมือแรงงานขอนแก่น, บ.ทุ่ม -->
 
     <!--สาย6 17ที่-->
     <string name="municipal_market_line6">ตลาดเทศบาล</string>
     <string name="municipal_office_khonkaen_line6">เทศบาลนครขอนแก่น</string>
-    <string name="chao_por_lak_muang_khonkaen_shrine_line6">ศาลหลักเมือง ขอนแก่น</string>
-    <string name="central_plaza_khonkaen_line6">เซ็นทรัลพลาซ่า ขอนแก่น</string>
-    <string name="big_c_khonkaen_line6">บิ๊กซี ขอนแก่น</string>
+    <string name="chao_por_lak_muang_khonkaen_shrine_line6">ศาลหลักเมืองขอนแก่น</string>
+    <string name="central_plaza_khonkaen_line6">เซ็นทรัลพลาซ่าขอนแก่น</string>
+    <string name="big_c_khonkaen_line6">บิ๊กซีขอนแก่น</string>
     <string name="ton_tann_market_line6">ตลาดต้นตาล</string>
-    <string name="home_pro_khonkaen_line6">โฮมโปร ขอนแก่น</string>
-    <string name="makro_khonkaen_line6">แม็คโคร ขอนแก่น</string>
+    <string name="home_pro_khonkaen_line6">โฮมโปรขอนแก่น</string>
+    <string name="makro_khonkaen_line6">แม็คโครขอนแก่น</string>
     <string name="watergate_market_khonkaen_line6">ประตูน้ำขอนแก่น</string>
-    <string name="tesco_lotus_khonkaen_line6">เทสโก้ โลตัส ขอนแก่น</string>
+    <string name="tesco_lotus_khonkaen_line6">เทสโก้โลตัสขอนแก่น</string>
     <string name="bus_terminal_3_line6">บขส.3</string>
     <string name="ban_kut_kwang_line6">บ.กุดกว้าง</string>
     <string name="ban_tha_phra_line6">บ.ท่าพระ</string>
@@ -140,6 +143,7 @@
     <string name="ban_tha_rae_line6">บ.ท่าแร่</string>
     <string name="ban_non_khawao_line6">บ.โนนเขวา</string>
     <string name="ban_lao_nok_chum_line6">บ.เหล่านกชุม</string>
+    <!-- ตลาดเทศบาล, เทศบาลนครขอนแก่น, ศาลหลักเมืองขอนแก่น, เซ็นทรัลพลาซ่าขอนแก่น, บิ๊กซีขอนแก่น, ตลาดต้นตาล, โฮมโปรขอนแก่น, แม็คโครขอนแก่น, ประตูน้ำขอนแก่น, เทสโก้โลตัสขอนแก่น, บขส.3, บ.กุดกว้าง, บ.ท่าพระ, บ.หนองหญ้าแพรก, บ.ท่าแร่, บ.โนนเขวา, บ.เหล่านกชุม -->
 
     <!--สาย8 12ที่-->
     <string name="khonkaen_university_line8">มหาวิทยาลัยขอนแก่น</string>
@@ -150,12 +154,13 @@
     <string name="khonkaen_wittayayon_school_line8">โรงเรียนขอนแก่นวิทยายน</string>
     <string name="kanlayanawat_school_line8">โรงเรียนกัลยาณวัตร</string>
     <string name="municipal_market_line8">ตลาดเทศบาล</string>
-    <string name="fairy_plaza_line8">แฟรี่ พลาซ่า</string>
+    <string name="fairy_plaza_line8">แฟรี่พลาซ่า</string>
     <string name="muang_kao_line8">เมืองเก่า</string>
     <string name="bueng_kaen_nakhon_line8">บึงแก่นนคร</string>
     <string name="don_bom_line8">บ.ดอนบม</string>
+    <!-- มหาวิทยาลัยขอนแก่น, เซ็นโทซ่า, บขส.1, บขส.2, สถานีตํารวจภูธรเมืองขอนแก่น, โรงเรียนขอนแก่นวิทยายน, โรงเรียนกัลยาณวัตร, ตลาดเทศบาล, แฟรี่พลาซ่า, เมืองเก่า, บึงแก่นนคร, บ.ดอนบม -->
 
-    <!--สาย9-->
+    <!--สาย9 14ที่-->
     <string name="ban_sam_liam_line9">บ.สามเหลี่ยม</string>
     <string name="bus_terminal_1_line9">บขส.1</string>
     <string name="bus_terminal_2_line9">บขส.2</string>
@@ -170,13 +175,14 @@
     <string name="ban_kok_line9">บ.กอก</string>
     <string name="ban_chot_line9">บ.โจด</string>
     <string name="ban_sa_at_line9">บ.สะอาด</string>
+    <!-- บ.สามเหลี่ยม, บขส.1, บขส.2, โรงเรียนขอนแก่นวิทยายน, ไปรษณีย์ขอนแก่น, ตลาดเทศบาล, แฟรี่พลาซ่า, สนามกีฬากลางขอนแก่น, โรงเรียนแก่นนครวิทยาลัย, ตลาดต้นตาล, มหาวิทยาลัยภาคตะวันออกเฉียงเหนือ, บ.กอก, บ.โจด, บ.สะอาด -->
 
-    <!--สาย10-->
+    <!--สาย10 16ที่-->
     <string name="khonkaen_university_line10">มหาวิทยาลัยขอนแก่น</string>
     <string name="bus_terminal_1_line10">บขส.1</string>
     <string name="district_khonkaen_line10">ที่ว่าการอําเภอเมืองขอนแก่น</string>
     <string name="ban_bakham_line10">บ.บะขาม</string>
-    <string name="khonkaen_prison_line10">เรือนจำ ขอนแก่น</string>
+    <string name="khonkaen_prison_line10">เรือนจำขอนแก่น</string>
     <string name="bus_terminal_2_line10">บขส.2</string>
     <string name="khonkaen_wittayayon_school_line10">โรงเรียนขอนแก่นวิทยายน</string>
     <string name="khonkaen_post_office_line10">ไปรษณีย์ขอนแก่น</string>
@@ -186,21 +192,23 @@
     <string name="khonkaen_sports_stadium_line10">สนามกีฬากลางขอนแก่น</string>
     <string name="kaen_nakhon_wittayalai_school_line10">โรงเรียนแก่นนครวิทยาลัย</string>
     <string name="watergate_market_khonkaen_line10">ประตูน้ำขอนแก่น</string>
-    <string name="makro_khonkaen_line10">แม็คโคร ขอนแก่น</string>
-    <string name="tesco_lotus_khonkaen_line10">เทสโก้โลตัส ขอนแก่น</string>
+    <string name="makro_khonkaen_line10">แม็คโครขอนแก่น</string>
+    <string name="tesco_lotus_khonkaen_line10">เทสโก้โลตัสขอนแก่น</string>
+    <!-- มหาวิทยาลัยขอนแก่น, บขส.1, ที่ว่าการอําเภอเมืองขอนแก่น, บ.บะขาม, เรือนจำขอนแก่น, บขส.2, โรงเรียนขอนแก่นวิทยายน, ไปรษณีย์ขอนแก่น, สถานีตํารวจภูธรเมืองขอนแก่น, ตลาดเทศบาล, แฟรี่พลาซ่า, สนามกีฬากลางขอนแก่น, โรงเรียนแก่นนครวิทยาลัย, ประตูน้ำขอนแก่น, แม็คโครขอนแก่น, เทสโก้โลตัสขอนแก่น -->
 
-    <!--สาย11-->
+    <!--สาย11 9ที่-->
     <string name="ban_non_swan_line11">บ.โนนสวรรค์</string>
     <string name="nong_yai_market_line11">ตลาดหนองใหญ่</string>
     <string name="khonkaen_vocational_education_college_line11">วิทยาลัยอาชีวศึกษาขอนแก่น</string>
     <string name="bus_terminal_2_line11">บขส.2</string>
     <string name="khonkaen_wittayayon_school_line11">โรงเรียนขอนแก่นวิทยายน</string>
-    <string name="tukcom_khonkaen_line11">ตึกคอม ขอนแก่น</string>
+    <string name="tukcom_khonkaen_line11">ตึกคอมขอนแก่น</string>
     <string name="municipal_office_khonkaen_line11">เทศบาลนครขอนแก่น</string>
     <string name="ton_tann_market_line11">ตลาดต้นตาล</string>
     <string name="ban_khok_fan_pong_line11">บ.โคกฟันโปง</string>
+    <!-- บ.โนนสวรรค์, ตลาดหนองใหญ่, วิทยาลัยอาชีวศึกษาขอนแก่น, บขส.2, โรงเรียนขอนแก่นวิทยายน, ตึกคอมขอนแก่น, เทศบาลนครขอนแก่น, ตลาดต้นตาล, บ.โคกฟันโปง -->
 
-    <!--สาย12-->
+    <!--สาย12 13ที่-->
     <string name="city_hall_in_khonkaen_line12">ศาลากลางจังหวัดขอนแก่น</string>
     <string name="bus_terminal_1_line12">บขส.1</string>
     <string name="khonkaen_wittayayon_school_line12">โรงเรียนขอนแก่นวิทยายน</string>
@@ -208,78 +216,102 @@
     <string name="municipal_market_line12">ตลาดเทศบาล</string>
     <string name="kaen_nakhon_wittayalai_school_line12">โรงเรียนแก่นนครวิทยาลัย</string>
     <string name="watergate_market_khonkaen_line12">ประตูน้ำขอนแก่น</string>
-    <string name="tesco_lotus_khonkaen_line12">เทสโก้ โลตัส ขอนแก่น</string>
+    <string name="tesco_lotus_khonkaen_line12">เทสโก้โลตัสขอนแก่น</string>
     <string name="bus_terminal_3_line12">บขส.3</string>
     <string name="ban_non_tun_line12">บ.โนนตุ่น</string>
     <string name="ban_kut_kwang_line12">บ.กุดกว้าง</string>
     <string name="ban_tha_phra_line12">บ.ท่าพระ</string>
     <string name="ban_nong_bua_di_mi_line12">บ.หนองบัวดีหมี</string>
+    <!-- ศาลากลางจังหวัดขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนแก่นนครวิทยาลัย, ประตูน้ำขอนแก่น, เทสโก้โลตัสขอนแก่น, บขส.3, บ.โนนตุ่น, บ.กุดกว้าง, บ.ท่าพระ, บ.หนองบัวดีหมี -->
 
 
-    <!--สาย13-->
+    <!--สาย13 13ที่-->
     <string name="ban_noi_ni_wad_line13">บ้านน้อยนิเวศน์</string>
-    <string name="bus_terminal_1_line13">บขส. 1</string>
+    <string name="bus_terminal_1_line13">บขส.1</string>
     <string name="a_jira_market_line13">ตลาด อ.จิระ ขอนแก่น</string>
-    <string name="tukcom_khonkaen_line13">ตึกคอม ขอนแก่น</string>
+    <string name="tukcom_khonkaen_line13">ตึกคอมขอนแก่น</string>
     <string name="kanlayanawat_school_line13">โรงเรียนกัลยาณวัตร</string>
     <string name="municipal_market_line13">ตลาดเทศบาล</string>
     <string name="suan_sanuk_municipal_school_line13">โรงเรียนเทศบาลสวนสนุก</string>
     <string name="bueng_kaen_nakhon_line13">บึงแก่นนคร</string>
-    <string name="ban_tum_line13">Ban Tum</string>
-    <string name="ban_don_bom_line13">บ. ดอนบม</string>
-    <string name="ban_dong_noi_line13">บ. ดงน้อย</string>
-    <string name="ban_don_dang_line13">บ. ดอนแดง</string>
+    <string name="ban_tum_line13">บ.ตูม</string>
+    <string name="ban_don_bom_line13">บ.ดอนบม</string>
+    <string name="ban_dong_noi_line13">บ.ดงน้อย</string>
+    <string name="ban_don_dang_line13">บ.ดอนแดง</string>
     <string name="ban_don_chan_line13">บ้านดอนหัน</string>
+    <!-- บ้านน้อยนิเวศน์, บขส.1, ตลาด อ.จิระ ขอนแก่น, ตึกคอมขอนแก่น, โรงเรียนกัลยาณวัตรม, ตลาดเทศบาล, โรงเรียนเทศบาลสวนสนุก, บึงแก่นนคร, บ.ตูม, บ.ดอนบม, บ.ดอนแดง, บ้านดอนหัน -->
 
-    <!--สาย16-->
+    <!--สาย16 7 ที่-->
     <string name="ban_non_tan_line16">บ.โนนทัน</string>
     <string name="non_tan_market_line16">ตลาดโนนทัน</string>
     <string name="khonkaen_rajanagarindra_psychiatric_hospital_line16">โรงพยาบาลจิตเวชขอนแก่น</string>
-    <string name="khonkaen_prison_line16">เรือนจำ ขอนแก่น</string>
+    <string name="khonkaen_prison_line16">เรือนจำขอนแก่น</string>
     <string name="kanlayanawat_school_line16">โรงเรียนกัลยาณวัตร</string>
     <string name="bus_terminal_1_line16">บขส.1</string>
     <string name="ban_sam_liam_line16">บ.สามเหลี่ยม</string>
+    <!-- บ.โนนทัน, ตลาดโนนทัน, โรงพยาบาลจิตเวชขอนแก่น, เรือนจำขอนแก่น, โรงเรียนกัลยาณวัตร, บขส.1, บ.สามเหลี่ยม -->
 
-    <!--สาย17-->
+    <!--สาย17 14ที่-->
+    <string name="ban_non_tan_line17">บ.โนนทัน</string>
+    <string name="bueng_kaen_nakhon_line17">บึงแก่นนคร</string>
+    <string name="suan_sanuk_municipal_school_line17">โรงเรียนเทศบาลสวนสนุก</string>
+    <string name="fairy_plaza_line17">แฟรี่พลาซ่า</string>
+    <string name="municipal_market_line17">ตลาดเทศบาล</string>
+    <string name="kanlayanawat_school_line17">โรงเรียนกัลยาณวัตร</string>
+    <string name="khonkaen_vocational_education_college_line17">วิทยาลัยอาชีวศึกษาขอนแก่น</string>
+    <string name="ban_don_market_line17">ตลาดบ้านดอน</string>
+    <string name="khai_sri_patcharin_line17">ค่ายศรีพัชรินทร์</string>
+    <string name="khamkaen_nakhon_school_line17">โรงเรียนขามแก่นนคร</string>
+    <string name="ban_kotha_line17">บ.โกทา</string>
+    <string name="ban_nong_hin_line17">บ.หนองหิน</string>
+    <string name="ban_hui_chan_line17">บ.ห้วยชัน</string>
+    <string name="ban_khok_tha_line17">บ.โคกท่า</string>
+    <!-- บ.โนนทัน, บึงแก่นนคร, โรงเรียนเทศบาลสวนสนุก, แฟรี่พลาซ่า, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, วิทยาลัยอาชีวศึกษาขอนแก่น, ตลาดบ้านดอน, ค่ายศรีพัชรินทร์, โรงเรียนขามแก่นนคร, บ.โกทา, บ.หนองหิน, บ.ห้วยชัน, บ.โคกท่า -->
 
-
-
-
-
-    <!--สาย18-->
+    <!--สาย18 9 ที่-->
     <string name="kanlayanawat_school_line18">โรงเรียนกัลยาณวัตร</string>
-    <string name="khonkaen_prison_line18">เรือนจำ ขอนแก่น</string>
+    <string name="khonkaen_prison_line18">เรือนจำขอนแก่น</string>
     <string name="northeastern_vocation_institute_khonkaen_technical_college_line18">วิทยาลัยเทคนิคขอนแก่น</string>
     <string name="medical_education_center_khonkaen_hospital_line18">โรงพยาบาลศูนย์ขอนแก่น</string>
     <string name="rajamangala_university_of_technology_isan_line18">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน</string>
     <string name="nong_yai_market_line18">ตลาดหนองใหญ่</string>
-    <string name="ban_awe_mong_line18">บ. แอ่วมอง</string>
-    <string name="ban_song_pueai_line18">บ. สงเปือย</string>
-    <string name="ban_non_phon_line18">บ. โนนพอง</string>
+    <string name="ban_awe_mong_line18">บ.แอ่วมอง</string>
+    <string name="ban_song_pueai_line18">บ.สงเปือย</string>
+    <string name="ban_non_phon_line18">บ.โนนพอง</string>
+    <!-- โรงเรียนกัลยาณวัตร, เรือนจำขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, โรงพยาบาลศูนย์ขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.แอ่วมอง, บ.สงเปือย, บ.โนนพอง -->
 
-    <!--สาย19-->
+    <!--สาย19 11 ที่-->
     <string name="nong_phai_lom_market_line19">ตลาดหนองไผ่ล้อม</string>
     <string name="municipal_market_line19">ตลาดเทศบาล</string>
     <string name="bang_lamphu_market_line19">ตลาดบางลำภู</string>
     <string name="khonkaen_wittayayon_school_line19">โรงเรียนขอนแก่นวิทยายน</string>
     <string name="bus_terminal_1_line19">บขส.1</string>
     <string name="sirikit_heart_center_line19">ศูนย์หัวใจสิริกิตขอนแก่น</string>
-    <string name="srinagarind_hospital_line19">โรงพยาบาลศรีนครินทร์ ขอนแก่น</string>
+    <string name="srinagarind_hospital_line19">โรงพยาบาลศรีนครินทร์ขอนแก่น</string>
     <string name="khonkaen_university_line19">มหาวิทยาลัยขอนแก่น</string>
     <string name="lotus_extra_khonkhon_line19">โลตัสเอ็กซ์ตร้า</string>
     <string name="ban_non_muang_line19">บ.โนนเมือง</string>
     <string name="ban_non_raug_line19">บ.โนนเรือง</string>
+    <!-- ตลาดหนองไผ่ล้อม, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, >บขส.1, ศูนย์หัวใจสิริกิตขอนแก่น, โรงพยาบาลศรีนครินทร์ขอนแก่น, มหาวิทยาลัยขอนแก่น, โลตัสเอ็กซ์ตร้า, บ.โนนเมือง, บ.โนนเรือง  -->
 
 
+    <!--สาย20 12ที่-->
+    <string name="nong_phai_lom_market_line20">ตลาดหนองไผ่ล้อม</string>
+    <string name="municipal_market_line20">ตลาดเทศบาล</string>
+    <string name="bang_lamphu_market_line20">ตลาดบางลำภู</string>
+    <string name="khonkaen_wittayayon_school_line20">โรงเรียนขอนแก่นวิทยายน</string>
+    <string name="bus_terminal_1_line20">บขส.1</string>
+    <string name="sirikit_heart_center_line20">ศูนย์หัวใจสิริกิตขอนแก่น</string>
+    <string name="srinagarind_hospital_line20">โรงพยาบาลศรีนครินทร์ขอนแก่น</string>
+    <string name="khonkaen_university_line20">มหาวิทยาลัยขอนแก่น</string>
+    <string name="lotus_extra_khon_khon_line20">โลตัสเอ็กซ์ตร้า</string>
+    <string name="ban_khok_na_ngam_line20">บ.โคกนางาม</string>
+    <string name="ban_nong_khla_line20">บ.หนองค้า</string>
+    <string name="ban_klang_hung_line20">บ.กลางฮุง</string>
+    <!-- ตลาดหนองไผ่ล้อม, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, บขส.1, ศูนย์หัวใจสิริกิตขอนแก่น, โรงพยาบาลศรีนครินทร์ขอนแก่น, มหาวิทยาลัยขอนแก่น, โลตัสเอ็กซ์ตร้า, บ.โคกนางาม, บ.หนองค้า, บ.กลางฮุง -->
 
-    <!--สาย20-->
 
-
-
-
-
-
-    <!--สาย21-->
+    <!--สาย21 14 ที่-->
     <string name="ban_non_khawao_line21">บ.โนนเขวา</string>
     <string name="ban_lao_nok_chum_line21">บ.เหล่านกชุม</string>
     <string name="ban_bue_line21">บ.บือ</string>
@@ -294,29 +326,32 @@
     <string name="city_hall_in_khonkaen_line21">ศาลากลางจังหวัดขอนแก่น</string>
     <string name="ban_don_market_line21">ตลาดบ้านดอน</string>
     <string name="ban_don_yang_line21">บ.ดองยาง</string>
+    <!-- บ.โนนเขวา, บ.เหล่านกชุม, บ.บือ, บ.โนนทัน, บึงแก่นนคร, แฟรี่พลาซ่า, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, โรงเรียนขอนแก่นวิทยายน, บขส.1, ศาลากลางจังหวัดขอนแก่น, ตลาดบ้านดอน, บ.ดองยาง -->
 
-    <!--สาย22-->
+    <!--สาย22 11 ที่-->
     <string name="ban_nong_hai_line22">บ.หนองไฮ</string>
     <string name="nong_yai_market">ตลาดหนองใหญ่</string>
     <string name="medical_education_center_khonkaen_hospital_line22">โรงพยาบาลศูนย์ขอนแก่น</string>
-    <string name="khon_kaen_prison_line22">เรือนจำ ขอนแก่น</string>
+    <string name="khon_kaen_prison_line22">เรือนจำขอนแก่น</string>
     <string name="khon_kaen_metropolitan_police_station_line22">สถานีตํารวจภูธรเมืองขอนแก่น</string>
     <string name="municipal_market_line22">ตลาดเทศบาล</string>
     <string name="bang_lamphu_market_line22">ตลาดบางลำภู</string>
     <string name="khon_kaen_wittayayon_school_line22">โรงเรียนขอนแก่นวิทยายน</string>
     <string name="bus_terminal_1_line22">บขส.1</string>
     <string name="khonkaen_post_office_line22">ไปรษณีย์ขอนแก่น</string>
-    <string name="ban_don_ya_nang_line22">บ. ดอนหญ้านาง</string>
+    <string name="ban_don_ya_nang_line22">บ.ดอนหญ้านาง</string>
+    <!-- บ.หนองไฮ, ตลาดหนองใหญ่, โรงพยาบาลศูนย์ขอนแก่น, เรือนจำขอนแก่น, สถานีตํารวจภูธรเมืองขอนแก่น, ตลาดเทศบาล, ตลาดบางลำภู, โรงเรียนขอนแก่นวิทยายน, บขส.1, ไปรษณีย์ขอนแก่น, บ.ดอนหญ้านาง -->
 
 
-    <!--สาย23-->
+    <!--สาย23 7 ที่-->
     <string name="municipal_market_line23">ตลาดเทศบาล</string>
-    <string name="bueng_kaen_nakhon_line23">บึงแก่นนคร</string>
+    <string name="bueng_kaen_nakhon_line23">ตลาดเทศบาล</string>
     <string name="ban_non_tun_line23">บ.โนนตุ่น</string>
     <string name="ban_tha_phra_line23">บ.ท่าพระ</string>
     <string name="ban_nong_bua_di_mi_line23">บ.หนองบัวดีหมี</string>
     <string name="ban_nong_waeng_line23">บ.หนองแวง</string>
     <string name="ban_huai_toei_line23">บ.ห้วยเตย</string>
+    <!-- ตลาดเทศบาล, ตลาดเทศบาล, บ.โนนตุ่น, บ.ท่าพระ, บ.หนองบัวดีหมี, บ.หนองแวง, บ.ห้วยเตย -->
 
 
 
