@@ -12,6 +12,7 @@ import android.widget.Toolbar;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnontproject.kkminibus.R;
+import com.app.arnontproject.kkminibus.fragment.SearchDetailFragment;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -93,6 +94,8 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
             R.drawable.ic_car23
     };
 
+    SupportMapFragment mapFragment;
+
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -101,7 +104,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         getSupportActionBar().hide();
         setContentView(R.layout.activity_map_all);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
@@ -153,7 +156,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark2));
 
         LatLng latLngLandmark3 = new LatLng(16.433139, 102.836696);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark3).title("บนส.2 ปรับอากาศ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark3).title("บขส.2 ปรับอากาศ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark3));
 
         LatLng latLngLandmark4 = new LatLng(16.429768, 102.835821);
@@ -165,7 +168,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark5));
 
         LatLng latLngLandmark6 = new LatLng(16.423187, 102.833898);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark6).title("แฟรี่ พลาซ่า").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark6).title("แฟรี่พลาซ่า").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark6));
 
         LatLng latLngLandmark7 = new LatLng(16.421009, 102.834317);
@@ -173,11 +176,11 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark7));
 
         LatLng latLngLandmark8 = new LatLng(16.412796, 102.831346);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark8).title("โรงเรียนเทศบาลวันกลาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark8).title("โรงเรียนเทศบาลวัดกลาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark8));
 
         LatLng latLngLandmark9 = new LatLng(16.412861, 102.828258);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark9).title("สนามกิฬากลาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark9).title("สนามกีฬากลาง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark9));
 
         LatLng latLngLandmark10 = new LatLng(16.415030, 102.826293);
@@ -204,9 +207,9 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.addMarker(new MarkerOptions().position(latLngLandmark15).title("วัดหนองแวง / พระมหาธาตุแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark15));
 
-        LatLng latLngLandmark16 = new LatLng(16.415549, 102.820259);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark16).title("วัดหนองแวง / พระมหาธาตุแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark16));
+//        LatLng latLngLandmark16 = new LatLng(16.415549, 102.820259);
+//        mMap.addMarker(new MarkerOptions().position(latLngLandmark16).title("วัดหนองแวง / พระมหาธาตุแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark16));
 
         LatLng latLngLandmark17 = new LatLng(16.404426, 102.813128);
         mMap.addMarker(new MarkerOptions().position(latLngLandmark17).title("ประตูน้ำขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
@@ -233,7 +236,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark22));
 
         LatLng latLngLandmark23 = new LatLng(16.424943, 102.818906);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark23).title("บิ๊ก ซี ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark23).title("บิ๊กซี ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark23));
 
         LatLng latLngLandmark24 = new LatLng(16.468368, 102.829854);
@@ -241,7 +244,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark24));
 
         LatLng latLngLandmark25 = new LatLng(16.427165, 102.834823);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark25).title("ตลาดเทศบาล 1").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark25).title("ตลาดเทศบาล1").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark25));
 
         LatLng latLngLandmark26 = new LatLng(16.428887, 102.835099);
@@ -273,7 +276,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark32));
 
         LatLng latLngLandmark33 = new LatLng(16.390041, 102.804180);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark33).title("บขส. 3").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark33).title("บขส.3").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark33));
 
         LatLng latLngLandmark34 = new LatLng(16.405161, 102.814430);
@@ -590,6 +593,237 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
                     intent.putExtra("btsMinibus2", message2);
                     Integer message3 = imageArray[18];
                     intent.putExtra("image", message3);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+
+                }
+                // Land Mark infoWindow
+                else if (marker.getTitle().equals("บขส.1")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "บขส.1";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงเรียนขอนแก่นวิทยายน")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงเรียนขอนแก่นวิทยายน";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("บขส.2 ปรับอากาศ")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "บขส.2 ปรับอากาศ";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ไปรษณีย์ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ไปรษณีย์ขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงเรียนกัลยาณวัตร")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงเรียนกัลยาณวัตร";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("แฟรี่พลาซ่า")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "แฟรี่พลาซ่า";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงเรียนเทศบาลสวนสนุก")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงเรียนเทศบาลสวนสนุก";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงเรียนเทศบาลวัดกลาง")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงเรียนเทศบาลวัดกลาง";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("สนามกีฬากลาง")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "สนามกีฬากลาง";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงเรียนโสตศึกษา")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงเรียนโสตศึกษา";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงเรียนแก่นนครวิทยาลัย")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงเรียนแก่นนครวิทยาลัย";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("เซ็นทรัลพลาซ่าขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "เซ็นทรัลพลาซ่าขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("สวนเรืองแสง")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "สวนเรืองแสง";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("คอฟฟี่ เด้อ หล่า : โอโซนวิลเลจ")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "คอฟฟี่ เด้อ หล่า : โอโซนวิลเลจ";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("วัดหนองแวง / พระมหาธาตุแก่นนคร")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "วัดหนองแวง / พระมหาธาตุแก่นนคร";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ประตูน้ำขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ประตูน้ำขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("เทสโก้ โลตัส ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "เทสโก้ โลตัส ขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("เทสโก้ โลตัส เอ็กซ์ตร้า")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "เทสโก้ โลตัส เอ็กซ์ตร้า";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("มหาวิทยาลัยขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "มหาวิทยาลัยขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ตลาดต้นตาล")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ตลาดต้นตาล";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ตลาดอู้ฟู่")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ตลาดอู้ฟู่";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("บิ๊กซี ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "บิ๊กซี ขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงพยาบาลศรีนครินทร์")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงพยาบาลศรีนครินทร์";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ตลาดเทศบาล1")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ตลาดเทศบาล1";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ตลาดบางลำพู")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ตลาดบางลำพู";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("วิทยาลัยเทคนิคขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "วิทยาลัยเทคนิคขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("สถานีตำรวจภูธรเมืองขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "สถานีตำรวจภูธรเมืองขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงพยาบาลราชพฤกษ์")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงพยาบาลราชพฤกษ์";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงพยาบาลขอนแก่นราม")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงพยาบาลขอนแก่นราม";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("โรงพยาบาลศูนย์ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "โรงพยาบาลศูนย์ขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("บขส.3")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "บขส.3";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("แม็คโคร ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "แม็คโคร ขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ศาลากลาง จังหวัดขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ศาลากลาง จังหวัดขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("เทศบาลนครขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "เทศบาลนครขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ที่ว่าการอำเภอขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ที่ว่าการอำเภอขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("วิทยาลัย อาชีวศึกษา ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "วิทยาลัย อาชีวศึกษา ขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ตึกคอม ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ตึกคอม ขอนแก่น";
+                    intent.putExtra("place", message);
                     startActivity(intent);
                     overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
                 }

@@ -122,7 +122,7 @@
     <string name="khonkaen_university_line5">Khon Kaen University</string>
     <string name="khonkaen_institude_for_skill_development_line5">Khonkaen Institude for Skill Development</string>
     <string name="ban_thum_line5">Ban Thum</string>
-    
+
     <!--สาย6-->
     <string name="municipal_market_line6">Municipal Market</string>
     <string name="municipal_office_khonkaen_line6">Municipal Office Khon Kaen</string>
@@ -333,5 +333,8 @@
     <string name="ban_nong_bua_di_mi_line23">Ban Nong Bua Di Mi</string>
     <string name="ban_nong_waeng_line23">Ban Nong Waeng</string>
     <string name="ban_huai_toei_line23">Ban Huai Toei</string>
+
+
+    <string name="your_land_marker">Your Land Marker</string>
 
 </resources>

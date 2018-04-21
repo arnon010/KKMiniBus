@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailLandMarkFromMapAllActivity">
+    <Toolbar
+        android:id="@+id/toolbarLandMark"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:titleTextColor="@color/gold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbarLandMark"
+            android:gravity="top"
+            android:id="@+id/ln">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_land_marker"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"
+                android:id="@+id/txtHeaderLandMarkDetail"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:id="@+id/txtLandMarkDetail"
+                android:textSize="@dimen/h1"
+                android:maxLines="1"
+                android:gravity="center"
+                android:background="@drawable/textview_style">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listViewLandMarkDetail"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

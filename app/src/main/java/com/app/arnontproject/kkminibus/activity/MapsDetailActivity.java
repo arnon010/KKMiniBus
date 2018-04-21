@@ -111,6 +111,97 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
         switch (txtFix) {
             case "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\nบ.โคกฟันโปง, บ.หัวทุ่ง, บ.คำไฮ, เซ็นทรัลพลาซ่า ขอนแก่น, ศาลหลักเมือง ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, เซ็นโทซ่า, ไปรษณีย์ขอนแก่น, วัดศรีจันทร์, เรือนจำขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, โรงพยาบาลศูนย์ขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.พระคือ, บ.หนองโพธิ์, บ.หนองแสง, บ.โคกน้อย":
 
+                // pin place landmark start
+                LatLng latlngLandmark1Line2 = new LatLng(16.438105, 102.774191);
+                map.addMarker(new MarkerOptions().position(latlngLandmark1Line2).title("บ.โคกฟันโปง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latlngLandmark1Line2));
+
+                LatLng latLngLandmark2Line2 = new LatLng(16.437724, 102.795194);
+                map.addMarker(new MarkerOptions().position(latLngLandmark2Line2).title("บ.หัวทุ่ง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark2Line2));
+
+                LatLng latLngLandmark3Line2 = new LatLng(16.436375, 102.799377);
+                map.addMarker(new MarkerOptions().position(latLngLandmark3Line2).title("บ.คำไฮ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark3Line2));
+
+                LatLng latLngLandmark4Line2 = new LatLng(16.432114, 102.824713);
+                map.addMarker(new MarkerOptions().position(latLngLandmark4Line2).title("เซ็นทรัลพลาซ่าขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark4Line2));
+
+                LatLng latLngLandmark5Line2 = new LatLng(16.431150, 102.828590);
+                map.addMarker(new MarkerOptions().position(latLngLandmark5Line2).title("ศาลหลักเมือง ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark5Line2));
+
+                LatLng latlngLandmark6Line2 = new LatLng(16.439266, 102.833345);
+                map.addMarker(new MarkerOptions().position(latlngLandmark6Line2).title("บขส.1").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latlngLandmark6Line2));
+
+                LatLng latLngLandmark7Line2 = new LatLng(16.432384, 102.835668);
+                map.addMarker(new MarkerOptions().position(latLngLandmark7Line2).title("โรงเรียนขอนแก่นวิทยายน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark7Line2));
+
+                LatLng latLngLandmark8Line2 = new LatLng(16.428785, 102.835340);
+                map.addMarker(new MarkerOptions().position(latLngLandmark8Line2).title("ตลาดบางลำพู").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark8Line2));
+
+                LatLng latLngLandmark9Line2 = new LatLng(16.427475, 102.835103);
+                map.addMarker(new MarkerOptions().position(latLngLandmark9Line2).title("ตลาดเทศบาล").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark9Line2));
+
+                LatLng latlngLandmark10Line2 = new LatLng(16.427651, 102.835532);
+                map.addMarker(new MarkerOptions().position(latlngLandmark10Line2).title("โรงเรียนกัลยาณวัตร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latlngLandmark10Line2));
+
+                LatLng latLngLandmark11Line2 = new LatLng(16.428687, 102.835620);
+                map.addMarker(new MarkerOptions().position(latLngLandmark11Line2).title("สถานีตํารวจภูธรเมืองขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark11Line2));
+
+                LatLng latLngLandmark12Line2 = new LatLng(16.429769, 102.835726);
+                map.addMarker(new MarkerOptions().position(latLngLandmark12Line2).title("ไปรษณีย์ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark12Line2));
+
+                LatLng latLngLandmark13Line2 = new LatLng(16.430044, 102.839578);
+                map.addMarker(new MarkerOptions().position(latLngLandmark13Line2).title("วัดศรีจันทร์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark13Line2));
+
+                LatLng latlngLandmark14Line2 = new LatLng(16.429288, 102.845191);
+                map.addMarker(new MarkerOptions().position(latlngLandmark14Line2).title("เรือนจำขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latlngLandmark14Line2));
+
+                LatLng latLngLandmark15Line2 = new LatLng(16.428625, 102.847469);
+                map.addMarker(new MarkerOptions().position(latLngLandmark15Line2).title("วิทยาลัยเทคนิคขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark15Line2));
+
+                LatLng latLngLandmark16Line2 = new LatLng(16.428952, 102.849130);
+                map.addMarker(new MarkerOptions().position(latLngLandmark16Line2).title("โรงพยาบาลศูนย์ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark16Line2));
+
+                LatLng latLngLandmark17Line2 = new LatLng(16.428111, 102.863237);
+                map.addMarker(new MarkerOptions().position(latLngLandmark17Line2).title("มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark17Line2));
+
+                LatLng latLngLandmark18Line2 = new LatLng(16.427545, 102.868770);
+                map.addMarker(new MarkerOptions().position(latLngLandmark18Line2).title("ตลาดหนองใหญ่").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark18Line2));
+
+                LatLng latLngLandmark19Line2 = new LatLng(16.421090, 102.894248);
+                map.addMarker(new MarkerOptions().position(latLngLandmark19Line2).title("บ. พระคือ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark19Line2));
+
+                LatLng latLngLandmark20Line2 = new LatLng(16.419572, 102.894469);
+                map.addMarker(new MarkerOptions().position(latLngLandmark20Line2).title("บ. หนองโพธิ์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line2));
+
+                LatLng latLngLandmark21Line2 = new LatLng(16.409421, 102.900173);
+                map.addMarker(new MarkerOptions().position(latLngLandmark21Line2).title("บ. หนองแสง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark21Line2));
+
+                LatLng latLngLandmark22Line2 = new LatLng(16.403769, 102.900674);
+                map.addMarker(new MarkerOptions().position(latLngLandmark22Line2).title("บ. โคกน้อย").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark22Line2));
+
+                // pin place landmark stop
+
                 LatLng mapCenter1 = new LatLng(16.426794, 102.874816);
                 map.addMarker(new MarkerOptions().position(mapCenter1).title("Start").snippet("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter2 = new LatLng(16.436621, 102.765723);
@@ -220,6 +311,23 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 );
                 break;
             case "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\nบขส. 3, แม็คโคร ขอนแก่น, ประตูน้ำขอนแก่น, ตลาดอู้ฟู, โรงเรียนแก่นนครวิทยาลัย, ศาลหลักเมือง ขอนแก่น, เซ็นทรัลพลาซ่า ขอนแก่น, โรงบาลราชพฤกษ์ ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, ไปรษณีย์ขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.ท่าหิน, บ.พรหมนิมิตร":
+
+                // pin place landmark start
+                LatLng latLngLandmark2Line3 = new LatLng(16.432643, 102.835542);
+                map.addMarker(new MarkerOptions().position(latLngLandmark2Line3).title("โรงเรียนขอนแก่นวิทยายน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark2Line3));
+
+                LatLng latLngLandmark4Line3 = new LatLng(16.429768, 102.835821);
+                map.addMarker(new MarkerOptions().position(latLngLandmark4Line3).title("ไปรษณีย์ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark4Line3));
+
+                LatLng latLngLandmark5Line3 = new LatLng(16.427702, 102.835688);
+                map.addMarker(new MarkerOptions().position(latLngLandmark5Line3).title("โรงเรียนกัลยาณวัตร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark5Line3));
+                // pin place landmark stop
+
+
+
                 LatLng mapCenter3 = new LatLng(16.389369, 102.806185);
                 map.addMarker(new MarkerOptions().position(mapCenter3).title("Start").snippet("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 LatLng mapCenter4 = new LatLng(16.427065, 102.872894);

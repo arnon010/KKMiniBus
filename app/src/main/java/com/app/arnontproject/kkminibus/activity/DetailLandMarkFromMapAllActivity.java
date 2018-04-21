@@ -1,46 +1,35 @@
-package com.app.arnontproject.kkminibus.fragment;
+package com.app.arnontproject.kkminibus.activity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
+import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnontproject.kkminibus.R;
-import com.app.arnontproject.kkminibus.activity.MapsDetailActivity;
 import com.app.arnontproject.kkminibus.adapter.CustomListAdapter;
 import com.app.arnontproject.kkminibus.adapter.MiniBus;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link SearchDetailFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link SearchDetailFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class SearchDetailFragment extends Fragment {
+public class DetailLandMarkFromMapAllActivity extends LocalizationActivity {
 
-    EditText edtSearchDetail;
+
+    TextView txtLandMarkDetail;
     private ArrayAdapter<MiniBus> adapter;
+    Toolbar toolbar;
+    String txtFix;
+
 
     private List<MiniBus> miniBus;
-    ArrayList<MiniBus> mAllData=new ArrayList<>();
+    ArrayList<MiniBus> mAllData= new ArrayList<>();
 
     String[] nameArray = {
             "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\nบ.โคกฟันโปง, บ.หัวทุ่ง, บ.คำไฮ, เซ็นทรัลพลาซ่า ขอนแก่น, ศาลหลักเมือง ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, เซ็นโทซ่า, ไปรษณีย์ขอนแก่น, วัดศรีจันทร์, เรือนจำขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, โรงพยาบาลศูนย์ขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.พระคือ, บ.หนองโพธิ์, บ.หนองแสง, บ.โคกน้อย",
@@ -111,54 +100,37 @@ public class SearchDetailFragment extends Fragment {
     ListView listView;
     CustomListAdapter listAdapter;
     TextView firstLine;
-    View rootView;
 
-
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    private OnFragmentInteractionListener mListener;
-
-    public SearchDetailFragment() {
-        // Required empty public constructor
-    }
-
-    public static SearchDetailFragment newInstance() {
-        SearchDetailFragment fragment = new SearchDetailFragment();
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        setContentView(R.layout.activity_detail_land_mark_from_map_all);
+        toolbar = findViewById(R.id.toolbarLandMark);
+        toolbar.setTitle(R.string.your_land_marker);
+        setActionBar(toolbar);
+        getSupportActionBar().hide();
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+        firstLine = findViewById(R.id.firstLine);
 
 
-    }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        String savedExtra = getIntent().getStringExtra("place");
+        txtLandMarkDetail = findViewById(R.id.txtLandMarkDetail);
+        txtLandMarkDetail.setText(savedExtra);
 
-        rootView = inflater.inflate(R.layout.fragment_search_detail, container, false);
-
-        firstLine = rootView.findViewById(R.id.firstLine);
+        txtFix = txtLandMarkDetail.getText().toString();
 
         populateDrinksList();
-        listAdapter = new CustomListAdapter(getActivity().getApplicationContext(),R.layout.listview_layout,miniBus);
-
-        listView = rootView.findViewById(R.id.listViewSearchDetail);
+        listAdapter = new CustomListAdapter(getApplicationContext(),R.layout.listview_layout,miniBus);
+        listView = findViewById(R.id.listViewLandMarkDetail);
         listView.setAdapter(listAdapter);
         listView.setTextFilterEnabled(true);
 
@@ -166,7 +138,7 @@ public class SearchDetailFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent intent = new Intent(getActivity(), MapsDetailActivity.class);
+                Intent intent = new Intent(DetailLandMarkFromMapAllActivity.this, MapsDetailActivity.class);
                 String message = nameArray[position];
                 intent.putExtra("minibus", message);
                 String message2 = infoArray[position];
@@ -174,150 +146,114 @@ public class SearchDetailFragment extends Fragment {
                 Integer message3 = imageArray[position];
                 intent.putExtra("image", message3);
                 startActivity(intent);
-                getActivity().overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
             }
         });
-
-        LayoutAnimationController lac = new LayoutAnimationController(AnimationUtils.loadAnimation(getActivity(), R.anim.pop_out), 0.5f); //0.5f == time between appearance of listview items.
+        LayoutAnimationController lac = new LayoutAnimationController(AnimationUtils.loadAnimation(this, R.anim.pop_out), 0.5f); //0.5f == time between appearance of listview items.
         listView.setLayoutAnimation(lac);
         listView.startLayoutAnimation();
 
-        edtSearchDetail = rootView.findViewById(R.id.edtSearchDetail);
-        edtSearchDetail.addTextChangedListener(new TextWatcher() {
 
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-                String text = edtSearchDetail.getText().toString().toLowerCase(Locale.getDefault());
-                filter(text);
-                listAdapter.notifyDataSetChanged();
-
-
-
-
-//                firstLine.setText(highlight(edtSearchDetail.getText().toString(),firstLine.getText().toString()));
-            }
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // TODO Auto-generated method stub
-
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                // TODO Auto-generated method stub
-
-
-            }
-        });
-
-        return rootView;
     }
-
-
-//    public static CharSequence highlight(String search, String originalText) {
-//        String normalizedText = Normalizer.normalize(originalText, Normalizer.Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "").toLowerCase();
-//        int start = normalizedText.indexOf(search);
-//        if (start <= 0) {
-//            return originalText;
-//        } else {
-//            Spannable highlighted = new SpannableString(originalText);
-//            while (start > 0) {
-//                int spanStart = Math.min(start, originalText.length());
-//                int spanEnd = Math.min(start + search.length(), originalText.length());
-//                highlighted.setSpan(new BackgroundColorSpan(Color.YELLOW), spanStart, spanEnd, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-//                start = normalizedText.indexOf(search, spanEnd);
-//            }
-//            return highlighted;
-//        }
-//    }
-
 
     private void populateDrinksList() {
-        miniBus = new ArrayList<>();
-        miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
-        miniBus.add(new MiniBus(nameArray[1],infoArray[1] ,imageArray[1]));
-        miniBus.add(new MiniBus(nameArray[2],infoArray[2] ,imageArray[2]));
-        miniBus.add(new MiniBus(nameArray[3],infoArray[3] ,imageArray[3]));
-        miniBus.add(new MiniBus(nameArray[4],infoArray[4] ,imageArray[4]));
-        miniBus.add(new MiniBus(nameArray[5],infoArray[5] ,imageArray[5]));
-        miniBus.add(new MiniBus(nameArray[6],infoArray[6] ,imageArray[6]));
-        miniBus.add(new MiniBus(nameArray[7],infoArray[7] ,imageArray[7]));
-        miniBus.add(new MiniBus(nameArray[8],infoArray[8] ,imageArray[8]));
-        miniBus.add(new MiniBus(nameArray[9],infoArray[9] ,imageArray[9]));
-        miniBus.add(new MiniBus(nameArray[10],infoArray[10] ,imageArray[10]));
-        miniBus.add(new MiniBus(nameArray[11],infoArray[11] ,imageArray[11]));
-        miniBus.add(new MiniBus(nameArray[12],infoArray[12] ,imageArray[12]));
-        miniBus.add(new MiniBus(nameArray[13],infoArray[13] ,imageArray[13]));
-        miniBus.add(new MiniBus(nameArray[14],infoArray[14] ,imageArray[14]));
-        miniBus.add(new MiniBus(nameArray[15],infoArray[15] ,imageArray[15]));
-        miniBus.add(new MiniBus(nameArray[16],infoArray[16] ,imageArray[16]));
-        miniBus.add(new MiniBus(nameArray[17],infoArray[17] ,imageArray[17]));
-        miniBus.add(new MiniBus(nameArray[18],infoArray[18] ,imageArray[18]));
 
-        mAllData.addAll(miniBus);
-        listView = rootView.findViewById(R.id.listViewSearchDetail);
-        adapter = new CustomListAdapter(getActivity(),
-                R.layout.listview_layout, miniBus);
-        listView.setAdapter(adapter);
-    }
 
-    public void filter(String charText) {
-        charText = charText.toLowerCase(Locale.getDefault());
-        miniBus .clear();
-        if (charText.length() == 0) {
-            miniBus.addAll(mAllData);
-        } else {
-            for (MiniBus wp : mAllData) {
-                if (wp.getName().toLowerCase(Locale.getDefault())
-                        .contains(charText)) {
-                    miniBus.add(wp);
-                }
-            }
+        switch (txtFix) {
+            case "บขส.1":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2] ,imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5] ,imageArray[5]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6] ,imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7] ,imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9] ,imageArray[9]));
+                miniBus.add(new MiniBus(nameArray[10],infoArray[10] ,imageArray[10]));
+                miniBus.add(new MiniBus(nameArray[11],infoArray[11] ,imageArray[11]));
+                miniBus.add(new MiniBus(nameArray[14],infoArray[14] ,imageArray[14]));
+                miniBus.add(new MiniBus(nameArray[15],infoArray[15] ,imageArray[15]));
+                miniBus.add(new MiniBus(nameArray[16],infoArray[16] ,imageArray[16]));
+                miniBus.add(new MiniBus(nameArray[17],infoArray[17] ,imageArray[17]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงเรียนขอนแก่นวิทยายน":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1] ,imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2] ,imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[3],infoArray[3] ,imageArray[3]));
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5] ,imageArray[5]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6] ,imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7] ,imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[8],infoArray[8] ,imageArray[8]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9] ,imageArray[9]));
+                miniBus.add(new MiniBus(nameArray[14],infoArray[14] ,imageArray[14]));
+                miniBus.add(new MiniBus(nameArray[15],infoArray[15] ,imageArray[15]));
+                miniBus.add(new MiniBus(nameArray[16],infoArray[16] ,imageArray[16]));
+                miniBus.add(new MiniBus(nameArray[17],infoArray[17] ,imageArray[17]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "บขส.2 ปรับอากาศ":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5],imageArray[5]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6] ,imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7] ,imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[8],infoArray[8] ,imageArray[8]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ไปรษณีย์ขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1] ,imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6] ,imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7] ,imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[17],infoArray[17] ,imageArray[17]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงเรียนกัลยาณวัตร":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1] ,imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5] ,imageArray[5]));
+                miniBus.add(new MiniBus(nameArray[10],infoArray[10] ,imageArray[10]));
+                miniBus.add(new MiniBus(nameArray[11],infoArray[11] ,imageArray[11]));
+                miniBus.add(new MiniBus(nameArray[12],infoArray[12] ,imageArray[12]));
+                miniBus.add(new MiniBus(nameArray[13],infoArray[13] ,imageArray[13]));
+                miniBus.add(new MiniBus(nameArray[16],infoArray[16] ,imageArray[16]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            default:
+                break;
+
         }
+
+
     }
-
-
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
-
-//    @Override
-//    public void onAttach(Context context) {
-//        super.onAttach(context);
-//        if (context instanceof OnFragmentInteractionListener) {
-//            mListener = (OnFragmentInteractionListener) context;
-//        } else {
-//            throw new RuntimeException(context.toString()
-//                    + " must implement OnFragmentInteractionListener");
-//        }
-//    }
 
     @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.pop_out, R.anim.pop_out_exit);
     }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
-
 }
