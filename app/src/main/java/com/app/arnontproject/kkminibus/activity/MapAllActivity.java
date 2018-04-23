@@ -195,17 +195,17 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.addMarker(new MarkerOptions().position(latLngLandmark12).title("เซ็นทรัลพลาซ่าขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark12));
 
-        LatLng latLngLandmark13 = new LatLng(16.431226, 102.823968);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark13).title("สวนเรืองแสง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark13));
+//        LatLng latLngLandmark13 = new LatLng(16.431226, 102.823968);
+//        mMap.addMarker(new MarkerOptions().position(latLngLandmark13).title("สวนเรืองแสง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark13));
+//
+//        LatLng latLngLandmark14 = new LatLng(16.436080, 102.830291);
+//        mMap.addMarker(new MarkerOptions().position(latLngLandmark14).title("คอฟฟี่ เด้อ หล่า : โอโซนวิลเลจ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark14));
 
-        LatLng latLngLandmark14 = new LatLng(16.436080, 102.830291);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark14).title("คอฟฟี่ เด้อ หล่า : โอโซนวิลเลจ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark14));
-
-        LatLng latLngLandmark15 = new LatLng(16.408328, 102.834224);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark15).title("วัดหนองแวง / พระมหาธาตุแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark15));
+//        LatLng latLngLandmark15 = new LatLng(16.408328, 102.834224);
+//        mMap.addMarker(new MarkerOptions().position(latLngLandmark15).title("วัดหนองแวง / พระมหาธาตุแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark15));
 
 //        LatLng latLngLandmark16 = new LatLng(16.415549, 102.820259);
 //        mMap.addMarker(new MarkerOptions().position(latLngLandmark16).title("วัดหนองแวง / พระมหาธาตุแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
@@ -232,7 +232,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark21));
 
         LatLng latLngLandmark22 = new LatLng(16.410074, 102.816836);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark22).title("ตลาดอู้ฟู่").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark22).title("ตลาดอู้ฟู").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark22));
 
         LatLng latLngLandmark23 = new LatLng(16.424943, 102.818906);
@@ -244,7 +244,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark24));
 
         LatLng latLngLandmark25 = new LatLng(16.427165, 102.834823);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark25).title("ตลาดเทศบาล1").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark25).title("ตลาดเทศบาล").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark25));
 
         LatLng latLngLandmark26 = new LatLng(16.428887, 102.835099);
@@ -263,13 +263,13 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.addMarker(new MarkerOptions().position(latLngLandmark29).title("สถานีตำรวจภูธรเมืองขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark29));
 
-        LatLng latLngLandmark30 = new LatLng(16.435663, 102.824102);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark30).title("โรงพยาบาลราชพฤกษ์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_hospital)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark30));
+//        LatLng latLngLandmark30 = new LatLng(16.435663, 102.824102);
+//        mMap.addMarker(new MarkerOptions().position(latLngLandmark30).title("โรงพยาบาลราชพฤกษ์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_hospital)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark30));
 
-        LatLng latLngLandmark31 = new LatLng(16.433224, 102.821034);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark31).title("โรงพยาบาลขอนแก่นราม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_hospital)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark31));
+//        LatLng latLngLandmark31 = new LatLng(16.433224, 102.821034);
+//        mMap.addMarker(new MarkerOptions().position(latLngLandmark31).title("โรงพยาบาลขอนแก่นราม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_hospital)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark31));
 
         LatLng latLngLandmark32 = new LatLng(16.429394, 102.848246);
         mMap.addMarker(new MarkerOptions().position(latLngLandmark32).title("โรงพยาบาลศูนย์ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_hospital)));
@@ -292,7 +292,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark36));
 
         LatLng latLngLandmark37 = new LatLng( 16.438297, 102.839755);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark37).title("ที่ว่าการอำเภอขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark37).title("ที่ว่าการอําเภอเมืองขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark37));
 
         LatLng latLngLandmark38 = new LatLng( 16.437569, 102.838971);

@@ -243,6 +243,327 @@ public class DetailLandMarkFromMapAllActivity extends LocalizationActivity {
                         R.layout.listview_layout, miniBus);
                 listView.setAdapter(adapter);
                 break;
+            case "แฟรี่พลาซ่า":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6] ,imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7] ,imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[12],infoArray[12] ,imageArray[12]));
+                miniBus.add(new MiniBus(nameArray[16],infoArray[16] ,imageArray[16]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงเรียนเทศบาลสวนสนุก":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[10],infoArray[10],imageArray[10]));
+                miniBus.add(new MiniBus(nameArray[12],infoArray[12],imageArray[12]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงเรียนเทศบาลวัดกลาง":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "สนามกีฬากลาง":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6],imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงเรียนโสตศึกษา":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงเรียนแก่นนครวิทยาลัย":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6],imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9],imageArray[9]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "เซ็นทรัลพลาซ่าขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ประตูน้ำขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9],imageArray[9]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "เทสโก้ โลตัส ขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6],imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9],imageArray[9]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "เทสโก้ โลตัส เอ็กซ์ตร้า":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[14],infoArray[14],imageArray[14]));
+                miniBus.add(new MiniBus(nameArray[15],infoArray[15],imageArray[15]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "มหาวิทยาลัยขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[3],infoArray[3],imageArray[3]));
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5],imageArray[5]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[14],infoArray[14],imageArray[14]));
+                miniBus.add(new MiniBus(nameArray[15],infoArray[15],imageArray[15]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ตลาดต้นตาล":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6],imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[8],infoArray[8],imageArray[8]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ตลาดอู้ฟู":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "บิ๊กซี ขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5],imageArray[5]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงพยาบาลศรีนครินทร์":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[14],infoArray[14],imageArray[14]));
+                miniBus.add(new MiniBus(nameArray[15],infoArray[15],imageArray[15]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ตลาดเทศบาล":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[3],infoArray[3],imageArray[3]));
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5],imageArray[5]));
+                miniBus.add(new MiniBus(nameArray[6],infoArray[6],imageArray[6]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9],imageArray[9]));
+                miniBus.add(new MiniBus(nameArray[10],infoArray[10],imageArray[10]));
+                miniBus.add(new MiniBus(nameArray[12],infoArray[12],imageArray[12]));
+                miniBus.add(new MiniBus(nameArray[13],infoArray[13],imageArray[13]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ตลาดบางลำพู":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[3],infoArray[3],imageArray[3]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9],imageArray[9]));
+                miniBus.add(new MiniBus(nameArray[14],infoArray[14],imageArray[14]));
+                miniBus.add(new MiniBus(nameArray[15],infoArray[15],imageArray[15]));
+                miniBus.add(new MiniBus(nameArray[17],infoArray[17],imageArray[17]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "วิทยาลัยเทคนิคขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[13],infoArray[13],imageArray[13]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[13],infoArray[13],imageArray[13]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "สถานีตำรวจภูธรเมืองขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[5],infoArray[5],imageArray[5]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                miniBus.add(new MiniBus(nameArray[16],infoArray[16],imageArray[16]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "โรงพยาบาลศูนย์ขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
+                miniBus.add(new MiniBus(nameArray[13],infoArray[13],imageArray[13]));
+                miniBus.add(new MiniBus(nameArray[17],infoArray[17],imageArray[17]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "บขส.3":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9],imageArray[9]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "แม็คโคร ขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
+                miniBus.add(new MiniBus(nameArray[2],infoArray[2],imageArray[2]));
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ศาลากลาง จังหวัดขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[9],infoArray[9],imageArray[9]));
+                miniBus.add(new MiniBus(nameArray[16],infoArray[16],imageArray[16]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "เทศบาลนครขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
+                miniBus.add(new MiniBus(nameArray[8],infoArray[8],imageArray[8]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ที่ว่าการอําเภอเมืองขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[7],infoArray[7],imageArray[7]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "วิทยาลัย อาชีวศึกษา ขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[8],infoArray[8],imageArray[8]));
+                miniBus.add(new MiniBus(nameArray[12],infoArray[12],imageArray[12]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
+            case "ตึกคอม ขอนแก่น":
+                miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[8],infoArray[8],imageArray[8]));
+                miniBus.add(new MiniBus(nameArray[10],infoArray[10],imageArray[10]));
+                mAllData.addAll(miniBus);
+                listView = findViewById(R.id.listViewLandMarkDetail);
+                adapter = new CustomListAdapter(this,
+                        R.layout.listview_layout, miniBus);
+                listView.setAdapter(adapter);
+                break;
             default:
                 break;
 

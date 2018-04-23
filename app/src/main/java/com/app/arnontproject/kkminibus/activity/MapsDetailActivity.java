@@ -111,7 +111,7 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
         switch (txtFix) {
             case "สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย\nบ.โคกฟันโปง, บ.หัวทุ่ง, บ.คำไฮ, เซ็นทรัลพลาซ่า ขอนแก่น, ศาลหลักเมือง ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, เซ็นโทซ่า, ไปรษณีย์ขอนแก่น, วัดศรีจันทร์, เรือนจำขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, โรงพยาบาลศูนย์ขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.พระคือ, บ.หนองโพธิ์, บ.หนองแสง, บ.โคกน้อย":
 
-                // pin place landmark start
+                // pin landmark start
                 LatLng latlngLandmark1Line2 = new LatLng(16.438105, 102.774191);
                 map.addMarker(new MarkerOptions().position(latlngLandmark1Line2).title("บ.โคกฟันโปง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latlngLandmark1Line2));
@@ -200,7 +200,7 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark22Line2).title("บ. โคกน้อย").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark22Line2));
 
-                // pin place landmark stop
+                // pin landmark stop
 
                 LatLng mapCenter1 = new LatLng(16.426794, 102.874816);
                 map.addMarker(new MarkerOptions().position(mapCenter1).title("Start").snippet("สาย 2 : บ้านโคกฟันโปง – บ้านโคกน้อย").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
@@ -312,7 +312,7 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 break;
             case "สาย 3 : บขส.3 – บ้านพรหมนิมิตร\nบขส. 3, แม็คโคร ขอนแก่น, ประตูน้ำขอนแก่น, ตลาดอู้ฟู, โรงเรียนแก่นนครวิทยาลัย, ศาลหลักเมือง ขอนแก่น, เซ็นทรัลพลาซ่า ขอนแก่น, โรงบาลราชพฤกษ์ ขอนแก่น, บขส.1, โรงเรียนขอนแก่นวิทยายน, ตลาดบางลำภู, ตลาดเทศบาล, โรงเรียนกัลยาณวัตร, สถานีตํารวจภูธรเมืองขอนแก่น, ไปรษณีย์ขอนแก่น, วิทยาลัยเทคนิคขอนแก่น, มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน, ตลาดหนองใหญ่, บ.ท่าหิน, บ.พรหมนิมิตร":
 
-                // pin place landmark start
+                // pin landmark start
                 LatLng latLngLandmark1Line3 = new LatLng(16.404893, 102.815481);
                 map.addMarker(new MarkerOptions().position(latLngLandmark1Line3).title("แม็คโคร ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line3));
@@ -393,7 +393,7 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark20Line3).title("บ. พรหมนิมิตร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line3));
 
-                // pin place landmark stop
+                // pin landmark stop
 
                 LatLng mapCenter3 = new LatLng(16.389369, 102.806185);
                 map.addMarker(new MarkerOptions().position(mapCenter3).title("Start").snippet("สาย 3 : บขส.3 – บ้านพรหมนิมิตร").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));

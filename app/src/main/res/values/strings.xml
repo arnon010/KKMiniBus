@@ -337,4 +337,8 @@
 
     <string name="your_land_marker">Your Land Marker</string>
 
+    <string name="sorry">Sorry for the inconvenience!!!</string>
+    <string name="renovation">Is under renovation</string>
+    <string name="ok">OK</string>
+
 </resources>
