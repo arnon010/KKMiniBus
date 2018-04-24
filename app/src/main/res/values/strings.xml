@@ -340,5 +340,12 @@
     <string name="sorry">Sorry for the inconvenience!!!</string>
     <string name="renovation">Is under renovation</string>
     <string name="ok">OK</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+
+
+    <string name="alert">Alert !!!</string>
+    <string name="close_app">Do you want to exit?</string>
 
 </resources>

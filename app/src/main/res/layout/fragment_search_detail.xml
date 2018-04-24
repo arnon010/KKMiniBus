@@ -38,6 +38,7 @@
             android:id="@+id/edtSearchDetail"
             android:textSize="@dimen/h1"
             android:maxLines="1"
+            android:inputType="text"
             android:gravity="center"
             android:background="@drawable/textview_style">
             <requestFocus/>

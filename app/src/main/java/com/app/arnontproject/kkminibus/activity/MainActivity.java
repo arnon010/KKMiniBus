@@ -132,7 +132,23 @@ public class MainActivity extends LocalizationActivity
             }
 
             this.doubleBackToExitPressedOnce = true;
-            Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getResources().getString(R.string.alert));
+            builder.setMessage(getResources().getString(R.string.close_app));
+            builder.setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    finish();
+                }
+            });
+            builder.setNegativeButton(getResources().getString(R.string.no), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            builder.show();
 
             new Handler().postDelayed(new Runnable() {
 

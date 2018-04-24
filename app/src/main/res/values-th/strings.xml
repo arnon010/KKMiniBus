@@ -359,6 +359,10 @@
     <string name="sorry">ขออภัยในความไม่สะดวก!!!</string>
     <string name="renovation">กำลังอยู่ในช่วงปรับปรุงเส้นทาง</string>
     <string name="ok">ตกลง</string>
+    <string name="yes">ใช่</string>
+    <string name="no">ไม่</string>
 
+    <string name="alert">แจ้งเตือน !!!</string>
+    <string name="close_app">คุณต้องการออกจริงหรือไม่?</string>
 
 </resources>

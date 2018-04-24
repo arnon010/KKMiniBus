@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
@@ -85,7 +86,7 @@ public class CommentActivity extends LocalizationActivity{
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
 
-                if (hasFocus) {
+                if (hasFocus && TextUtils.isEmpty(edtNameComment.getText())) {
                     new Handler().postDelayed(new Runnable() {
 
                         @Override
@@ -101,7 +102,9 @@ public class CommentActivity extends LocalizationActivity{
                     else
                         txtViewName.setVisibility(View.INVISIBLE);
                 }
+
             }
+
         });
 
         // Password
@@ -125,6 +128,7 @@ public class CommentActivity extends LocalizationActivity{
                     else
                         txtViewEmail.setVisibility(View.INVISIBLE);
                 }
+
             }
         });
 
@@ -149,6 +153,7 @@ public class CommentActivity extends LocalizationActivity{
                     else
                         txtViewComment.setVisibility(View.INVISIBLE);
                 }
+
             }
         });
 
@@ -169,6 +174,15 @@ public class CommentActivity extends LocalizationActivity{
                 }
 
 
+                if (TextUtils.isEmpty(edtNameComment.getText())) {
+                    edtNameComment.setError(getResources().getString(R.string.please_comment));
+                }
+                if (TextUtils.isEmpty(edtEmailComment.getText())) {
+                    edtEmailComment.setError(getResources().getString(R.string.please_comment));
+                }
+                if (TextUtils.isEmpty(edtComment.getText())) {
+                    edtComment.setError(getResources().getString(R.string.please_comment));
+                }
 
             }
         });
