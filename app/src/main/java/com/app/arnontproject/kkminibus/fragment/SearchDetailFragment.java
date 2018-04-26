@@ -194,8 +194,6 @@ public class SearchDetailFragment extends Fragment {
                 listAdapter.notifyDataSetChanged();
 
 
-
-
 //                firstLine.setText(highlight(edtSearchDetail.getText().toString(),firstLine.getText().toString()));
             }
 
@@ -216,24 +214,6 @@ public class SearchDetailFragment extends Fragment {
 
         return rootView;
     }
-
-
-//    public static CharSequence highlight(String search, String originalText) {
-//        String normalizedText = Normalizer.normalize(originalText, Normalizer.Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "").toLowerCase();
-//        int start = normalizedText.indexOf(search);
-//        if (start <= 0) {
-//            return originalText;
-//        } else {
-//            Spannable highlighted = new SpannableString(originalText);
-//            while (start > 0) {
-//                int spanStart = Math.min(start, originalText.length());
-//                int spanEnd = Math.min(start + search.length(), originalText.length());
-//                highlighted.setSpan(new BackgroundColorSpan(Color.YELLOW), spanStart, spanEnd, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-//                start = normalizedText.indexOf(search, spanEnd);
-//            }
-//            return highlighted;
-//        }
-//    }
 
 
     private void populateDrinksList() {

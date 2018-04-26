@@ -162,7 +162,7 @@ public class CommentActivity extends LocalizationActivity{
             public void onClick(View v) {
                 if (edtEmailComment.getText().toString().trim().matches(emailPattern)) {
                     startActivity(new Intent(CommentActivity.this, MainActivity.class));
-                    Toast.makeText(getApplicationContext(),"valid email address", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Thanks for the comments.", Toast.LENGTH_SHORT).show();
                     addNewContactRealTimeDatabase();
                     addNewContactCloudFireStore();
                     overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
