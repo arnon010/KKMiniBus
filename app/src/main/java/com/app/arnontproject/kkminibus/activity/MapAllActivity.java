@@ -260,7 +260,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark28));
 
         LatLng latLngLandmark29 = new LatLng(16.428680, 102.836164);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark29).title("สถานีตำรวจภูธรเมืองขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark29).title("สถานีตำรวจภูธรเมืองขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark29));
 
 //        LatLng latLngLandmark30 = new LatLng(16.435663, 102.824102);
@@ -292,7 +292,7 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark36));
 
         LatLng latLngLandmark37 = new LatLng( 16.438297, 102.839755);
-        mMap.addMarker(new MarkerOptions().position(latLngLandmark37).title("ที่ว่าการอําเภอเมืองขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark37).title("ที่ว่าการอําเภอเมืองขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark37));
 
         LatLng latLngLandmark38 = new LatLng( 16.437569, 102.838971);
@@ -302,6 +302,11 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
         LatLng latLngLandmark39 = new LatLng( 16.430244, 102.832277);
         mMap.addMarker(new MarkerOptions().position(latLngLandmark39).title("ตึกคอม ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark39));
+
+        LatLng latLngLandmark40 = new LatLng( 16.466271, 102.831751);
+        mMap.addMarker(new MarkerOptions().position(latLngLandmark40).title("ศูนย์หัวใจสิริกิตขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_hospital)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark40));
+
 
 
 
@@ -808,9 +813,9 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
                     intent.putExtra("place", message);
                     startActivity(intent);
                     overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
-                }else if (marker.getTitle().equals("ที่ว่าการอำเภอขอนแก่น")) {
+                }else if (marker.getTitle().equals("ที่ว่าการอําเภอเมืองขอนแก่น")) {
                     Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
-                    String message = "ที่ว่าการอำเภอขอนแก่น";
+                    String message = "ที่ว่าการอําเภอเมืองขอนแก่น";
                     intent.putExtra("place", message);
                     startActivity(intent);
                     overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
@@ -826,7 +831,16 @@ public class MapAllActivity extends LocalizationActivity implements OnMapReadyCa
                     intent.putExtra("place", message);
                     startActivity(intent);
                     overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
+                }else if (marker.getTitle().equals("ตึกคอม ขอนแก่น")) {
+                    Intent intent = new Intent(MapAllActivity.this, DetailLandMarkFromMapAllActivity.class);
+                    String message = "ศูนย์หัวใจสิริกิตขอนแก่น";
+                    intent.putExtra("place", message);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
                 }
+
+
+
 
             }
         });

@@ -21,7 +21,7 @@ public class DetailMiniBusActivity extends LocalizationActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_mini_bus);
 
-        Toolbar toolbar = findViewById(R.id.toolbarDetailMiniBus);
+        Toolbar toolbar = findViewById(R.id.toolbarDetailMiniBus1);
         toolbar.setTitle(R.string.detail_mini_bus);
         setActionBar(toolbar);
         getSupportActionBar().hide();
@@ -35,12 +35,12 @@ public class DetailMiniBusActivity extends LocalizationActivity {
 
 
         String savedExtra = getIntent().getStringExtra("minibus");
-        txtMiniBusDetail = findViewById(R.id.txtMiniBusDetail);
+        txtMiniBusDetail = findViewById(R.id.txtMiniBusDetail1);
         txtMiniBusDetail.setText(savedExtra);
 
 
         ItemListDialogFragment fragment = ItemListDialogFragment.newInstance();
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container,fragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment_container1,fragment).commit();
 
     }
 
