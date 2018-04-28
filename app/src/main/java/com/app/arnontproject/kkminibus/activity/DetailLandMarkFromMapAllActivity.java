@@ -310,6 +310,7 @@ public class DetailLandMarkFromMapAllActivity extends LocalizationActivity {
                 break;
             case "เซ็นทรัลพลาซ่าขอนแก่น":
                 miniBus = new ArrayList<>();
+                miniBus.add(new MiniBus(nameArray[0],infoArray[0],imageArray[0]));
                 miniBus.add(new MiniBus(nameArray[1],infoArray[1],imageArray[1]));
                 miniBus.add(new MiniBus(nameArray[4],infoArray[4],imageArray[4]));
                 mAllData.addAll(miniBus);
