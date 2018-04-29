@@ -184,21 +184,21 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark18Line2).title("ตลาดหนองใหญ่").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark18Line2));
 
-                LatLng latLngLandmark19Line2 = new LatLng(16.421090, 102.894248);
-                map.addMarker(new MarkerOptions().position(latLngLandmark19Line2).title("บ. พระคือ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark19Line2));
-
-                LatLng latLngLandmark20Line2 = new LatLng(16.419572, 102.894469);
-                map.addMarker(new MarkerOptions().position(latLngLandmark20Line2).title("บ. หนองโพธิ์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line2));
-
-                LatLng latLngLandmark21Line2 = new LatLng(16.409421, 102.900173);
-                map.addMarker(new MarkerOptions().position(latLngLandmark21Line2).title("บ. หนองแสง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark21Line2));
-
-                LatLng latLngLandmark22Line2 = new LatLng(16.403769, 102.900674);
-                map.addMarker(new MarkerOptions().position(latLngLandmark22Line2).title("บ. โคกน้อย").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark22Line2));
+//                LatLng latLngLandmark19Line2 = new LatLng(16.421090, 102.894248);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark19Line2).title("บ. พระคือ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark19Line2));
+//
+//                LatLng latLngLandmark20Line2 = new LatLng(16.419572, 102.894469);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark20Line2).title("บ. หนองโพธิ์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line2));
+//
+//                LatLng latLngLandmark21Line2 = new LatLng(16.409421, 102.900173);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark21Line2).title("บ. หนองแสง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark21Line2));
+//
+//                LatLng latLngLandmark22Line2 = new LatLng(16.403769, 102.900674);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark22Line2).title("บ. โคกน้อย").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark22Line2));
 
                 // pin landmark stop
 
@@ -385,13 +385,13 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark18Line3).title("ตลาดหนองใหญ่").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark18Line3));
 
-                LatLng latLngLandmark19Line3 = new LatLng(16.438345, 102.943897);
-                map.addMarker(new MarkerOptions().position(latLngLandmark19Line3).title("บ. ท่าหิน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark19Line3));
-
-                LatLng latLngLandmark20Line3 = new LatLng(16.446155, 102.947748);
-                map.addMarker(new MarkerOptions().position(latLngLandmark20Line3).title("บ. พรหมนิมิตร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line3));
+//                LatLng latLngLandmark19Line3 = new LatLng(16.438345, 102.943897);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark19Line3).title("บ. ท่าหิน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark19Line3));
+//
+//                LatLng latLngLandmark20Line3 = new LatLng(16.446155, 102.947748);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark20Line3).title("บ. พรหมนิมิตร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line3));
 
                 // pin landmark stop
 
@@ -605,13 +605,13 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark18Line4).title("โลตัสเอ็กซ์ตร้า").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark18Line4));
 
-                LatLng latLngLandmark19Line4 = new LatLng(16.535924, 102.830049);
-                map.addMarker(new MarkerOptions().position(latLngLandmark19Line4).title("บ.สำราญ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark19Line4));
-
-                LatLng latLngLandmark20Line4 = new LatLng(16.561523, 102.824449);
-                map.addMarker(new MarkerOptions().position(latLngLandmark20Line4).title("บ. หนองน้ำเกลี้ยง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line4));
+//                LatLng latLngLandmark19Line4 = new LatLng(16.535924, 102.830049);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark19Line4).title("บ.สำราญ").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark19Line4));
+//
+//                LatLng latLngLandmark20Line4 = new LatLng(16.561523, 102.824449);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark20Line4).title("บ. หนองน้ำเกลี้ยง").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark20Line4));
                 // pin land mark stop
 
 
@@ -783,9 +783,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark7Line5).title("สถาบันพัฒนาฝีมือแรงงาน ขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark7Line5));
 
-                LatLng latLngLandmark8Line5 = new LatLng(16.450427, 102.714856);
-                map.addMarker(new MarkerOptions().position(latLngLandmark8Line5).title("บ. ทุ่ม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark8Line5));
+//                LatLng latLngLandmark8Line5 = new LatLng(16.450427, 102.714856);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark8Line5).title("บ. ทุ่ม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark8Line5));
 
                 // pin land mark stop
 
@@ -1070,9 +1070,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark9Line8).title("บึงแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark9Line8));
 
-                LatLng latLngLandmark10Line8 = new LatLng(16.378520, 102.846291);
-                map.addMarker(new MarkerOptions().position(latLngLandmark10Line8).title("บ. ดอนบม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark10Line8));
+//                LatLng latLngLandmark10Line8 = new LatLng(16.378520, 102.846291);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark10Line8).title("บ. ดอนบม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark10Line8));
 
                 // pin land mark stop
 
@@ -1296,9 +1296,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark3Line9).title("บขส. 2").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark3Line9));
 
-                LatLng latLngLandmark4Line9 = new LatLng(16.378520, 102.846291);
-                map.addMarker(new MarkerOptions().position(latLngLandmark4Line9).title("บ. ดอนบม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark4Line9));
+//                LatLng latLngLandmark4Line9 = new LatLng(16.378520, 102.846291);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark4Line9).title("บ. ดอนบม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark4Line9));
 
                 LatLng latLngLandmark5Line9 = new LatLng(16.432384, 102.835668);
                 map.addMarker(new MarkerOptions().position(latLngLandmark5Line9).title("โรงเรียนขอนแก่นวิทยายน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
@@ -1336,9 +1336,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
 //                map.addMarker(new MarkerOptions().position(latLngLandmark13Line9).title("บ. โจด").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
 //                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark13Line9));
 
-                LatLng latLngLandmark14Line9 = new LatLng(16.401787, 102.778999);
-                map.addMarker(new MarkerOptions().position(latLngLandmark14Line9).title("บ. สะอาด").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark14Line9));
+//                LatLng latLngLandmark14Line9 = new LatLng(16.401787, 102.778999);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark14Line9).title("บ. สะอาด").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark14Line9));
 
                 // pin land mark stop
 
@@ -1552,9 +1552,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
 
                 // pin land mark start
 
-                LatLng latLngLandmark1Line10 = new LatLng(16.476059, 102.832161);
-                map.addMarker(new MarkerOptions().position(latLngLandmark1Line10).title("มหาวิทยาลัยขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line10));
+//                LatLng latLngLandmark1Line10 = new LatLng(16.476059, 102.832161);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark1Line10).title("มหาวิทยาลัยขอนแก่น").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_school)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line10));
 
                 LatLng latLngLandmark2Line10 = new LatLng(16.439266, 102.833345);
                 map.addMarker(new MarkerOptions().position(latLngLandmark2Line10).title("บขส. 1").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
@@ -1819,9 +1819,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
 
                 // pin land mark start
 
-                LatLng latLngLandmark1Line11 = new LatLng(16.418274, 102.903125);
-                map.addMarker(new MarkerOptions().position(latLngLandmark1Line11).title("บ. โนนสวรรค์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line11));
+//                LatLng latLngLandmark1Line11 = new LatLng(16.418274, 102.903125);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark1Line11).title("บ. โนนสวรรค์").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line11));
 
                 LatLng latLngLandmark2Line11 = new LatLng(16.427545, 102.868770);
                 map.addMarker(new MarkerOptions().position(latLngLandmark2Line11).title("ตลาดหนองใหญ่").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
@@ -1860,8 +1860,8 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
 
                 LatLng mapCenter29 = new LatLng(16.409522, 102.781848);
                 map.addMarker(new MarkerOptions().position(mapCenter29).title("Start").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
-                LatLng mapCenter30 = new LatLng(16.441628, 102.814526);
-                map.addMarker(new MarkerOptions().position(mapCenter30).title("Stop").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
+//                LatLng mapCenter30 = new LatLng(16.441628, 102.814526);
+//                map.addMarker(new MarkerOptions().position(mapCenter30).title("Stop").snippet("สาย 11 : บ้านโนนสวรรค์ – บ้านขามเจริญ").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)));
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(mapCenter29, 15));
                 map.addPolyline(new PolylineOptions().geodesic(true)
                         .add(new LatLng(16.409522, 102.781848))
@@ -2473,9 +2473,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
 
                 // pin land mark start
 
-                LatLng latLngLandmark1Line16 = new LatLng(16.420134, 102.849856);
-                map.addMarker(new MarkerOptions().position(latLngLandmark1Line16).title("บ. โนนทัน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line16));
+//                LatLng latLngLandmark1Line16 = new LatLng(16.420134, 102.849856);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark1Line16).title("บ. โนนทัน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line16));
 
                 LatLng latLngLandmark2Line16 = new LatLng(16.420134, 102.849856);
                 map.addMarker(new MarkerOptions().position(latLngLandmark2Line16).title("ตลาดโนนทัน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
@@ -2497,9 +2497,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
                 map.addMarker(new MarkerOptions().position(latLngLandmark6Line16).title("บขส. 1").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_bus)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark6Line16));
 
-                LatLng latLngLandmark7Line16 = new LatLng(16.440316, 102.825347);
-                map.addMarker(new MarkerOptions().position(latLngLandmark7Line16).title("บ. สามเหลี่ยม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark7Line16));
+//                LatLng latLngLandmark7Line16 = new LatLng(16.440316, 102.825347);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark7Line16).title("บ. สามเหลี่ยม").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark7Line16));
 
 
                 // pin land mark stop
@@ -3232,7 +3232,7 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
 //                map.addMarker(new MarkerOptions().position(latLngLandmark4Line21).title("บ. โนนทัน").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_home)));
 //                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark4Line21));
 
-                LatLng latLngLandmark5Line21 = new LatLng(16.413309, 102.835381);
+                LatLng latLngLandmark5Line21 = new LatLng(16.418743, 102.840095);
                 map.addMarker(new MarkerOptions().position(latLngLandmark5Line21).title("บึงแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
                 map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark5Line21));
 
@@ -3613,9 +3613,9 @@ public class MapsDetailActivity extends LocalizationActivity implements OnMapRea
 
                 // pin land mark start
 
-                LatLng latLngLandmark1Line23 = new LatLng(16.427475, 102.835103);
-                map.addMarker(new MarkerOptions().position(latLngLandmark1Line23).title("ตลาดเทศบาล").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
-                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line23));
+//                LatLng latLngLandmark1Line23 = new LatLng(16.427475, 102.835103);
+//                map.addMarker(new MarkerOptions().position(latLngLandmark1Line23).title("ตลาดเทศบาล").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_market)));
+//                map.moveCamera(CameraUpdateFactory.newLatLng(latLngLandmark1Line23));
 
                 LatLng latLngLandmark2Line23 = new LatLng(16.413309, 102.835381);
                 map.addMarker(new MarkerOptions().position(latLngLandmark2Line23).title("บึงแก่นนคร").snippet("").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_star)));
