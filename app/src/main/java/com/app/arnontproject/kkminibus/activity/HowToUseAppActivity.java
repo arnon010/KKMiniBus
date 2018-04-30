@@ -1,6 +1,8 @@
 package com.app.arnontproject.kkminibus.activity;
 
 import android.annotation.TargetApi;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,11 +13,11 @@ import android.view.View;
 
 import com.akexorcist.localizationactivity.ui.LocalizationActivity;
 import com.app.arnontproject.kkminibus.R;
+import com.app.arnontproject.kkminibus.adapter.ZoomableImageView;
 
 public class HowToUseAppActivity extends LocalizationActivity {
 
     TextView txtHowTo;
-    ImageView imgHowTo;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -36,7 +38,10 @@ public class HowToUseAppActivity extends LocalizationActivity {
         });
 
         txtHowTo = findViewById(R.id.txtHowTo);
-        imgHowTo = findViewById(R.id.imgHowTo);
+
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.howto_01);
+        ZoomableImageView touch = findViewById(R.id.imgHowTo);
+        touch.setImageBitmap(bitmap);
 
 
     }
