@@ -20,7 +20,6 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/h1"
         android:id="@+id/txtMiniBusDetail1"
-        android:visibility="gone"
         android:text="@string/detail_mini_bus"
         android:gravity="center"
         android:layout_gravity="center"/>
