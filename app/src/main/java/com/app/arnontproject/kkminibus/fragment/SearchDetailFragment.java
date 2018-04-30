@@ -38,7 +38,7 @@ import java.util.Locale;
 public class SearchDetailFragment extends Fragment {
 
     EditText edtSearchDetail;
-    private ArrayAdapter<MiniBus> adapter;
+    private CustomListAdapter adapter;
 
     private List<MiniBus> miniBus;
     ArrayList<MiniBus> mAllData=new ArrayList<>();
@@ -167,15 +167,20 @@ public class SearchDetailFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String message = nameArray[position];
-                String message2 = infoArray[position];
-                Integer message3 = imageArray[position];
+//                String stateName = listView.getAdapter().getItem(position).toString();
+//                Log.d("Select State Name", stateName);
+
+//                String message = nameArray[1];
+//                String message2 = infoArray[position];
+//                Integer message3 = imageArray[position];
+
+
+                MiniBus item = adapter.getItem(position);
 
                 Intent intent = new Intent(getActivity(), MapsDetailActivity.class);
-                intent.putExtra("minibus", message);
-                intent.putExtra("btsMinibus2", message2);
-                intent.putExtra("image", message3);
-                Log.e("click", nameArray[position]);
+                intent.putExtra("minibus", item.getName());
+                intent.putExtra("btsMinibus2", item.getInfo());
+                intent.putExtra("image", item.getImageID());
                 startActivity(intent);
                 getActivity().overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
             }

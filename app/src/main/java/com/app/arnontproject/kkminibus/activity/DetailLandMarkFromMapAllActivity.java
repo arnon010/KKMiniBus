@@ -23,7 +23,7 @@ public class DetailLandMarkFromMapAllActivity extends LocalizationActivity {
 
 
     TextView txtLandMarkDetail;
-    private ArrayAdapter<MiniBus> adapter;
+    private CustomListAdapter adapter;
     Toolbar toolbar;
     String txtFix;
 
@@ -139,12 +139,10 @@ public class DetailLandMarkFromMapAllActivity extends LocalizationActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Intent intent = new Intent(DetailLandMarkFromMapAllActivity.this, MapsDetailActivity.class);
-                String message = nameArray[position];
-                intent.putExtra("minibus", message);
-                String message2 = infoArray[position];
-                intent.putExtra("btsMinibus2", message2);
-                Integer message3 = imageArray[position];
-                intent.putExtra("image", message3);
+                MiniBus item = adapter.getItem(position);
+                intent.putExtra("minibus", item.getName());
+                intent.putExtra("btsMinibus2", item.getInfo());
+                intent.putExtra("image", item.getImageID());
                 startActivity(intent);
                 overridePendingTransition(R.anim.push_in, R.anim.push_in_exit);
             }
